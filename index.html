@@ -1,0 +1,1760 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="noindex,nofollow,noarchive" name="robots"/>
+<meta content="noindex,nofollow,noarchive" name="googlebot"/>
+<title>QGIS aplicado ao CAR — Material das atividades</title>
+<link href="assets/css/site.css" rel="stylesheet"/>
+<link href="assets/css/exercicio-01.css" rel="stylesheet"/>
+<link href="assets/css/atividade-01.css" rel="stylesheet"/>
+<link href="assets/css/atividade-02.css" rel="stylesheet"/>
+<link href="assets/css/atividade-03.css" rel="stylesheet"/>
+<link href="assets/css/atividade-04.css" rel="stylesheet"/>
+<link href="assets/css/preparacao.css" rel="stylesheet"/><link href="assets/css/overrides.css" rel="stylesheet"/></head>
+<body>
+<main class="site-home" id="inicio">
+<header class="site-home-header">
+<div>
+<div class="site-kicker">Curso QGIS aplicado ao Cadastro Ambiental Rural</div>
+<h1>Exercícios e atividades práticas</h1>
+<p class="lead">Comece pela preparação do ambiente e, em seguida, acesse o exercício ou a atividade indicada. Os tópicos podem ser expandidos ou recolhidos durante a execução.</p>
+</div>
+<img alt="QGIS Aplicado ao CAR" class="logo" src="assets/img/logo/logo-dalvi-geotecnologias-cbee9e2874040b.png"/>
+</header>
+<section aria-label="Conteúdo do curso" class="unit-grid"><a class="unit-card prep" data-open-unit="preparacao-01" href="#preparacao-01">
+<div class="type">Preparação 01</div>
+<h2>Instalar o QGIS pelo OSGeo4W</h2>
+<p>Download do instalador, instalação Express e seleção dos componentes utilizados no curso.</p>
+<span class="badge">Preparar computador</span>
+</a><a class="unit-card prep" data-open-unit="preparacao-02" href="#preparacao-02">
+<div class="type">Preparação 02</div>
+<h2>Instalar ou atualizar o perfil do QGIS</h2>
+<p>Atualização do perfil Dalvi_GEO antes da abertura do projeto Módulo CAR.</p>
+<span class="badge">Preparar perfil</span>
+</a>
+<a class="unit-card" data-open-unit="exercicio-01" href="#exercicio-01">
+<div class="type">Exercício 01</div>
+<h2>Digitalização e edição vetorial</h2>
+<p>Criação de camadas, digitalização sobre imagem-guia e principais ferramentas de edição vetorial do QGIS.</p>
+<span class="badge">Abrir guia</span>
+</a>
+<a class="unit-card" data-open-unit="atividade-01" href="#atividade-01">
+<div class="type">Atividade 01</div>
+<h2>Construção do imóvel no Módulo CAR</h2>
+<p>Construção completa do imóvel, uso do solo, Reserva Legal, atributos, exportação e validação.</p>
+<span class="badge">Abrir guia</span>
+</a>
+<a class="unit-card" data-open-unit="atividade-02" href="#atividade-02">
+<div class="type">Atividade 02</div>
+<h2>Construção do imóvel a partir de arquivo KML</h2>
+<p>Carregamento de KML, caracterização do uso do solo, cursos d'água, Reserva Legal e exportação.</p>
+<span class="badge">Abrir guia</span>
+</a>
+<a class="unit-card" data-open-unit="atividade-03" href="#atividade-03"><div class="type">Atividade 03</div><h2>Construção a partir das coordenadas da matrícula</h2><p>Extração assistida das coordenadas, polígono por pontos, análise temporal de vegetação, Reserva Legal, exportação e validação.</p><span class="badge">Abrir guia</span></a>
+<div class="unit-card pending">
+<div class="type">Atividade 04</div>
+<h2>Atividade 04</h2>
+<p>Espaço reservado para o próximo guia.</p>
+<span class="badge">Em elaboração</span>
+</div>
+</section>
+</main>
+<nav aria-label="Navegação do guia" class="unit-toolbar" id="unit-toolbar">
+<div class="unit-toolbar-inner">
+<button class="toolbar-button primary" data-home="" type="button">← Início</button>
+<div class="toolbar-title" id="toolbar-title"></div>
+<button class="toolbar-button" data-expand-all="" type="button">Expandir todos</button>
+<button class="toolbar-button" data-collapse-all="" type="button">Recolher todos</button>
+<button class="toolbar-button" data-print="" type="button">Imprimir</button>
+</div>
+</nav><aside aria-label="Resultado esperado" class="result-panel" id="result-panel"><div class="result-panel-head"><strong>Resultado esperado</strong><button aria-label="Recolher referência" data-result-collapse="" type="button">−</button></div><button class="result-image-button" data-result-zoom="" type="button"><img alt="Resultado esperado da atividade" id="result-panel-image" src=""/></button><div class="result-panel-caption" id="result-panel-caption"></div><button class="result-open-button" data-result-zoom="" type="button">Ampliar imagem</button></aside><button aria-label="Abrir resultado esperado" class="result-fab" data-result-expand="" id="result-fab" type="button">▣ Resultado</button><div aria-hidden="true" class="result-lightbox" id="result-lightbox"><button aria-label="Fechar imagem" class="result-lightbox-close" data-result-close="" type="button">×</button><img alt="Resultado esperado ampliado" id="result-lightbox-image" src=""/><div id="result-lightbox-caption"></div></div>
+<section class="course-unit" data-title="Preparação 01 — Instalar o QGIS pelo OSGeo4W" id="preparacao-01">
+<div class="prep-sheet">
+<div class="print-footer">Curso QGIS aplicado ao CAR • Preparação 01 • Instalação do QGIS</div>
+<header class="header">
+<div class="header-text">
+<div class="kicker">Preparação do ambiente</div>
+<h1>Preparação 01 — Instalar o QGIS pelo OSGeo4W</h1>
+<div class="subtitle">Instalação do ambiente QGIS utilizado no curso por meio do instalador de rede OSGeo4W.</div>
+</div>
+<img alt="QGIS Aplicado ao CAR" class="logo" src="assets/img/logo/logo-dalvi-geotecnologias-cbee9e2874040b.png"/>
+</header>
+<div class="objective"><strong>Objetivo.</strong> Instalar o QGIS LTR e os componentes geoespaciais necessários antes do início das atividades práticas. O instalador OSGeo4W baixa os pacotes pela internet durante a instalação.</div>
+<a class="download-button" href="https://download.osgeo.org/osgeo4w/v2/osgeo4w-setup.exe">↓ Baixar o instalador OSGeo4W</a>
+<p style="font-size:8.6pt;word-break:break-all">https://download.osgeo.org/osgeo4w/v2/osgeo4w-setup.exe</p>
+<details class="topic" open=""><summary><h2>1. Baixar e iniciar o instalador</h2></summary><div class="topic-body">
+<div class="prep-step">
+<div class="step-title"><span class="step-no">1</span> Baixar e executar <b>osgeo4w-setup.exe</b></div>
+<p>Use o botão acima, aguarde o download e execute o arquivo. Mantenha conexão com a internet durante o processo.</p>
+</div>
+<div class="prep-step">
+<div class="step-title"><span class="step-no">2</span> Selecionar <b>Express Install</b></div>
+<div class="figure"><img alt="OSGeo4W Setup — Express Install" src="assets/img/preparacao/01-osgeo4w-express-install.png"/><div class="caption">Na tela inicial do OSGeo4W, marque <b>Express Install</b> e clique em <b>Avançar</b>.</div></div>
+<p>Para o ambiente do curso, utilize a instalação Express. Não é necessário usar Advanced Install.</p>
+</div>
+</div></details>
+<details class="topic"><summary><h2>2. Selecionar os pacotes</h2></summary><div class="topic-body">
+<div class="prep-step">
+<div class="step-title"><span class="step-no">3</span> Marcar os componentes utilizados no curso</div>
+<div class="figure"><img alt="OSGeo4W — seleção de pacotes" src="assets/img/preparacao/02-osgeo4w-select-packages.png"/><div class="caption">Seleção de pacotes no modo Express.</div></div>
+<p>Deixe marcados <b>QGIS LTR</b>, <b>GDAL</b> e <b>GRASS GIS</b>. O item <b>QGIS</b> (versão de lançamento) pode permanecer desmarcado quando o objetivo for usar a versão LTR do curso.</p>
+<p>Clique em <b>Avançar</b>. O instalador calculará as dependências e iniciará o download/instalação dos componentes necessários.</p>
+</div>
+<div class="note"><strong>Durante as telas seguintes:</strong> confirme as opções apresentadas pelo instalador, aceite os termos/licenças quando solicitado e aguarde a conclusão dos downloads. O conteúdo dessas telas pode variar conforme os pacotes e atualizações disponíveis.</div>
+</div></details>
+<details class="topic"><summary><h2>3. Concluir e conferir</h2></summary><div class="topic-body">
+<div class="prep-step">
+<div class="step-title"><span class="step-no">4</span> Finalizar a instalação</div>
+<p>Aguarde até que o instalador informe a conclusão. Depois, feche o instalador. O QGIS LTR ficará disponível no Windows para ser utilizado nas próximas etapas.</p>
+</div>
+<ul class="checklist">
+<li><input class="ck" type="checkbox"/><span>OSGeo4W Installer baixado e executado.</span></li>
+<li><input class="ck" type="checkbox"/><span>Express Install selecionado.</span></li>
+<li><input class="ck" type="checkbox"/><span>QGIS LTR, GDAL e GRASS GIS selecionados.</span></li>
+<li><input class="ck" type="checkbox"/><span>Instalação concluída sem erros.</span></li>
+</ul>
+<div class="note"><strong>Referência técnica:</strong> o fluxo Express Install é o procedimento rápido documentado pelo projeto OSGeo4W e pelo guia de instalação do QGIS para Windows.</div>
+</div></details>
+</div>
+</section><section class="course-unit" data-title="Preparação 02 — Instalar ou atualizar o perfil do QGIS" id="preparacao-02">
+<div class="prep-sheet">
+<div class="print-footer">Curso QGIS aplicado ao CAR • Preparação 02 • Perfil Dalvi_GEO</div>
+<header class="header">
+<div class="header-text">
+<div class="kicker">Preparação do ambiente</div>
+<h1>Preparação 02 — Instalar ou atualizar o perfil do QGIS</h1>
+<div class="subtitle">Aplicação das configurações e scripts do perfil Dalvi_GEO utilizado no curso.</div>
+</div>
+<img alt="QGIS Aplicado ao CAR" class="logo" src="assets/img/logo/logo-dalvi-geotecnologias-cbee9e2874040b.png"/>
+</header>
+<div class="warn"><strong>Antes de executar a atualização: FECHE O QGIS.</strong> Se o programa estiver aberto, arquivos do perfil podem estar em uso e a atualização pode falhar.</div>
+<details class="topic" open=""><summary><h2>1. Localizar e executar o atualizador</h2></summary><div class="topic-body">
+<div class="prep-step">
+<div class="step-title"><span class="step-no">1</span> Localizar o arquivo de atualização</div>
+<div class="figure"><img alt="Arquivo Atualizacao do perfil do QGIS.bat" src="assets/img/preparacao/03-atualizacao-perfil-arquivo-bat.png"/><div class="caption">Na pasta do Módulo CAR, localize <b>Atualizacao do perfil do QGIS.bat</b>.</div></div>
+<p>Dê duplo clique em <b>Atualizacao do perfil do QGIS.bat</b>. O script instalará ou atualizará o perfil <b>Dalvi_GEO</b> no QGIS deste computador.</p>
+</div>
+</div></details>
+<details class="topic"><summary><h2>2. Executar o script</h2></summary><div class="topic-body">
+<div class="prep-step">
+<div class="step-title"><span class="step-no">2</span> Ler o aviso e continuar</div>
+<div class="figure"><img alt="Terminal de atualização do perfil Dalvi_GEO" src="assets/img/preparacao/04-atualizacao-perfil-terminal.png"/><div class="caption">Tela inicial do atualizador do perfil.</div></div>
+<p>Confirme novamente que o QGIS está fechado. Quando a tela mostrar <b>Pressione qualquer tecla para continuar...</b>, pressione uma tecla e acompanhe as mensagens do script até a conclusão.</p>
+</div>
+<div class="note"><strong>O que esta etapa faz:</strong> instala ou atualiza as configurações e scripts do perfil <b>Dalvi_GEO</b>, preparando o ambiente utilizado no curso.</div>
+</div></details>
+<details class="topic"><summary><h2>3. Abrir o projeto do Módulo CAR</h2></summary><div class="topic-body">
+<div class="prep-step">
+<div class="step-title"><span class="step-no">3</span> Abrir <b>Modulo_CAR.qgz</b></div>
+<p>Depois de concluir a atualização do perfil, abra o arquivo <b>Modulo_CAR.qgz</b>. É neste projeto que serão realizadas as atividades do Módulo CAR.</p>
+</div>
+<ul class="checklist">
+<li><input class="ck" type="checkbox"/><span>QGIS fechado antes da atualização.</span></li>
+<li><input class="ck" type="checkbox"/><span>Atualizacao do perfil do QGIS.bat executado.</span></li>
+<li><input class="ck" type="checkbox"/><span>Script concluído sem erros.</span></li>
+<li><input class="ck" type="checkbox"/><span>Modulo_CAR.qgz localizado e pronto para abertura.</span></li>
+</ul>
+</div></details>
+</div>
+</section><section class="course-unit" data-result-caption="Resultado esperado — Exercício 01" data-result-image="assets/img/exercicio-01/resultado-esperado-correto.png" data-title="Exercício 01 — Digitalização e edição vetorial" id="exercicio-01">
+<div class="sheet">
+<div class="print-footer">Curso QGIS aplicado ao CAR • Exercício 01 • Digitalização e edição vetorial</div>
+<header class="header">
+<div class="header-text">
+<div class="kicker">Curso QGIS aplicado ao CAR</div>
+<h1>Exercício 01 — Digitalização e edição vetorial</h1>
+<div class="subtitle">Criação de camadas Shapefile, digitalização sobre imagem-guia e uso das principais ferramentas de edição vetorial do QGIS.</div>
+</div>
+<img alt="Dalvi Geotecnologias" class="logo" src="assets/img/logo/logo-dalvi-geotecnologias-cbee9e2874040b.png"/>
+</header>
+<div class="box objective"><strong>Objetivo.</strong> Utilizar a imagem <strong>EXERCÍCIO 01.tiff</strong> como base de referência para criar e editar geometrias vetoriais de ponto, polígono e linha. Ao final, as feições deverão reproduzir os elementos mostrados na imagem e deverão estar salvas na pasta do exercício.</div>
+<div class="hero"><img alt="Imagem-guia do Exercício 01" src="assets/img/exercicio-01/imagem-guia-do-exercicio-01-4640eed519a5d7.png"/></div>
+<div class="caption"><strong>Imagem de referência.</strong> Os elementos vetoriais deverão ser construídos diretamente sobre esta base.</div>
+<div class="legend">
+<div class="legend-item"><div class="sym"><div class="dot"></div></div><strong>PONTOS</strong><br/><span class="caption">marcador azul</span></div>
+<div class="legend-item"><div class="sym"><div class="poly"></div></div><strong>POLÍGONO</strong><br/><span class="caption">contorno laranja</span></div>
+<div class="legend-item"><div class="sym"><div class="line"></div></div><strong>LINHA</strong><br/><span class="caption">linha vermelha</span></div>
+<div class="legend-item"><div class="sym"><div class="buffer"></div></div><strong>BUFFER</strong><br/><span class="caption">ciano tracejado</span></div>
+</div>
+<details class="topic" open=""><summary><h2>1. Exercício 01</h2></summary><div class="topic-body">
+<h3>1.a) Carregar a imagem de referência no QGIS</h3>
+<div class="box">
+<p><strong>Arquivo:</strong> <span class="path">\CURSO_QGIS_CAR_2026-2\EXERCÍCIO\EXERCÍCIO 01\EXERCÍCIO 01.tiff</span></p>
+<p>O arquivo raster já está disponível na pasta do exercício. Ele será usado somente como <strong>guia visual</strong> para a digitalização.</p>
+</div>
+<div class="raster-flow">
+<div class="flow-card"><img alt="Raster" src="assets/icons/qgis/mActionAddRasterLayer.svg"/><strong>1. Localizar o arquivo</strong><br/>Abra a pasta <strong>EXERCÍCIO 01</strong> no Explorador de Arquivos do Windows.</div>
+<div class="flow-arrow">→</div>
+<div class="flow-card"><strong>2. Arrastar</strong><br/>Clique em <strong>EXERCÍCIO 01.tiff</strong> com o botão esquerdo e mantenha o botão pressionado.</div>
+<div class="flow-arrow">→</div>
+<div class="flow-card"><strong>3. Soltar no QGIS</strong><br/>Arraste o arquivo até a <strong>área central do mapa</strong> e solte o botão do mouse.</div>
+</div>
+<ol class="steps">
+<li><div><strong>Confirmar o carregamento.</strong><br/>A camada <strong>EXERCÍCIO 01</strong> deverá aparecer no painel <strong>Camadas</strong> e a imagem deverá ser exibida no canvas do QGIS.</div></li>
+<li><div><strong>Ajustar a visualização, se necessário.</strong><br/>Se a imagem não estiver enquadrada na tela, use <span class="ui">botão direito na camada EXERCÍCIO 01 &gt; Zoom para a Camada</span>.</div></li>
+<li><div><strong>Manter o raster como base.</strong><br/>Deixe <strong>EXERCÍCIO 01</strong> na parte inferior do painel Camadas. As novas camadas vetoriais deverão ficar acima dela para permanecerem visíveis durante a digitalização.</div></li>
+</ol>
+<div class="note"><strong>Importante.</strong> Não coloque o raster em edição. Toda a atividade será executada nas camadas vetoriais criadas nos próximos passos.</div>
+<h3>1.b) Criar a camada do tipo ponto e digitalizar os pontos</h3>
+<div class="grid-2">
+<div class="shot"><img alt="Nova Camada Shapefile" src="assets/img/exercicio-01/nova-camada-shapefile-77fe4948fac461.png"/><div class="caption">Acesso à criação da camada Shapefile.</div></div>
+<div class="shot"><img alt="Configuração de camada ponto" src="assets/img/exercicio-01/configuracao-de-camada-ponto-8e4d56c977cea3.png"/><div class="caption">Configuração da camada <strong>PONTOS</strong>.</div></div>
+</div>
+<ol class="steps">
+<li><div><div class="tool-card"><img alt="Nova Camada Shapefile" class="tool-icon" src="assets/icons/qgis/mActionNewVectorLayer.svg"/><div><div class="tool-name">Nova Camada Shapefile</div><div class="tool-loc">Localização: Menu Camada → Criar Camada; também disponível na barra Gerenciar Camadas</div><div class="tool-text">Acesse <span class="ui">Camada &gt; Criar Camada &gt; Nova Camada Shapefile...</span>.</div></div></div></div></li>
+<li><div><strong>Configurar o Shapefile.</strong><table class="settings"><tr><th>Nome do arquivo</th><td><span class="path">\CURSO_QGIS_CAR_2026-2\EXERCÍCIO\EXERCÍCIO 01\PONTOS.shp</span></td></tr><tr><th>Codificação</th><td>UTF-8</td></tr><tr><th>Tipo de geometria</th><td>Ponto</td></tr><tr><th>Dimensões adicionais</th><td>Nenhum</td></tr><tr><th>SRC</th><td>EPSG:31984 — SIRGAS 2000 / UTM zone 24S</td></tr><tr><th>Campo</th><td><strong>NOME</strong> • Texto (string) • Comprimento 80. Clique em <strong>Adicionar campo à lista</strong> e depois em <strong>OK</strong>.</td></tr></table></div></li>
+<li><div><strong>Definir a simbologia.</strong><br/><span class="ui">botão direito em PONTOS &gt; Propriedades... &gt; Simbologia &gt; Símbolo simples &gt; Marcador simples</span>.<br/>Use marcador circular com <strong>3,0 mm</strong>, preenchimento azul-claro, contorno azul-escuro e largura do traço de aproximadamente <strong>0,40 mm</strong>. Clique em <strong>Aplicar</strong> e <strong>OK</strong>.</div></li><div class="figure symbology-reference"><img alt="Simbologia de referência da camada PONTOS" src="assets/img/exercicio-01/simbologia-ponto.png"/><div class="caption"><strong>Simbologia — PONTOS.</strong> Utilize esta tela como referência para tamanho, preenchimento e contorno do marcador.</div></div>
+<li><div><div class="tool-card edit-start"><div class="edit-callout"><img alt="Alternar edição" src="assets/icons/qgis/mActionToggleEditing.svg"/>ANTES DE USAR A FERRAMENTA: coloque a camada em edição</div><img alt="Alternar edição" class="tool-icon" src="assets/icons/qgis/mActionToggleEditing.svg"/><div><div class="tool-name">Alternar edição</div><div class="tool-loc">Localização: Barra Digitalização, na parte superior do QGIS</div><div class="tool-text">Selecione <strong>PONTOS</strong> no painel Camadas e clique em <strong>Alternar edição</strong>. As ferramentas de captura serão habilitadas para a camada ativa.</div></div></div></div></li>
+<li><div><div class="tool-card"><img alt="Adicionar feição de ponto" class="tool-icon" src="assets/icons/qgis/mActionCapturePoint.svg"/><div><div class="tool-name">Adicionar feição de ponto</div><div class="tool-loc">Localização: Barra Digitalização; habilitada quando uma camada de ponto está ativa e em edição</div><div class="tool-text">Clique exatamente sobre cada marcador azul da imagem. Para cada ponto, preencha o atributo <strong>NOME</strong> e confirme em <strong>OK</strong>.</div></div></div></div></li>
+</ol>
+<div class="finish-box"><div class="finish-title">Finalizar esta etapa</div><div class="finish-actions">
+<div class="finish-action"><img alt="Salvar edições" src="assets/icons/qgis/mActionSaveEdits.svg"/><div><strong>1. Salvar edições da camada</strong><br/>Com <strong>PONTOS</strong> ativa, clique em <strong>Salvar edições da camada</strong>.</div></div>
+<div class="finish-arrow">→</div>
+<div class="finish-action"><img alt="Alternar edição" src="assets/icons/qgis/mActionToggleEditing.svg"/><div><strong>2. Sair do modo de edição</strong><br/>Clique em <strong>Alternar edição</strong> para desativar a edição da camada.</div></div>
+</div></div>
+<h3>1.c) Criar a camada do tipo polígono e digitalizar o polígono inicial</h3>
+<div class="grid-2">
+<div class="shot"><img alt="Nova Camada Shapefile" src="assets/img/exercicio-01/nova-camada-shapefile-77fe4948fac461.png"/><div class="caption">Repita o mesmo caminho de criação da camada.</div></div>
+<div class="shot"><img alt="Configuração de camada polígono" src="assets/img/exercicio-01/configuracao-de-camada-poligono-ebb314052f7c5e.png"/><div class="caption">Configuração da camada <strong>POLIGONO</strong>.</div></div>
+</div>
+<ol class="steps">
+<li><div><div class="tool-card"><img alt="Nova Camada Shapefile" class="tool-icon" src="assets/icons/qgis/mActionNewVectorLayer.svg"/><div><div class="tool-name">Nova Camada Shapefile</div><div class="tool-loc">Localização: Menu Camada → Criar Camada; barra Gerenciar Camadas</div><div class="tool-text">Acesse <span class="ui">Camada &gt; Criar Camada &gt; Nova Camada Shapefile...</span>.</div></div></div></div></li>
+<li><div><strong>Configurar o Shapefile.</strong><table class="settings"><tr><th>Nome do arquivo</th><td><span class="path">\CURSO_QGIS_CAR_2026-2\EXERCÍCIO\EXERCÍCIO 01\POLIGONO.shp</span></td></tr><tr><th>Codificação</th><td>UTF-8</td></tr><tr><th>Tipo de geometria</th><td>Polígono</td></tr><tr><th>Dimensões adicionais</th><td>Nenhum</td></tr><tr><th>SRC</th><td>EPSG:31984 — SIRGAS 2000 / UTM zone 24S</td></tr><tr><th>Campo</th><td><strong>NOME</strong> • Texto (string) • Comprimento 80. Adicione o campo à lista e clique em <strong>OK</strong>.</td></tr></table></div></li>
+<li><div><strong>Definir a simbologia.</strong><br/><span class="ui">botão direito em POLIGONO &gt; Propriedades... &gt; Simbologia &gt; Símbolo simples &gt; Preenchimento simples</span>.<br/>Configure o preenchimento com a transparência mostrada na referência, contorno laranja, linha sólida e largura do traço de aproximadamente <strong>0,66 mm</strong>.</div></li><div class="figure symbology-reference"><img alt="Simbologia de referência da camada POLIGONO" src="assets/img/exercicio-01/simbologia-poligono.png"/><div class="caption"><strong>Simbologia — POLIGONO.</strong> Referência correta de preenchimento e contorno para a atividade.</div></div>
+<li><div><div class="tool-card edit-start"><div class="edit-callout"><img alt="Alternar edição" src="assets/icons/qgis/mActionToggleEditing.svg"/>ANTES DE USAR A FERRAMENTA: coloque a camada em edição</div><img alt="Alternar edição" class="tool-icon" src="assets/icons/qgis/mActionToggleEditing.svg"/><div><div class="tool-name">Alternar edição</div><div class="tool-loc">Localização: Barra Digitalização</div><div class="tool-text">Selecione <strong>POLIGONO</strong> e ative o modo de edição.</div></div></div></div></li>
+<li><div><div class="tool-card"><img alt="Adicionar feição de polígono" class="tool-icon" src="assets/icons/qgis/mActionCapturePolygon.svg"/><div><div class="tool-name">Adicionar feição de polígono</div><div class="tool-loc">Localização: Barra Digitalização; habilitada para a camada de polígono em edição</div><div class="tool-text">Clique, na sequência, em cada vértice do polígono laranja localizado no canto superior esquerdo. Após o último vértice, clique com o <strong>botão direito</strong>, preencha o atributo e confirme.</div></div></div></div></li>
+</ol>
+<div class="finish-box"><div class="finish-title">Finalizar esta etapa</div><div class="finish-actions">
+<div class="finish-action"><img alt="Salvar edições" src="assets/icons/qgis/mActionSaveEdits.svg"/><div><strong>1. Salvar edições da camada</strong><br/>Com <strong>POLIGONO</strong> ativa, clique em <strong>Salvar edições da camada</strong>.</div></div>
+<div class="finish-arrow">→</div>
+<div class="finish-action"><img alt="Alternar edição" src="assets/icons/qgis/mActionToggleEditing.svg"/><div><strong>2. Sair do modo de edição</strong><br/>Clique em <strong>Alternar edição</strong> para desativar a edição da camada.</div></div>
+</div></div>
+<div class="page-break"></div>
+<h3>1.d) Editar o polígono: mover, ajustar, deslocar, quebrar e criar anéis</h3>
+<div class="grid-2">
+<div class="shot"><img alt="Resultado intermediário" src="assets/img/exercicio-01/resultado-intermediario-f012c96d45ed1a.png"/><div class="caption"><strong>Resultado intermediário:</strong> feição externa quebrada em duas partes.</div></div>
+<div class="shot"><img alt="Resultado esperado correto do Exercício 01" src="assets/img/exercicio-01/resultado-esperado-correto.png"/><div class="caption"><strong>Resultado esperado.</strong> Referência final correta para conferir pontos, polígono, linha e buffer após a conclusão do exercício.</div></div>
+</div>
+<div class="box"><div class="result-order">Sequência desta etapa:</div><p>mover → editar vértices → curva de afastamento → apagar polígono interno → ativar aderência para a camada ativa → quebrar feição → adicionar anel → preencher anel → remodelar.</p></div>
+<ol class="steps">
+<li><div><div class="tool-card edit-start"><div class="edit-callout"><img alt="Alternar edição" src="assets/icons/qgis/mActionToggleEditing.svg"/>ANTES DE USAR A FERRAMENTA: coloque a camada em edição</div><img alt="Alternar edição" class="tool-icon" src="assets/icons/qgis/mActionToggleEditing.svg"/><div><div class="tool-name">Alternar edição</div><div class="tool-loc">Localização: Barra Digitalização</div><div class="tool-text">Selecione <strong>POLIGONO</strong> e coloque novamente a camada em edição.</div></div></div></div></li>
+<li><div><div class="tool-card"><img alt="Mover feição(ões)" class="tool-icon" src="assets/icons/qgis/mActionMoveFeature.svg"/><div><div class="tool-name">Mover feição(ões)</div><div class="tool-loc">Localização: Barra Digitalização Avançada; no ambiente do curso, entre as ferramentas de edição avançada</div><div class="tool-text">Clique no polígono e mova-o para a direita, posicionando-o aproximadamente sobre a geometria laranja interna.</div></div></div></div></li>
+<li><div><div class="tool-card"><img alt="Ferramenta Vértice — camada atual" class="tool-icon" src="assets/icons/qgis/mActionVertexToolActiveLayer.svg"/><div><div class="tool-name">Ferramenta Vértice — camada atual</div><div class="tool-loc">Localização: Barra Digitalização</div><div class="tool-text">Clique na feição e arraste os vértices até que o polígono coincida com a geometria interna da imagem.</div></div></div></div></li>
+<li><div><div class="tool-card"><img alt="Curva de Afastamento" class="tool-icon" src="assets/icons/qgis/mActionOffsetCurve.svg"/><div><div class="tool-name">Curva de Afastamento</div><div class="tool-loc">Localização: Barra Digitalização Avançada</div><div class="tool-text">Crie um deslocamento para fora até coincidir com a geometria laranja externa. Confirme o deslocamento de modo que a geometria externa seja criada sem perder a referência necessária para o passo seguinte.</div></div></div></div></li>
+<li><div><div class="tool-card"><img alt="Selecionar feição" class="tool-icon" src="assets/icons/qgis/mActionSelectRectangle.svg"/><div><div class="tool-name">Selecionar feição</div><div class="tool-loc">Localização: Barra Seleção, na parte superior</div><div class="tool-text">Selecione o <strong>polígono interno</strong> que permaneceu após a criação da geometria externa.</div></div></div><div class="tool-card"><img alt="Excluir feição(ões) selecionada(s)" class="tool-icon" src="assets/icons/qgis/mActionDeleteSelected.svg"/><div><div class="tool-name">Excluir feição(ões) selecionada(s)</div><div class="tool-loc">Localização: Barra Digitalização; também é possível usar a tecla Delete</div><div class="tool-text">Exclua o polígono interno. Ao final deste passo deverá permanecer apenas a geometria externa.</div></div></div></div></li>
+<li><div><div class="tool-card"><img alt="Habilitar aderência" class="tool-icon" src="assets/icons/qgis/mIconSnapping.svg"/><div><div class="tool-name">Habilitar aderência</div><div class="tool-loc">Localização: Barra Aderência — ímã vermelho na segunda linha de ferramentas</div><div class="tool-text">Ative a aderência. O botão funciona também pela tecla <strong>S</strong>.</div></div></div><div class="tool-card"><img alt="Modo de aderência: Camada ativa" class="tool-icon" src="assets/icons/qgis/mIconSnappingActiveLayer.svg"/><div><div class="tool-name">Modo de aderência: Camada ativa</div><div class="tool-loc">Localização: Barra Aderência, no seletor de modo ao lado do ímã</div><div class="tool-text">Defina a aderência para <strong>Camada ativa</strong>, garantindo que os novos segmentos e vértices se conectem à camada POLIGONO.</div></div></div></div></li>
+<li><div><div class="tool-card"><img alt="Quebrar feição" class="tool-icon" src="assets/icons/qgis/mActionSplitFeatures.svg"/><div><div class="tool-name">Quebrar feição</div><div class="tool-loc">Localização: Barra Digitalização Avançada; disponível quando a camada vetorial está em edição</div><div class="tool-text">Desenhe uma linha de corte atravessando o polígono de uma borda à outra, conforme a imagem intermediária. Finalize com o <strong>botão direito</strong>. O polígono será dividido em duas feições independentes.</div></div></div></div></li>
+<li><div><div class="tool-card"><img alt="Adicionar anel" class="tool-icon" src="assets/icons/qgis/mActionAddRing.svg"/><div><div class="tool-name">Adicionar anel</div><div class="tool-loc">Localização: Barra Digitalização Avançada</div><div class="tool-text">Selecione a feição a ser alterada, ative <strong>Adicionar anel</strong> e desenhe o primeiro polígono interno. Termine com o botão direito para criar o vazio interno.</div></div></div></div></li>
+<li><div><div class="tool-card"><img alt="Preencher anel" class="tool-icon" src="assets/icons/qgis/mActionFillRing.svg"/><div><div class="tool-name">Preencher anel</div><div class="tool-loc">Localização: Barra Digitalização Avançada</div><div class="tool-text">Utilize <strong>Preencher anel</strong> no segundo elemento interno indicado na imagem, concluindo o desenho com o botão direito e confirmando o formulário de atributos quando ele for exibido.</div></div></div></div></li>
+<li><div><div class="tool-card"><img alt="Remodelar feição" class="tool-icon" src="assets/icons/qgis/mActionReshape.svg"/><div><div class="tool-name">Remodelar feição</div><div class="tool-loc">Localização: Barra Digitalização Avançada</div><div class="tool-text">Redesenhe o trecho necessário da borda para reproduzir a forma final. Para polígonos, a linha de remodelamento deve cruzar a borda da feição no início e no final do trecho que será substituído. Finalize com o botão direito.</div></div></div><div class="official-doc-example"><div><strong>Veja a ferramenta em funcionamento.</strong><p>A documentação oficial do QGIS apresenta uma ilustração do uso de <b>Remodelar feição</b> em um polígono. A imagem abaixo é carregada do repositório oficial quando houver conexão com a internet.</p><a href="https://docs.qgis.org/3.44/pt_BR/docs/user_manual/working_with_vector/editing_geometry_attributes.html" target="_blank">Abrir documentação oficial do QGIS 3.44 ↗</a></div><img alt="Ilustração oficial do QGIS — Remodelar polígono" loading="lazy" src="https://raw.githubusercontent.com/qgis/QGIS-Documentation/release_3.44/docs/user_manual/working_with_vector/img/reshape_polygon.png"/></div></div></li>
+</ol>
+<div class="finish-box"><div class="finish-title">Finalizar esta etapa</div><div class="finish-actions">
+<div class="finish-action"><img alt="Salvar edições" src="assets/icons/qgis/mActionSaveEdits.svg"/><div><strong>1. Salvar edições da camada</strong><br/>Com <strong>POLIGONO</strong> ativa, clique em <strong>Salvar edições da camada</strong>.</div></div>
+<div class="finish-arrow">→</div>
+<div class="finish-action"><img alt="Alternar edição" src="assets/icons/qgis/mActionToggleEditing.svg"/><div><strong>2. Sair do modo de edição</strong><br/>Clique em <strong>Alternar edição</strong> para desativar a edição da camada.</div></div>
+</div></div>
+<h3>1.e) Criar a camada do tipo linha e digitalizar a linha inicial</h3>
+<div class="grid-2">
+<div class="shot"><img alt="Nova Camada Shapefile" src="assets/img/exercicio-01/nova-camada-shapefile-77fe4948fac461.png"/><div class="caption">Repita o caminho de criação da camada.</div></div>
+<div class="shot"><img alt="Configuração de camada linha" src="assets/img/exercicio-01/configuracao-de-camada-linha-5f8520205c2cf1.png"/><div class="caption">Configuração da camada <strong>LINHA</strong>.</div></div>
+</div>
+<ol class="steps">
+<li><div><div class="tool-card"><img alt="Nova Camada Shapefile" class="tool-icon" src="assets/icons/qgis/mActionNewVectorLayer.svg"/><div><div class="tool-name">Nova Camada Shapefile</div><div class="tool-loc">Localização: Menu Camada → Criar Camada; barra Gerenciar Camadas</div><div class="tool-text">Acesse <span class="ui">Camada &gt; Criar Camada &gt; Nova Camada Shapefile...</span>.</div></div></div></div></li>
+<li><div><strong>Configurar o Shapefile.</strong><table class="settings"><tr><th>Nome do arquivo</th><td><span class="path">\CURSO_QGIS_CAR_2026-2\EXERCÍCIO\EXERCÍCIO 01\LINHA.shp</span></td></tr><tr><th>Codificação</th><td>UTF-8</td></tr><tr><th>Tipo de geometria</th><td>String de linha</td></tr><tr><th>Dimensões adicionais</th><td>Nenhum</td></tr><tr><th>SRC</th><td>EPSG:31984 — SIRGAS 2000 / UTM zone 24S</td></tr><tr><th>Campo</th><td><strong>NOME</strong> • Texto (string) • Comprimento 80. Adicione o campo à lista e clique em <strong>OK</strong>.</td></tr></table></div></li>
+<li><div><strong>Definir a simbologia.</strong><br/><span class="ui">botão direito em LINHA &gt; Propriedades... &gt; Simbologia &gt; Símbolo simples &gt; Linha simples</span>.<br/>Use cor vermelha, linha sólida, largura do traço de aproximadamente <strong>0,78 mm</strong> e extremidades/uniões arredondadas conforme a referência.</div></li><div class="figure symbology-reference"><img alt="Simbologia de referência da camada LINHA" src="assets/img/exercicio-01/simbologia-linha.png"/><div class="caption"><strong>Simbologia — LINHA.</strong> Referência correta para a linha vermelha do exercício.</div></div>
+<li><div><div class="tool-card edit-start"><div class="edit-callout"><img alt="Alternar edição" src="assets/icons/qgis/mActionToggleEditing.svg"/>ANTES DE USAR A FERRAMENTA: coloque a camada em edição</div><img alt="Alternar edição" class="tool-icon" src="assets/icons/qgis/mActionToggleEditing.svg"/><div><div class="tool-name">Alternar edição</div><div class="tool-loc">Localização: Barra Digitalização</div><div class="tool-text">Selecione <strong>LINHA</strong> e ative o modo de edição.</div></div></div></div></li>
+<li><div><div class="tool-card"><img alt="Adicionar feição de linha" class="tool-icon" src="assets/icons/qgis/mActionCaptureLine.svg"/><div><div class="tool-name">Adicionar feição de linha</div><div class="tool-loc">Localização: Barra Digitalização; habilitada para camada de linha em edição</div><div class="tool-text">Clique sucessivamente sobre a linha vermelha do canto inferior esquerdo. Insira vértices suficientes para reproduzir as mudanças de direção. Finalize com o botão direito, preencha o atributo e confirme.</div></div></div></div></li>
+</ol>
+<div class="finish-box"><div class="finish-title">Finalizar esta etapa</div><div class="finish-actions">
+<div class="finish-action"><img alt="Salvar edições" src="assets/icons/qgis/mActionSaveEdits.svg"/><div><strong>1. Salvar edições da camada</strong><br/>Com <strong>LINHA</strong> ativa, clique em <strong>Salvar edições da camada</strong>.</div></div>
+<div class="finish-arrow">→</div>
+<div class="finish-action"><img alt="Alternar edição" src="assets/icons/qgis/mActionToggleEditing.svg"/><div><strong>2. Sair do modo de edição</strong><br/>Clique em <strong>Alternar edição</strong> para desativar a edição da camada.</div></div>
+</div></div>
+<div class="page-break"></div>
+<h3>1.f) Mover a linha, rotacionar e gerar o buffer de 30 m</h3>
+<div class="grid-2">
+<div class="shot"><img alt="Menu Buffer" src="assets/img/exercicio-01/menu-buffer-fb07c5a3fb17c6.png"/><div class="caption">Caminho do algoritmo Buffer pelo menu Vetor.</div></div>
+<div class="box"><h4>Ferramentas desta etapa</h4><div class="tool-card"><img alt="Mover feição(ões)" class="tool-icon" src="assets/icons/qgis/mActionMoveFeature.svg"/><div><div class="tool-name">Mover feição(ões)</div><div class="tool-loc">Localização: Barra Digitalização Avançada</div><div class="tool-text">Reposicionar a linha.</div></div></div><div class="tool-card"><img alt="Rodar/Rotacionar feição(ões)" class="tool-icon" src="assets/icons/qgis/mActionRotateFeature.svg"/><div><div class="tool-name">Rodar/Rotacionar feição(ões)</div><div class="tool-loc">Localização: Barra Digitalização Avançada</div><div class="tool-text">Girar a linha até coincidir com a referência.</div></div></div></div>
+</div>
+<ol class="steps">
+<li><div><div class="tool-card edit-start"><div class="edit-callout"><img alt="Alternar edição" src="assets/icons/qgis/mActionToggleEditing.svg"/>ANTES DE USAR A FERRAMENTA: coloque a camada em edição</div><img alt="Alternar edição" class="tool-icon" src="assets/icons/qgis/mActionToggleEditing.svg"/><div><div class="tool-name">Alternar edição</div><div class="tool-loc">Localização: Barra Digitalização</div><div class="tool-text">Selecione <strong>LINHA</strong> e coloque a camada novamente em edição.</div></div></div></div></li>
+<li><div><div class="tool-card"><img alt="Mover feição(ões)" class="tool-icon" src="assets/icons/qgis/mActionMoveFeature.svg"/><div><div class="tool-name">Mover feição(ões)</div><div class="tool-loc">Localização: Barra Digitalização Avançada</div><div class="tool-text">Desloque a linha do canto inferior esquerdo para a região da linha vermelha localizada no canto inferior direito.</div></div></div></div></li>
+<li><div><div class="tool-card"><img alt="Rodar/Rotacionar feição(ões)" class="tool-icon" src="assets/icons/qgis/mActionRotateFeature.svg"/><div><div class="tool-name">Rodar/Rotacionar feição(ões)</div><div class="tool-loc">Localização: Barra Digitalização Avançada</div><div class="tool-text">Gire a linha até que o traçado se encaixe sobre a referência. Faça pequenos ajustes alternando entre Mover e Rotacionar, se necessário.</div></div></div></div></li>
+</ol>
+<div class="finish-box"><div class="finish-title">Finalizar esta etapa</div><div class="finish-actions">
+<div class="finish-action"><img alt="Salvar edições" src="assets/icons/qgis/mActionSaveEdits.svg"/><div><strong>1. Salvar edições da camada</strong><br/>Com <strong>LINHA</strong> ativa, clique em <strong>Salvar edições da camada</strong>.</div></div>
+<div class="finish-arrow">→</div>
+<div class="finish-action"><img alt="Alternar edição" src="assets/icons/qgis/mActionToggleEditing.svg"/><div><strong>2. Sair do modo de edição</strong><br/>Clique em <strong>Alternar edição</strong> para desativar a edição da camada.</div></div>
+</div></div>
+<div class="tool-card"><img alt="Buffer" class="tool-icon" src="assets/icons/qgis/mAlgorithmBuffer.svg"/><div><div class="tool-name">Buffer</div><div class="tool-loc">Localização: Vetor → Ferramentas de Geoprocessamento → Buffer...</div><div class="tool-text">Com a edição de LINHA já encerrada, abra o algoritmo <strong>Buffer</strong> e use os parâmetros abaixo.</div></div></div>
+<table class="settings"><tr><th>Camada de entrada</th><td>LINHA</td></tr><tr><th>Distância</th><td><strong>30 m</strong></td></tr><tr><th>Segmentos</th><td>5</td></tr><tr><th>Estilo da extremidade</th><td>Redondo</td></tr><tr><th>Estilo de junção</th><td>Redondo</td></tr><tr><th>Dissolver resultado</th><td>Desmarcado</td></tr><tr><th>Saída</th><td><span class="path">\CURSO_QGIS_CAR_2026-2\EXERCÍCIO\EXERCÍCIO 01\BUFFER_30M.shp</span></td></tr></table>
+<div class="note">O SRC EPSG:31984 utiliza metros como unidade. Portanto, distância = <strong>30</strong> corresponde a um buffer de <strong>30 metros</strong>.</div>
+<h3>1.g) Ajustar a aparência do buffer</h3>
+<ol class="steps">
+<li><div><strong>Abrir a simbologia.</strong><br/><span class="ui">botão direito em BUFFER_30M &gt; Propriedades... &gt; Simbologia &gt; Símbolo simples &gt; Preenchimento simples</span>.</div></li>
+<li><div><strong>Configurar o estilo.</strong><br/>Use preenchimento <strong>Sem pincel</strong>, contorno ciano, estilo tracejado conforme a referência e largura do traço de aproximadamente <strong>1,06 mm</strong>. Clique em <strong>Aplicar</strong> e <strong>OK</strong>.</div></li><div class="figure symbology-reference"><img alt="Simbologia de referência do BUFFER_30M" src="assets/img/exercicio-01/simbologia-buffer.png"/><div class="caption"><strong>Simbologia — BUFFER_30M.</strong> Referência correta do contorno ciano tracejado utilizado no exercício.</div></div>
+<li><div><strong>Organizar a ordem das camadas.</strong><br/>No painel Camadas, mantenha <strong>LINHA</strong> acima de <strong>BUFFER_30M</strong> para que a linha vermelha permaneça visível no centro do buffer.</div></li>
+</ol>
+<div class="note"><strong>Nesta etapa não é necessário colocar BUFFER_30M em edição.</strong> O ajuste solicitado é de simbologia; a geometria deve permanecer como resultado do buffer de 30 m.</div>
+<div class="page-break"></div>
+</div></details><details class="topic"><summary><h2>2. Conferência final</h2></summary><div class="topic-body">
+<p>Marque cada item após confirmar o resultado no QGIS.</p>
+<ul class="checklist">
+<li><input class="ck" type="checkbox"/><span>O arquivo <strong>EXERCÍCIO 01.tiff</strong> foi carregado e permanece como camada de fundo.</span></li>
+<li><input class="ck" type="checkbox"/><span><strong>PONTOS.shp</strong> foi criado em EPSG:31984 e salvo na pasta do exercício.</span></li>
+<li><input class="ck" type="checkbox"/><span>Todos os pontos azuis foram digitalizados sobre a imagem de referência.</span></li>
+<li><input class="ck" type="checkbox"/><span><strong>POLIGONO.shp</strong> foi criado e estilizado com contorno laranja.</span></li>
+<li><input class="ck" type="checkbox"/><span>O polígono inicial foi digitalizado sobre a geometria do canto superior esquerdo.</span></li>
+<li><input class="ck" type="checkbox"/><span>O polígono foi movido, teve os vértices ajustados e recebeu curva de afastamento.</span></li>
+<li><input class="ck" type="checkbox"/><span>O polígono interno foi excluído.</span></li>
+<li><input class="ck" type="checkbox"/><span>A aderência foi ativada em modo <strong>Camada ativa</strong> antes da quebra da feição.</span></li>
+<li><input class="ck" type="checkbox"/><span>A feição foi quebrada conforme o modelo e os anéis foram executados.</span></li>
+<li><input class="ck" type="checkbox"/><span>O remodelamento foi concluído e o resultado do polígono coincide com a imagem final.</span></li>
+<li><input class="ck" type="checkbox"/><span><strong>LINHA.shp</strong> foi criada, desenhada, movida e rotacionada sobre a referência.</span></li>
+<li><input class="ck" type="checkbox"/><span><strong>BUFFER_30M.shp</strong> foi gerado com distância de 30 m.</span></li>
+<li><input class="ck" type="checkbox"/><span>O buffer foi estilizado com contorno ciano tracejado e preenchimento transparente.</span></li>
+<li><input class="ck" type="checkbox"/><span>Após cada etapa de edição, as alterações foram salvas e a camada foi retirada do modo de edição.</span></li>
+</ul>
+</div></details><details class="topic"><summary><h2 style="margin-top:8mm">3. Referência rápida das ferramentas</h2></summary><div class="topic-body">
+<table class="settings quick">
+<tr><th class="qi">Ícone</th><th>Ferramenta</th><th>Localização no ambiente do curso</th><th>Uso no exercício</th></tr>
+<tr><td class="qi"><img alt="Raster" src="assets/icons/qgis/mActionAddRasterLayer.svg"/></td><td>Adicionar camada raster</td><td>Barra <strong>Gerenciar Camadas</strong>, linha superior. Neste exercício, o TIFF é carregado por <strong>arrastar e soltar</strong> no canvas.</td><td>Carregar EXERCÍCIO 01.tiff.</td></tr>
+<tr><td class="qi"><img alt="Nova camada" src="assets/icons/qgis/mActionNewVectorLayer.svg"/></td><td>Nova Camada Shapefile</td><td><strong>Camada → Criar Camada → Nova Camada Shapefile...</strong>; também na barra Gerenciar Camadas.</td><td>Criar PONTOS, POLIGONO e LINHA.</td></tr>
+<tr><td class="qi"><img alt="Edição" src="assets/icons/qgis/mActionToggleEditing.svg"/></td><td>Alternar edição</td><td>Barra <strong>Digitalização</strong>, segunda linha de ferramentas; também no menu de contexto da camada.</td><td>Entrar e sair do modo de edição.</td></tr>
+<tr><td class="qi"><img alt="Salvar" src="assets/icons/qgis/mActionSaveEdits.svg"/></td><td>Salvar edições da camada</td><td>Barra <strong>Digitalização</strong>; fica disponível enquanto a camada está em edição.</td><td>Gravar as alterações antes de sair da edição.</td></tr>
+<tr><td class="qi"><img alt="Ponto" src="assets/icons/qgis/mActionCapturePoint.svg"/></td><td>Adicionar feição de ponto</td><td>Barra <strong>Digitalização</strong>; habilitada com camada de ponto ativa e em edição.</td><td>Digitalizar os pontos azuis.</td></tr>
+<tr><td class="qi"><img alt="Polígono" src="assets/icons/qgis/mActionCapturePolygon.svg"/></td><td>Adicionar feição de polígono</td><td>Barra <strong>Digitalização</strong>; habilitada com camada de polígono ativa e em edição.</td><td>Digitalizar o polígono inicial.</td></tr>
+<tr><td class="qi"><img alt="Linha" src="assets/icons/qgis/mActionCaptureLine.svg"/></td><td>Adicionar feição de linha</td><td>Barra <strong>Digitalização</strong>; habilitada com camada de linha ativa e em edição.</td><td>Digitalizar a linha vermelha.</td></tr>
+<tr><td class="qi"><img alt="Vértice" src="assets/icons/qgis/mActionVertexToolActiveLayer.svg"/></td><td>Ferramenta Vértice — camada atual</td><td>Barra <strong>Digitalização</strong>.</td><td>Mover e ajustar vértices do polígono.</td></tr>
+<tr><td class="qi"><img alt="Mover" src="assets/icons/qgis/mActionMoveFeature.svg"/></td><td>Mover feição(ões)</td><td>Barra <strong>Digitalização Avançada</strong>; no layout do curso, junto às ferramentas avançadas de edição.</td><td>Mover polígono e linha.</td></tr>
+<tr><td class="qi"><img alt="Rotacionar" src="assets/icons/qgis/mActionRotateFeature.svg"/></td><td>Rodar/Rotacionar feição(ões)</td><td>Barra <strong>Digitalização Avançada</strong>.</td><td>Rotacionar a linha.</td></tr>
+<tr><td class="qi"><img alt="Afastamento" src="assets/icons/qgis/mActionOffsetCurve.svg"/></td><td>Curva de Afastamento</td><td>Barra <strong>Digitalização Avançada</strong>.</td><td>Criar a geometria externa deslocada.</td></tr>
+<tr><td class="qi"><img alt="Selecionar" src="assets/icons/qgis/mActionSelectRectangle.svg"/></td><td>Selecionar feição</td><td>Barra de <strong>Seleção</strong>, linha superior.</td><td>Selecionar o polígono interno antes da exclusão.</td></tr>
+<tr><td class="qi"><img alt="Excluir" src="assets/icons/qgis/mActionDeleteSelected.svg"/></td><td>Excluir feição(ões) selecionada(s)</td><td>Barra <strong>Digitalização</strong>; também tecla <strong>Delete</strong>.</td><td>Apagar o polígono interno.</td></tr>
+<tr><td class="qi"><img alt="Aderência" src="assets/icons/qgis/mIconSnapping.svg"/></td><td>Habilitar aderência</td><td>Barra <strong>Aderência</strong>, ímã vermelho na segunda linha de ferramentas. Atalho: <strong>S</strong>.</td><td>Garantir encaixe dos novos segmentos e vértices.</td></tr>
+<tr><td class="qi"><img alt="Camada ativa" src="assets/icons/qgis/mIconSnappingActiveLayer.svg"/></td><td>Modo de aderência: Camada ativa</td><td>Seletor de modo na barra <strong>Aderência</strong>, ao lado do botão do ímã.</td><td>Restringir a aderência à camada POLIGONO ativa.</td></tr>
+<tr><td class="qi"><img alt="Quebrar" src="assets/icons/qgis/mActionSplitFeatures.svg"/></td><td>Quebrar feição</td><td>Barra <strong>Digitalização Avançada</strong>.</td><td>Dividir o polígono externo em duas feições.</td></tr>
+<tr><td class="qi"><img alt="Adicionar anel" src="assets/icons/qgis/mActionAddRing.svg"/></td><td>Adicionar anel</td><td>Barra <strong>Digitalização Avançada</strong>; ativa para polígonos em edição.</td><td>Criar vazio interno no polígono.</td></tr>
+<tr><td class="qi"><img alt="Preencher anel" src="assets/icons/qgis/mActionFillRing.svg"/></td><td>Preencher anel</td><td>Barra <strong>Digitalização Avançada</strong>.</td><td>Executar o segundo elemento interno da atividade.</td></tr>
+<tr><td class="qi"><img alt="Remodelar" src="assets/icons/qgis/mActionReshape.svg"/></td><td>Remodelar feição</td><td>Barra <strong>Digitalização Avançada</strong>.</td><td>Substituir trecho da borda do polígono.</td></tr>
+<tr><td class="qi"><img alt="Buffer" src="assets/icons/qgis/mAlgorithmBuffer.svg"/></td><td>Buffer</td><td><strong>Vetor → Ferramentas de Geoprocessamento → Buffer...</strong>; também pode ser localizado na Caixa de Ferramentas de Processamento.</td><td>Gerar faixa de 30 m ao redor da linha.</td></tr>
+</table>
+<div class="footer-source"><strong>Documentação de referência:</strong> QGIS 3.44 — edição vetorial, barras de Digitalização e Digitalização Avançada, opções de aderência e algoritmos de geometria vetorial. Os ícones utilizados correspondem ao tema oficial do QGIS 3.44.</div>
+</div></details></div>
+</section>
+<section class="course-unit" data-result-caption="Resultado esperado — Atividade 01" data-result-image="assets/img/atividade-01/resultado-esperado-no-qgis-ba74d3320a43fd.jpg" data-title="Atividade 01 — Construção do imóvel no Módulo CAR" id="atividade-01">
+<div class="sheet">
+<div class="print-footer">Curso QGIS aplicado ao CAR - Módulo CAR - Atividade prática de construção do imóvel</div>
+<header class="header">
+<div class="header-text">
+<div class="kicker">Curso QGIS aplicado ao Cadastro Ambiental Rural</div>
+<h1>Atividade prática - Construção do imóvel no Módulo CAR</h1>
+<div class="subtitle">Importação de coordenadas, dominialidade, uso do solo, Reserva Legal, hidrografia, infraestrutura, atribuição, validação e envio ao simulador.</div>
+</div>
+<img alt="QGIS Aplicado ao CAR" class="logo" src="assets/img/logo/logo-dalvi-geotecnologias-cbee9e2874040b.png"/>
+</header><div class="project-start">
+<div class="project-icon">Q</div>
+<div><strong>Antes de iniciar esta atividade: abra o arquivo <code>Modulo_CAR.qgz</code>.</strong><br/>As orientações a seguir devem ser executadas dentro desse projeto do Módulo CAR.</div>
+</div><div class="model-guidance model-update-full">
+<div class="model-guidance-head"><span class="model-badge">M</span><div><strong>Atualizar as camadas antes de continuar</strong><small>Projeto → Modelos → 01.3. Atualizar Camadas após Importação → Executar...</small></div></div>
+<p>Logo após abrir o <b>Modulo_CAR.qgz</b>, execute <b>01.3. Atualizar Camadas após Importação</b>. O modelo atualiza as referências/localizações utilizadas pelo projeto no computador atual.</p>
+<div class="figure"><img alt="Atualizar Camadas após Importação" src="assets/img/modulo-car/atualizar-camadas-apos-importacao.webp"/><div class="caption">Caminho do modelo utilizado para atualizar as camadas do projeto.</div></div>
+<div class="note"><strong>Repita este procedimento após ferramentas automatizadas do Módulo CAR</strong> que importem, criem, substituam ou atualizem dados — por exemplo Importar Shape, Polígono a partir de ponto, Rio Linha para Rio Área e Gerar Faixa de Domínio.</div>
+</div>
+<div class="box objective"><strong>Objetivo.</strong> Construir no projeto <b>Módulo CAR</b> a representação espacial completa do imóvel do exercício, classificar suas feições, preencher os atributos, validar o trabalho, exportar os Shapefiles em ZIP e submetê-los ao Simulador de Importação de Shape do SIMLAM.</div>
+<div class="note" style="display:flex;align-items:center;gap:3mm">
+<div style="flex:0 0 auto;width:8mm;height:8mm;border-radius:50%;background:#d93025;color:#fff;display:flex;align-items:center;justify-content:center;font-size:8pt">▶</div>
+<div><strong>Aula completa em vídeo:</strong><br/>
+<a href="https://www.youtube.com/watch?v=kArPwlnksWQ" target="_blank">https://www.youtube.com/watch?v=kArPwlnksWQ</a>
+</div>
+</div>
+<div class="workflow">
+<div class="wf">Coordenadas</div><div class="wf-arrow">→</div>
+<div class="wf">ATP / Matrícula</div><div class="wf-arrow">→</div>
+<div class="wf">AA / AVN / Represa</div><div class="wf-arrow">→</div>
+<div class="wf">Reserva Legal</div><div class="wf-arrow">→</div>
+<div class="wf">Nascente / Construções</div><div class="wf-arrow">→</div>
+<div class="wf blue">Atributar</div><div class="wf-arrow">→</div>
+<div class="wf green">Exportar e validar</div>
+</div>
+<details class="topic" open=""><summary><h2>1. Preparação e construção do imóvel</h2></summary><div class="topic-body">
+<h3>1.a) Reconhecer o projeto e os arquivos</h3>
+<div class="grid-32">
+<div>
+<p>A atividade será executada no projeto <b>Módulo CAR</b>, já configurado para o curso. Localize no painel Camadas os grupos utilizados:</p>
+<ul class="layer-list">
+<li><b>DOMINIALIDADE</b>: AREA TOTAL DO IMÓVEL; MATRÍCULA/POSSE</li>
+<li><b>USO DO SOLO</b>: ÁREA ALTERADA; VEGETAÇÃO NATIVA</li>
+<li><b>PRESERVAÇÃO</b>: RESERVA LEGAL</li>
+<li><b>HIDROGRAFIA</b>: NASCENTE; REPRESA</li>
+<li><b>TRANSPORTE/INFRA</b>: CONSTRUÇÕES</li>
+<li><b>APPS PROCESSADAS</b>: camadas auxiliares de referência</li>
+</ul>
+<div class="note"><strong>Regra de trabalho.</strong> Mantenha somente a camada necessária em edição. Ao terminar uma etapa, salve e saia do modo de edição.</div>
+</div>
+<div class="figure"><img alt="Painel de camadas" src="assets/img/atividade-01/painel-de-camadas-44de8a8f1af6ab.jpg"/><div class="caption">Grupos e camadas utilizados na atividade.</div></div>
+</div>
+<table class="source-table">
+<tr><th>Arquivo</th><th>Utilização</th></tr>
+<tr><td><b>coordenadas_vertices(1).txt</b></td><td>Importar os vértices usados para digitalizar a ATP.</td></tr>
+<tr><td><b>Certidão Matrícula 1001.pdf</b></td><td>Consultar dados documentais solicitados nos formulários.</td></tr>
+<tr><td><b>CCIR 2026(1).pdf</b></td><td>Consultar código do imóvel rural e dados cadastrais quando necessário.</td></tr>
+<tr><td><b>PdfDoMapa (45).pdf</b></td><td>Conferência visual final.</td></tr>
+</table>
+<div class="warn"><strong>Área documental x área geométrica.</strong> A documentação registra 14,0000 ha, enquanto a geometria das coordenadas resulta em aproximadamente 14,0999 ha. Não altere o desenho para forçar coincidência entre esses valores.</div>
+<h3>1.b) Importar a tabela de coordenadas</h3>
+<div class="tool-card">
+<div class="tool-head">
+<img alt="Adicionar Camada de Texto Delimitado" class="tool-icon" src="assets/icons/qgis/mActionAddDelimitedTextLayer.svg"/>
+<div>
+<div class="tool-name">Adicionar Camada de Texto Delimitado</div>
+<div class="tool-location">Camada → Adicionar Camada → Adicionar Camada de Texto Delimitado... • Ctrl+Shift+T</div>
+</div>
+</div>
+<div class="tool-grid">
+<div><span>Camada ativa</span><strong>Nenhuma camada de edição</strong></div>
+<div><span>Pré-condição</span><strong>Arquivo coordenadas_vertices(1).txt disponível</strong></div>
+</div>
+<div class="tool-procedure"><span>Procedimento</span>Selecione o TXT e configure os campos e o SRC conforme a tabela abaixo.</div>
+<div class="tool-result"><span>Resultado esperado</span>Os vértices são adicionados ao projeto como pontos em EPSG:31984.</div>
+</div>
+<table class="settings">
+<tr><th>Formato</th><td>Delimitadores personalizados → <b>Espaço</b>.</td></tr>
+<tr><th>Cabeçalho</th><td>O primeiro registro possui nomes de campos.</td></tr>
+<tr><th>Separador decimal</th><td>Marcar <b>Separador decimal é vírgula</b>.</td></tr>
+<tr><th>Geometria</th><td>Coordenadas de ponto.</td></tr>
+<tr><th>X</th><td><b>coord_x</b></td></tr>
+<tr><th>Y</th><td><b>coord_y</b></td></tr>
+<tr><th>SRC</th><td><b>EPSG:31984 - SIRGAS 2000 / UTM zone 24S</b></td></tr>
+</table>
+<div class="note">O registro 13 repete o vértice 01 para indicar o fechamento. Na digitalização da ATP, clique nos vértices 01 a 12 e finalize com o botão direito.</div>
+<h3>1.c) Ativar a aderência e construir a ATP</h3>
+<div class="tool-card">
+<div class="tool-head">
+<img alt="Habilitar aderência" class="tool-icon" src="assets/icons/qgis/mIconSnapping.svg"/>
+<div>
+<div class="tool-name">Habilitar aderência</div>
+<div class="tool-location">Barra Aderência - ícone do ímã</div>
+</div>
+</div>
+<div class="tool-grid">
+<div><span>Camada ativa</span><strong>AREA TOTAL DO IMÓVEL será editada</strong></div>
+<div><span>Pré-condição</span><strong>Pontos importados visíveis</strong></div>
+</div>
+<div class="tool-procedure"><span>Procedimento</span>Ative a aderência aos pontos importados. Use modo que permita encaixe na camada de coordenadas, preferencialmente Todas as camadas ou Configuração avançada com essa camada habilitada.</div>
+<div class="tool-result"><span>Resultado esperado</span>O cursor encaixa exatamente sobre os vértices importados.</div>
+</div>
+<div class="tool-card edit-start"><div class="edit-callout"><img alt="Alternar edição" src="assets/icons/qgis/mActionToggleEditing.svg"/>ANTES DE USAR A FERRAMENTA: coloque a camada em edição</div>
+<div class="tool-head">
+<img alt="Alternar edição" class="tool-icon" src="assets/icons/qgis/mActionToggleEditing.svg"/>
+<div>
+<div class="tool-name">Alternar edição</div>
+<div class="tool-location">Barra Digitalização</div>
+</div>
+</div>
+<div class="tool-grid">
+<div><span>Camada ativa</span><strong>AREA TOTAL DO IMÓVEL</strong></div>
+<div><span>Pré-condição</span><strong>Aderência ativa</strong></div>
+</div>
+<div class="tool-procedure"><span>Procedimento</span>Coloque a camada em edição.</div>
+<div class="tool-result"><span>Resultado esperado</span>Ferramentas de captura são habilitadas.</div>
+</div>
+<div class="tool-card">
+<div class="tool-head">
+<img alt="Adicionar feição de polígono" class="tool-icon" src="assets/icons/qgis/mActionCapturePolygon.svg"/>
+<div>
+<div class="tool-name">Adicionar feição de polígono</div>
+<div class="tool-location">Barra Digitalização</div>
+</div>
+</div>
+<div class="tool-grid">
+<div><span>Camada ativa</span><strong>AREA TOTAL DO IMÓVEL</strong></div>
+<div><span>Pré-condição</span><strong>Camada em edição e aderência ativa</strong></div>
+</div>
+<div class="tool-procedure"><span>Procedimento</span>Clique em ordem nos pontos 01 a 12. Finalize com o botão direito. Preencha os atributos solicitados pelo formulário.</div>
+<div class="tool-result"><span>Resultado esperado</span>A ATP é criada como uma única feição.</div>
+</div>
+<div class="finish">
+<div class="finish-title">Finalizar esta etapa - AREA TOTAL DO IMÓVEL</div>
+<div class="finish-grid">
+<div class="finish-action">
+<img alt="Salvar edições" src="assets/icons/qgis/mActionSaveEdits.svg"/>
+<div><strong>1. Salvar edições da camada</strong><br/>Clique em <b>Salvar edições da camada</b> para gravar as alterações realizadas em <b>AREA TOTAL DO IMÓVEL</b>.</div>
+</div>
+<div class="finish-arrow">→</div>
+<div class="finish-action">
+<img alt="Alternar edição" src="assets/icons/qgis/mActionToggleEditing.svg"/>
+<div><strong>2. Sair do modo de edição</strong><br/>Clique em <b>Alternar edição</b>. Ao concluir, a camada não deve permanecer em edição.</div>
+</div>
+</div>
+</div>
+<h3>1.d) Copiar a ATP para MATRÍCULA/POSSE</h3>
+<div class="copy-flow">
+<div class="cf-node"><b>AREA TOTAL DO IMÓVEL</b><small>camada de origem</small></div>
+<div class="cf-arrow">→</div>
+<div class="cf-step"><img src="assets/icons/qgis/mActionSelectRectangle.svg"/><span>Selecionar feição</span></div>
+<div class="cf-arrow">→</div>
+<div class="cf-step"><img src="assets/icons/qgis/mActionEditCopy.svg"/><span>Copiar<br/><kbd>Ctrl+C</kbd></span></div>
+<div class="cf-arrow">→</div>
+<div class="cf-node target"><b>MATRÍCULA/POSSE</b><small>ativar e colocar em edição</small></div>
+<div class="cf-arrow">→</div>
+<div class="cf-step"><img src="assets/icons/qgis/mActionEditPaste.svg"/><span>Colar<br/><kbd>Ctrl+V</kbd></span></div>
+</div>
+<div class="micro-note">A geometria deve permanecer na ATP; por isso aqui usamos Copiar, não Recortar.</div>
+<div class="finish">
+<div class="finish-title">Finalizar esta etapa - MATRÍCULA/POSSE</div>
+<div class="finish-grid">
+<div class="finish-action">
+<img alt="Salvar edições" src="assets/icons/qgis/mActionSaveEdits.svg"/>
+<div><strong>1. Salvar edições da camada</strong><br/>Clique em <b>Salvar edições da camada</b> para gravar as alterações realizadas em <b>MATRÍCULA/POSSE</b>.</div>
+</div>
+<div class="finish-arrow">→</div>
+<div class="finish-action">
+<img alt="Alternar edição" src="assets/icons/qgis/mActionToggleEditing.svg"/>
+<div><strong>2. Sair do modo de edição</strong><br/>Clique em <b>Alternar edição</b>. Ao concluir, a camada não deve permanecer em edição.</div>
+</div>
+</div>
+</div>
+<h3>1.e) Criar a ÁREA ALTERADA - AA</h3>
+<p>Transfira a geometria utilizada na sequência da atividade para <b>ÁREA ALTERADA</b> utilizando <strong>Recortar</strong> (<kbd>Ctrl+X</kbd>) e <strong>Colar</strong> (<kbd>Ctrl+V</kbd>), e não Copiar. A AA será a geometria inicial de trabalho, da qual serão posteriormente retiradas as feições reclassificadas.</p>
+<div class="copy-flow">
+<div class="cf-node"><b>MATRÍCULA/POSSE</b><small>camada de origem</small></div>
+<div class="cf-arrow">→</div>
+<div class="cf-step"><img src="assets/icons/qgis/mActionSelectRectangle.svg"/><span>Selecionar feição</span></div>
+<div class="cf-arrow">→</div>
+<div class="cf-step"><img src="assets/icons/qgis/mActionEditCut.svg"/><span>Recortar<br/><kbd>Ctrl+X</kbd></span></div>
+<div class="cf-arrow">→</div>
+<div class="cf-node target"><b>ÁREA ALTERADA</b><small>ativar e colocar em edição</small></div>
+<div class="cf-arrow">→</div>
+<div class="cf-step"><img src="assets/icons/qgis/mActionEditPaste.svg"/><span>Colar<br/><kbd>Ctrl+V</kbd></span></div>
+</div>
+<div class="micro-note"><strong>Recortar (Ctrl+X)</strong> é a operação utilizada nesta etapa. Após colar na ÁREA ALTERADA, confira/preencha os atributos da camada.</div>
+<div class="finish">
+<div class="finish-title">Finalizar esta etapa - ÁREA ALTERADA</div>
+<div class="finish-grid">
+<div class="finish-action">
+<img alt="Salvar edições" src="assets/icons/qgis/mActionSaveEdits.svg"/>
+<div><strong>1. Salvar edições da camada</strong><br/>Clique em <b>Salvar edições da camada</b> para gravar as alterações realizadas em <b>ÁREA ALTERADA</b>.</div>
+</div>
+<div class="finish-arrow">→</div>
+<div class="finish-action">
+<img alt="Alternar edição" src="assets/icons/qgis/mActionToggleEditing.svg"/>
+<div><strong>2. Sair do modo de edição</strong><br/>Clique em <b>Alternar edição</b>. Ao concluir, a camada não deve permanecer em edição.</div>
+</div>
+</div>
+</div>
+<div class="page-break"></div>
+</div></details><details class="topic"><summary><h2>2. Classificação do uso do solo</h2></summary><div class="topic-body">
+<div class="compare">
+<div class="compare-card"><h4>Quando usar <kbd>Ctrl+X</kbd> - Recortar</h4><p>Use quando a feição deve <b>sair da camada de origem</b> e passar para outra camada. É o caso da AVN, da Represa e das Construções retiradas da AA.</p></div>
+<div class="compare-card"><h4>Quando usar <kbd>Ctrl+C</kbd> - Copiar</h4><p>Use quando a feição deve <b>continuar existindo na camada de origem</b>. É o caso da AVN que também será aproveitada na RESERVA LEGAL.</p></div>
+</div>
+<div class="history-guidance"><div class="history-text"><strong>Antes de delimitar a Vegetação Nativa: consulte o histórico de imagens.</strong><p>O <b>uso do solo atual</b> deve ser interpretado com a imagem mais recente e adequada disponível. Para <b>VEGETAÇÃO NATIVA</b> e, posteriormente, para a <b>RESERVA LEGAL</b>, compare também bases de diferentes datas para compreender a permanência, evolução ou alteração da cobertura vegetal.</p><p>As imagens históricas são elementos de apoio à interpretação temporal e devem ser analisadas em conjunto com a situação atual e a documentação disponível.</p></div><div class="figure history-shot"><img alt="Bases históricas de ortofotos e satélite" src="assets/img/modulo-car/bases-historicas-ortofotos.webp"/><div class="caption">Alterne entre Google/Bing e as ortofotos disponíveis, especialmente 2019/2020, 2012/2015 e 2007/2008 quando pertinentes.</div></div></div><h3>2.a) Separar a VEGETAÇÃO NATIVA - AVN</h3>
+<div class="tool-card edit-start"><div class="edit-callout"><img alt="Alternar edição" src="assets/icons/qgis/mActionToggleEditing.svg"/>ANTES DE USAR A FERRAMENTA: coloque a camada em edição</div>
+<div class="tool-head">
+<img alt="Alternar edição" class="tool-icon" src="assets/icons/qgis/mActionToggleEditing.svg"/>
+<div>
+<div class="tool-name">Alternar edição</div>
+<div class="tool-location">Barra Digitalização</div>
+</div>
+</div>
+<div class="tool-grid">
+<div><span>Camada ativa</span><strong>ÁREA ALTERADA</strong></div>
+<div><span>Pré-condição</span><strong>AA ativa</strong></div>
+</div>
+<div class="tool-procedure"><span>Procedimento</span>Coloque a AA em edição.</div>
+<div class="tool-result"><span>Resultado esperado</span>A geometria pode ser quebrada.</div>
+</div>
+<div class="tool-card">
+<div class="tool-head">
+<img alt="Quebrar feição" class="tool-icon" src="assets/icons/qgis/mActionSplitFeatures.svg"/>
+<div>
+<div class="tool-name">Quebrar feição</div>
+<div class="tool-location">Barra Digitalização Avançada</div>
+</div>
+</div>
+<div class="tool-grid">
+<div><span>Camada ativa</span><strong>ÁREA ALTERADA</strong></div>
+<div><span>Pré-condição</span><strong>AA em edição; AVN identificada visualmente</strong></div>
+</div>
+<div class="tool-procedure"><span>Procedimento</span>Trace a linha necessária para separar a porção de vegetação nativa da restante da AA. Finalize o corte com o botão direito.</div>
+<div class="tool-result"><span>Resultado esperado</span>A AVN fica isolada como feição independente ainda dentro da camada ÁREA ALTERADA.</div>
+</div>
+<p>Depois de isolar a AVN, <strong>não copie e não exclua posteriormente</strong>. Use <b>Recortar</b> para que ela saia da AA no mesmo procedimento:</p>
+<div class="copy-flow">
+<div class="cf-node"><b>ÁREA ALTERADA - feição AVN isolada</b><small>camada de origem</small></div>
+<div class="cf-arrow">→</div>
+<div class="cf-step"><img src="assets/icons/qgis/mActionSelectRectangle.svg"/><span>Selecionar feição</span></div>
+<div class="cf-arrow">→</div>
+<div class="cf-step"><img src="assets/icons/qgis/mActionEditCut.svg"/><span>Recortar<br/><kbd>Ctrl+X</kbd></span></div>
+<div class="cf-arrow">→</div>
+<div class="cf-node target"><b>VEGETAÇÃO NATIVA</b><small>ativar e colocar em edição</small></div>
+<div class="cf-arrow">→</div>
+<div class="cf-step"><img src="assets/icons/qgis/mActionEditPaste.svg"/><span>Colar<br/><kbd>Ctrl+V</kbd></span></div>
+</div>
+<div class="micro-note">O Ctrl+X remove a feição da AA e a coloca na área de transferência. Depois, com VEGETAÇÃO NATIVA em edição, use Ctrl+V.</div>
+<div class="finish">
+<div class="finish-title">Finalizar esta etapa - VEGETAÇÃO NATIVA</div>
+<div class="finish-grid">
+<div class="finish-action">
+<img alt="Salvar edições" src="assets/icons/qgis/mActionSaveEdits.svg"/>
+<div><strong>1. Salvar edições da camada</strong><br/>Clique em <b>Salvar edições da camada</b> para gravar as alterações realizadas em <b>VEGETAÇÃO NATIVA</b>.</div>
+</div>
+<div class="finish-arrow">→</div>
+<div class="finish-action">
+<img alt="Alternar edição" src="assets/icons/qgis/mActionToggleEditing.svg"/>
+<div><strong>2. Sair do modo de edição</strong><br/>Clique em <b>Alternar edição</b>. Ao concluir, a camada não deve permanecer em edição.</div>
+</div>
+</div>
+</div>
+<div class="finish">
+<div class="finish-title">Finalizar esta etapa - ÁREA ALTERADA</div>
+<div class="finish-grid">
+<div class="finish-action">
+<img alt="Salvar edições" src="assets/icons/qgis/mActionSaveEdits.svg"/>
+<div><strong>1. Salvar edições da camada</strong><br/>Clique em <b>Salvar edições da camada</b> para gravar as alterações realizadas em <b>ÁREA ALTERADA</b>.</div>
+</div>
+<div class="finish-arrow">→</div>
+<div class="finish-action">
+<img alt="Alternar edição" src="assets/icons/qgis/mActionToggleEditing.svg"/>
+<div><strong>2. Sair do modo de edição</strong><br/>Clique em <b>Alternar edição</b>. Ao concluir, a camada não deve permanecer em edição.</div>
+</div>
+</div>
+</div>
+<h3>2.b) Separar a REPRESA</h3>
+<p>Neste exercício, a separação da Represa é realizada com <b>Quebrar feição</b>.</p>
+<div class="tool-card edit-start"><div class="edit-callout"><img alt="Alternar edição" src="assets/icons/qgis/mActionToggleEditing.svg"/>ANTES DE USAR A FERRAMENTA: coloque a camada em edição</div>
+<div class="tool-head">
+<img alt="Alternar edição" class="tool-icon" src="assets/icons/qgis/mActionToggleEditing.svg"/>
+<div>
+<div class="tool-name">Alternar edição</div>
+<div class="tool-location">Barra Digitalização</div>
+</div>
+</div>
+<div class="tool-grid">
+<div><span>Camada ativa</span><strong>ÁREA ALTERADA</strong></div>
+<div><span>Pré-condição</span><strong>Represa identificada visualmente</strong></div>
+</div>
+<div class="tool-procedure"><span>Procedimento</span>Coloque a AA em edição.</div>
+<div class="tool-result"><span>Resultado esperado</span>A geometria pode ser quebrada.</div>
+</div>
+<div class="tool-card">
+<div class="tool-head">
+<img alt="Quebrar feição" class="tool-icon" src="assets/icons/qgis/mActionSplitFeatures.svg"/>
+<div>
+<div class="tool-name">Quebrar feição</div>
+<div class="tool-location">Barra Digitalização Avançada</div>
+</div>
+</div>
+<div class="tool-grid">
+<div><span>Camada ativa</span><strong>ÁREA ALTERADA</strong></div>
+<div><span>Pré-condição</span><strong>AA em edição</strong></div>
+</div>
+<div class="tool-procedure"><span>Procedimento</span>Trace o corte de modo a isolar a geometria da Represa conforme a ortofoto e a referência da atividade.</div>
+<div class="tool-result"><span>Resultado esperado</span>A Represa passa a ser uma feição independente dentro da AA.</div>
+</div>
+<div class="copy-flow">
+<div class="cf-node"><b>ÁREA ALTERADA - feição REPRESA isolada</b><small>camada de origem</small></div>
+<div class="cf-arrow">→</div>
+<div class="cf-step"><img src="assets/icons/qgis/mActionSelectRectangle.svg"/><span>Selecionar feição</span></div>
+<div class="cf-arrow">→</div>
+<div class="cf-step"><img src="assets/icons/qgis/mActionEditCut.svg"/><span>Recortar<br/><kbd>Ctrl+X</kbd></span></div>
+<div class="cf-arrow">→</div>
+<div class="cf-node target"><b>REPRESA</b><small>ativar e colocar em edição</small></div>
+<div class="cf-arrow">→</div>
+<div class="cf-step"><img src="assets/icons/qgis/mActionEditPaste.svg"/><span>Colar<br/><kbd>Ctrl+V</kbd></span></div>
+</div>
+<div class="micro-note">Use Ctrl+X para retirar a feição da AA. Em seguida, ative REPRESA, coloque-a em edição e use Ctrl+V.</div>
+<div class="finish">
+<div class="finish-title">Finalizar esta etapa - REPRESA</div>
+<div class="finish-grid">
+<div class="finish-action">
+<img alt="Salvar edições" src="assets/icons/qgis/mActionSaveEdits.svg"/>
+<div><strong>1. Salvar edições da camada</strong><br/>Clique em <b>Salvar edições da camada</b> para gravar as alterações realizadas em <b>REPRESA</b>.</div>
+</div>
+<div class="finish-arrow">→</div>
+<div class="finish-action">
+<img alt="Alternar edição" src="assets/icons/qgis/mActionToggleEditing.svg"/>
+<div><strong>2. Sair do modo de edição</strong><br/>Clique em <b>Alternar edição</b>. Ao concluir, a camada não deve permanecer em edição.</div>
+</div>
+</div>
+</div>
+<div class="finish">
+<div class="finish-title">Finalizar esta etapa - ÁREA ALTERADA</div>
+<div class="finish-grid">
+<div class="finish-action">
+<img alt="Salvar edições" src="assets/icons/qgis/mActionSaveEdits.svg"/>
+<div><strong>1. Salvar edições da camada</strong><br/>Clique em <b>Salvar edições da camada</b> para gravar as alterações realizadas em <b>ÁREA ALTERADA</b>.</div>
+</div>
+<div class="finish-arrow">→</div>
+<div class="finish-action">
+<img alt="Alternar edição" src="assets/icons/qgis/mActionToggleEditing.svg"/>
+<div><strong>2. Sair do modo de edição</strong><br/>Clique em <b>Alternar edição</b>. Ao concluir, a camada não deve permanecer em edição.</div>
+</div>
+</div>
+</div>
+<div class="official"><strong>Princípio da classificação.</strong> Depois do Ctrl+X, a AVN e a Represa não permanecem como feições independentes na ÁREA ALTERADA. Elas passam a existir apenas em suas respectivas camadas.</div>
+<h3>2.c) Conferir o uso do solo</h3>
+<ul>
+<li>ATP e MATRÍCULA/POSSE continuam cobrindo o imóvel;</li>
+<li>ÁREA ALTERADA não contém as feições retiradas como AVN e Represa;</li>
+<li>VEGETAÇÃO NATIVA contém a área florestada;</li>
+<li>REPRESA contém a massa d'água;</li>
+<li>pequenas variações de área são aceitáveis, desde que a classificação geométrica esteja coerente.</li>
+</ul>
+</div></details><details class="topic"><summary><h2>3. Demarcação da Reserva Legal</h2></summary><div class="topic-body"><div class="note rl-history-reminder"><strong>Reserva Legal — confira novamente o histórico.</strong> Antes de definir a ARL, compare a imagem atual com as ortofotos históricas já consultadas para a Vegetação Nativa e considere a documentação do imóvel.</div>
+<h3>3.a) Copiar a AVN para RESERVA LEGAL</h3>
+<div class="note"><strong>Aqui muda a lógica:</strong> a AVN deve permanecer em VEGETAÇÃO NATIVA e também compor a Reserva Legal. Portanto, use <kbd>Ctrl+C</kbd>, e não Ctrl+X.</div>
+<div class="copy-flow">
+<div class="cf-node"><b>VEGETAÇÃO NATIVA</b><small>camada de origem</small></div>
+<div class="cf-arrow">→</div>
+<div class="cf-step"><img src="assets/icons/qgis/mActionSelectRectangle.svg"/><span>Selecionar feição</span></div>
+<div class="cf-arrow">→</div>
+<div class="cf-step"><img src="assets/icons/qgis/mActionEditCopy.svg"/><span>Copiar<br/><kbd>Ctrl+C</kbd></span></div>
+<div class="cf-arrow">→</div>
+<div class="cf-node target"><b>RESERVA LEGAL</b><small>ativar e colocar em edição</small></div>
+<div class="cf-arrow">→</div>
+<div class="cf-step"><img src="assets/icons/qgis/mActionEditPaste.svg"/><span>Colar<br/><kbd>Ctrl+V</kbd></span></div>
+</div>
+<div class="micro-note">A AVN permanece em sua camada original e uma cópia é inserida na RESERVA LEGAL.</div>
+<div class="finish">
+<div class="finish-title">Finalizar esta etapa - RESERVA LEGAL</div>
+<div class="finish-grid">
+<div class="finish-action">
+<img alt="Salvar edições" src="assets/icons/qgis/mActionSaveEdits.svg"/>
+<div><strong>1. Salvar edições da camada</strong><br/>Clique em <b>Salvar edições da camada</b> para gravar as alterações realizadas em <b>RESERVA LEGAL</b>.</div>
+</div>
+<div class="finish-arrow">→</div>
+<div class="finish-action">
+<img alt="Alternar edição" src="assets/icons/qgis/mActionToggleEditing.svg"/>
+<div><strong>2. Sair do modo de edição</strong><br/>Clique em <b>Alternar edição</b>. Ao concluir, a camada não deve permanecer em edição.</div>
+</div>
+</div>
+</div>
+<h3>3.b) Diagnóstico pelo DescompliCAR</h3>
+<div class="box objective">
+<h4>Diagnóstico para Demarcação da Reserva Legal</h4>
+<p>Acesse o <b>DescompliCAR - Ferramenta de Diagnóstico para Demarcação da Reserva Legal</b> e utilize os dados do imóvel/documentação do exercício para identificar a composição necessária da ARL.</p>
+<a class="button-link" href="https://dalvigeo.github.io/DescompliCAR/" target="_blank">Abrir DescompliCAR</a>
+<p style="font-size:8.7pt;word-break:break-all">https://dalvigeo.github.io/DescompliCAR/</p>
+<div class="workflow"><div class="wf">Dados do imóvel</div><div class="wf-arrow">→</div><div class="wf blue">DescompliCAR</div><div class="wf-arrow">→</div><div class="wf yellow">Diagnóstico</div><div class="wf-arrow">→</div><div class="wf green">Demarcação no mapa</div></div>
+<p>Neste exercício, toda a AVN é aproveitada na Reserva Legal, mas a área ainda precisa ser complementada por uma segunda feição.</p>
+</div>
+<div class="formula">ARL = AVN aproveitada + parcela complementar</div>
+<h3>3.c) Complementar a RESERVA LEGAL</h3>
+<div class="tool-card edit-start"><div class="edit-callout"><img alt="Alternar edição" src="assets/icons/qgis/mActionToggleEditing.svg"/>ANTES DE USAR A FERRAMENTA: coloque a camada em edição</div>
+<div class="tool-head">
+<img alt="Alternar edição" class="tool-icon" src="assets/icons/qgis/mActionToggleEditing.svg"/>
+<div>
+<div class="tool-name">Alternar edição</div>
+<div class="tool-location">Barra Digitalização</div>
+</div>
+</div>
+<div class="tool-grid">
+<div><span>Camada ativa</span><strong>RESERVA LEGAL</strong></div>
+<div><span>Pré-condição</span><strong>Diagnóstico concluído</strong></div>
+</div>
+<div class="tool-procedure"><span>Procedimento</span>Coloque RESERVA LEGAL em edição.</div>
+<div class="tool-result"><span>Resultado esperado</span>A camada fica pronta para receber a complementação.</div>
+</div>
+<div class="tool-card">
+<div class="tool-head">
+<img alt="Adicionar feição de polígono" class="tool-icon" src="assets/icons/qgis/mActionCapturePolygon.svg"/>
+<div>
+<div class="tool-name">Adicionar feição de polígono</div>
+<div class="tool-location">Barra Digitalização</div>
+</div>
+</div>
+<div class="tool-grid">
+<div><span>Camada ativa</span><strong>RESERVA LEGAL</strong></div>
+<div><span>Pré-condição</span><strong>Camada em edição; ortofoto e diagnóstico disponíveis</strong></div>
+</div>
+<div class="tool-procedure"><span>Procedimento</span>Digitalize a parcela complementar conforme a referência visual e o resultado do diagnóstico. Finalize com o botão direito e preencha os atributos.</div>
+<div class="tool-result"><span>Resultado esperado</span>A ARL passa a ser composta por duas feições.</div>
+</div>
+<div class="finish">
+<div class="finish-title">Finalizar esta etapa - RESERVA LEGAL</div>
+<div class="finish-grid">
+<div class="finish-action">
+<img alt="Salvar edições" src="assets/icons/qgis/mActionSaveEdits.svg"/>
+<div><strong>1. Salvar edições da camada</strong><br/>Clique em <b>Salvar edições da camada</b> para gravar as alterações realizadas em <b>RESERVA LEGAL</b>.</div>
+</div>
+<div class="finish-arrow">→</div>
+<div class="finish-action">
+<img alt="Alternar edição" src="assets/icons/qgis/mActionToggleEditing.svg"/>
+<div><strong>2. Sair do modo de edição</strong><br/>Clique em <b>Alternar edição</b>. Ao concluir, a camada não deve permanecer em edição.</div>
+</div>
+</div>
+</div>
+<div class="page-break"></div>
+</div></details><details class="topic"><summary><h2>4. Hidrografia, construções e atributos</h2></summary><div class="topic-body">
+<h3>4.a) Demarcar a NASCENTE</h3>
+<p>A nascente é posicionada visualmente na ortofoto.</p>
+<div class="tool-card edit-start"><div class="edit-callout"><img alt="Alternar edição" src="assets/icons/qgis/mActionToggleEditing.svg"/>ANTES DE USAR A FERRAMENTA: coloque a camada em edição</div>
+<div class="tool-head">
+<img alt="Alternar edição" class="tool-icon" src="assets/icons/qgis/mActionToggleEditing.svg"/>
+<div>
+<div class="tool-name">Alternar edição</div>
+<div class="tool-location">Barra Digitalização</div>
+</div>
+</div>
+<div class="tool-grid">
+<div><span>Camada ativa</span><strong>NASCENTE</strong></div>
+<div><span>Pré-condição</span><strong>Nascente identificada visualmente</strong></div>
+</div>
+<div class="tool-procedure"><span>Procedimento</span>Coloque a camada em edição.</div>
+<div class="tool-result"><span>Resultado esperado</span>A ferramenta de ponto fica disponível.</div>
+</div>
+<div class="tool-card">
+<div class="tool-head">
+<img alt="Adicionar feição de ponto" class="tool-icon" src="assets/icons/qgis/mActionCapturePoint.svg"/>
+<div>
+<div class="tool-name">Adicionar feição de ponto</div>
+<div class="tool-location">Barra Digitalização</div>
+</div>
+</div>
+<div class="tool-grid">
+<div><span>Camada ativa</span><strong>NASCENTE</strong></div>
+<div><span>Pré-condição</span><strong>Camada em edição</strong></div>
+</div>
+<div class="tool-procedure"><span>Procedimento</span>Clique sobre a posição visual da nascente e preencha os atributos pelo formulário.</div>
+<div class="tool-result"><span>Resultado esperado</span>Uma nascente é criada.</div>
+</div>
+<div class="finish">
+<div class="finish-title">Finalizar esta etapa - NASCENTE</div>
+<div class="finish-grid">
+<div class="finish-action">
+<img alt="Salvar edições" src="assets/icons/qgis/mActionSaveEdits.svg"/>
+<div><strong>1. Salvar edições da camada</strong><br/>Clique em <b>Salvar edições da camada</b> para gravar as alterações realizadas em <b>NASCENTE</b>.</div>
+</div>
+<div class="finish-arrow">→</div>
+<div class="finish-action">
+<img alt="Alternar edição" src="assets/icons/qgis/mActionToggleEditing.svg"/>
+<div><strong>2. Sair do modo de edição</strong><br/>Clique em <b>Alternar edição</b>. Ao concluir, a camada não deve permanecer em edição.</div>
+</div>
+</div>
+</div>
+<h3>4.b) Demarcar as CONSTRUÇÕES com Preencher anel</h3>
+<p>As três construções estão no interior da área classificada como AA. Para que essas áreas não permaneçam simultaneamente na ÁREA ALTERADA, use <b>Preencher anel</b> sobre a AA e transfira as feições resultantes para CONSTRUÇÕES por <kbd>Ctrl+X</kbd>.</p>
+<div class="tool-card edit-start"><div class="edit-callout"><img alt="Alternar edição" src="assets/icons/qgis/mActionToggleEditing.svg"/>ANTES DE USAR A FERRAMENTA: coloque a camada em edição</div>
+<div class="tool-head">
+<img alt="Alternar edição" class="tool-icon" src="assets/icons/qgis/mActionToggleEditing.svg"/>
+<div>
+<div class="tool-name">Alternar edição</div>
+<div class="tool-location">Barra Digitalização</div>
+</div>
+</div>
+<div class="tool-grid">
+<div><span>Camada ativa</span><strong>ÁREA ALTERADA</strong></div>
+<div><span>Pré-condição</span><strong>Construções identificadas na ortofoto</strong></div>
+</div>
+<div class="tool-procedure"><span>Procedimento</span>Coloque a AA em edição.</div>
+<div class="tool-result"><span>Resultado esperado</span>A ferramenta Preencher anel fica disponível.</div>
+</div>
+<div class="tool-card">
+<div class="tool-head">
+<img alt="Preencher anel" class="tool-icon" src="assets/icons/qgis/mActionFillRing.svg"/>
+<div>
+<div class="tool-name">Preencher anel</div>
+<div class="tool-location">Barra Digitalização Avançada</div>
+</div>
+</div>
+<div class="tool-grid">
+<div><span>Camada ativa</span><strong>ÁREA ALTERADA</strong></div>
+<div><span>Pré-condição</span><strong>AA em edição; construção totalmente interna à feição</strong></div>
+</div>
+<div class="tool-procedure"><span>Procedimento</span>Digitalize manualmente o contorno de uma construção e finalize com o botão direito. A ferramenta cria o vazio na AA e uma nova feição ocupando o anel. Repita o procedimento para as três construções.</div>
+<div class="tool-result"><span>Resultado esperado</span>A AA fica recortada e são criadas três feições separadas correspondentes às construções.</div>
+</div>
+<p>Selecione as feições das construções criadas na AA. Elas possuem a mesma classe de destino e podem ser transferidas juntas:</p>
+<div class="copy-flow">
+<div class="cf-node"><b>ÁREA ALTERADA - construções isoladas</b><small>camada de origem</small></div>
+<div class="cf-arrow">→</div>
+<div class="cf-step"><img src="assets/icons/qgis/mActionSelectRectangle.svg"/><span>Selecionar feição</span></div>
+<div class="cf-arrow">→</div>
+<div class="cf-step"><img src="assets/icons/qgis/mActionEditCut.svg"/><span>Recortar<br/><kbd>Ctrl+X</kbd></span></div>
+<div class="cf-arrow">→</div>
+<div class="cf-node target"><b>CONSTRUÇÕES</b><small>ativar e colocar em edição</small></div>
+<div class="cf-arrow">→</div>
+<div class="cf-step"><img src="assets/icons/qgis/mActionEditPaste.svg"/><span>Colar<br/><kbd>Ctrl+V</kbd></span></div>
+</div>
+<div class="micro-note">Selecione as três feições quando todas forem receber o mesmo tratamento, use Ctrl+X e depois Ctrl+V na camada CONSTRUÇÕES em edição.</div>
+<div class="finish">
+<div class="finish-title">Finalizar esta etapa - CONSTRUÇÕES</div>
+<div class="finish-grid">
+<div class="finish-action">
+<img alt="Salvar edições" src="assets/icons/qgis/mActionSaveEdits.svg"/>
+<div><strong>1. Salvar edições da camada</strong><br/>Clique em <b>Salvar edições da camada</b> para gravar as alterações realizadas em <b>CONSTRUÇÕES</b>.</div>
+</div>
+<div class="finish-arrow">→</div>
+<div class="finish-action">
+<img alt="Alternar edição" src="assets/icons/qgis/mActionToggleEditing.svg"/>
+<div><strong>2. Sair do modo de edição</strong><br/>Clique em <b>Alternar edição</b>. Ao concluir, a camada não deve permanecer em edição.</div>
+</div>
+</div>
+</div>
+<div class="finish">
+<div class="finish-title">Finalizar esta etapa - ÁREA ALTERADA</div>
+<div class="finish-grid">
+<div class="finish-action">
+<img alt="Salvar edições" src="assets/icons/qgis/mActionSaveEdits.svg"/>
+<div><strong>1. Salvar edições da camada</strong><br/>Clique em <b>Salvar edições da camada</b> para gravar as alterações realizadas em <b>ÁREA ALTERADA</b>.</div>
+</div>
+<div class="finish-arrow">→</div>
+<div class="finish-action">
+<img alt="Alternar edição" src="assets/icons/qgis/mActionToggleEditing.svg"/>
+<div><strong>2. Sair do modo de edição</strong><br/>Clique em <b>Alternar edição</b>. Ao concluir, a camada não deve permanecer em edição.</div>
+</div>
+</div>
+</div>
+<h3>4.c) Verificar e preencher os atributos de todas as geometrias</h3>
+<div class="warn"><strong>Antes de exportar, todas as feições devem estar corretamente atributadas.</strong> Faça a conferência em AREA TOTAL DO IMÓVEL, MATRÍCULA/POSSE, ÁREA ALTERADA, VEGETAÇÃO NATIVA, RESERVA LEGAL, REPRESA, NASCENTE e CONSTRUÇÕES.</div>
+<div class="compare">
+<div class="compare-card">
+<h4>Método 1 - Tabela de atributos</h4>
+<div class="tool-card">
+<div class="tool-head">
+<img alt="Abrir Tabela de Atributos" class="tool-icon" src="assets/icons/qgis/mActionOpenTable.svg"/>
+<div>
+<div class="tool-name">Abrir Tabela de Atributos</div>
+<div class="tool-location">Botão direito na camada → Abrir Tabela de Atributos • F6</div>
+</div>
+</div>
+<div class="tool-grid">
+<div><span>Camada ativa</span><strong>Camada que será conferida</strong></div>
+<div><span>Pré-condição</span><strong>Camada colocada em edição</strong></div>
+</div>
+<div class="tool-procedure"><span>Procedimento</span>Abra a tabela e edite os valores diretamente nas células/listas suspensas disponíveis. Faça a conferência feição por feição.</div>
+<div class="tool-result"><span>Resultado esperado</span>Os valores ficam preenchidos de acordo com as opções configuradas no projeto.</div>
+</div>
+</div>
+<div class="compare-card">
+<h4>Método 2 - Atribuição simultânea</h4>
+<div class="tool-card">
+<div class="tool-head">
+<img alt="Modificar atributos de feições selecionadas" class="tool-icon" src="assets/icons/qgis/mActionMultiEdit.svg"/>
+<div>
+<div class="tool-name">Modificar atributos de feições selecionadas</div>
+<div class="tool-location">Editar → Modificar atributos das feições selecionadas; também disponível pelo modo multi edição da Tabela de Atributos</div>
+</div>
+</div>
+<div class="tool-grid">
+<div><span>Camada ativa</span><strong>Camada que será conferida</strong></div>
+<div><span>Pré-condição</span><strong>Camada em edição e uma ou mais feições selecionadas</strong></div>
+</div>
+<div class="tool-procedure"><span>Procedimento</span>Selecione uma feição ou várias feições <b>somente quando elas devam receber os mesmos atributos</b>. Abra a ferramenta, escolha os valores nas listas suspensas e aplique as alterações.</div>
+<div class="tool-result"><span>Resultado esperado</span>Os atributos escolhidos são aplicados simultaneamente às feições selecionadas.</div>
+</div>
+</div>
+</div>
+<div class="note"><strong>Boa prática:</strong> quando houver apenas uma feição, use o formulário/tabela normalmente. Para várias feições com a mesma classificação, a edição simultânea reduz trabalho e evita preenchimentos divergentes.</div>
+<p>Após concluir a atribuição de cada camada, salve as edições e saia do modo de edição.</p>
+</div></details><details class="topic"><summary><h2>5. APPs processadas no projeto</h2></summary><div class="topic-body">
+<div class="grid-2">
+<div class="note"><h4>Processamento no projeto</h4><p>As camadas do grupo <b>APPS PROCESSADAS</b> servem como referência de conferência, diagnóstico e apoio à elaboração.</p></div>
+<div class="official"><h4>Resultado oficial</h4><p>O processamento e o croqui oficial são produzidos pelo <b>SIMLAM</b>. O processamento local do projeto não substitui o resultado oficial.</p></div>
+</div>
+<div class="page-break"></div>
+<div class="model-reminder"><span class="model-badge">M</span><div><strong>Após executar o modelo:</strong> execute também <b>01.3. Atualizar Camadas após Importação</b> antes de continuar.</div></div></div></details><details class="topic"><summary><h2>6. Exportar os Shapefiles para ZIP</h2></summary><div class="topic-body">
+<h3>6.a) Abrir o modelo de exportação</h3>
+<div class="figure"><img alt="Menu Exportar shapes ZIP" src="assets/img/atividade-01/menu-exportar-shapes-zip-cdf2bb222d2c8a.png"/><div class="caption">Caminho: <b>Projeto → Modelos → 10. Exportar shapes (.ZIP) → Executar...</b></div></div>
+<div class="tool-card">
+<div class="tool-head"><span class="model-badge">M</span><div><div class="tool-name">10. Exportar shapes (.ZIP)</div><div class="tool-location">Projeto → Modelos → 10. Exportar shapes (.ZIP) → Executar...</div></div></div>
+<div class="tool-grid"><div><span>Camadas</span><strong>Projeto completo</strong></div><div><span>Pré-condição</span><strong>Edições salvas e atributos conferidos</strong></div></div>
+<div class="tool-procedure"><span>Procedimento</span>Abra o modelo e configure os parâmetros de exportação. A ferramenta prepara as camadas do projeto no formato necessário para a etapa de simulação/importação.</div>
+<div class="tool-result"><span>Resultado esperado</span>Um arquivo ZIP é gerado na pasta definida e o log apresenta a coordenada do ponto de referência do empreendimento.</div>
+</div>
+<div class="grid-2">
+<div class="figure"><img alt="Parâmetros Exportar shapes ZIP" src="assets/img/atividade-01/parametros-exportar-shapes-zip-692b2dd9e23dc9.png"/><div class="caption">Parâmetros do modelo de exportação.</div></div>
+<div>
+<table class="settings">
+<tr><th>Identificação</th><td>Use uma identificação simples, por exemplo <b>atividade_01</b>.</td></tr>
+<tr><th>Salvar como pasta ao invés de ZIP</th><td><b>Desmarcado</b>. O objetivo desta etapa é gerar o ZIP.</td></tr>
+<tr><th>Verificar atributos antes de exportar</th><td><b>Marcado</b>.</td></tr>
+<tr><th>Abrir simulador ao finalizar</th><td><b>Marcado</b>, para seguir diretamente para a validação.</td></tr>
+<tr><th>Salvar arquivo</th><td>Escolha a pasta da atividade.</td></tr>
+<tr><th>Executar</th><td>Clique em <b>Executar</b> e aguarde a conclusão.</td></tr>
+</table>
+</div>
+</div>
+<h3>6.b) Conferir o log da exportação</h3>
+<div class="figure"><img alt="Log da exportação" src="assets/img/atividade-01/log-da-exportacao-1c01704126503d.png"/><div class="caption">Ao concluir, o log informa o <b>Ponto de Coordenada do Empreendimento</b>.</div></div><div class="note"><strong>Conferência da exportação.</strong> O log confirma a execução do modelo e pode apresentar um ponto de referência. Para o preenchimento do Simulador, utilize a <b>coordenada central fornecida na etapa seguinte</b>.</div>
+</div></details><details class="topic"><summary><h2>7. Simulador de Importação de Shape - SIMLAM</h2></summary><div class="topic-body"><a class="simulator-button" href="http://simlam.idaf.es.gov.br/portal/geoprocessamento/simulador-de-importacao-de-shape-dominialidade" rel="noopener" target="_blank">Acessar o Simulador de Importação de Shape</a><div class="coord-panel">
+<div class="coord-title">Coordenada central do empreendimento — use estes valores no processamento</div>
+<div class="coord-row"><code>362600,5652</code><button class="copy-button" data-copy-value="362600,5652" type="button">Copiar</button></div>
+<div class="coord-row"><code>7873310,8350</code><button class="copy-button" data-copy-value="7873310,8350" type="button">Copiar</button></div>
+<div class="clipboard-tip"><strong>Antes de copiar:</strong> pressione <kbd>Windows + V</kbd>. Se o Windows solicitar, clique em <b>Ativar</b> para habilitar o histórico da Área de Transferência. Depois clique em <b>Copiar</b> nos dois valores. Assim, as duas coordenadas ficam disponíveis no histórico para preencher Easting e Northing sem precisar voltar ao guia.</div>
+</div>
+<h3>7.a) Preparar o processamento</h3>
+<div class="figure"><img alt="Simulador de Importação de Shape" src="assets/img/atividade-01/simulador-de-importacao-de-shape-1545c1688c4623.png"/><div class="caption">Tela do Simulador de Importação de Shape - Dominialidade.</div></div>
+<ol class="steps">
+<li><div><strong>Informe o seu próprio CPF</strong> no campo de identificação do usuário da verificação.</div></li>
+<li><div>Se você já tiver realizado um processamento anteriormente, clique em <b>Reenviar</b> para liberar novamente a edição dos dados.</div></li>
+<li><div>Em <b>Ponto de Coordenada Geográfica do Empreendimento</b>, os campos <b>Sistema de Coordenada = UTM</b>, <b>Datum = SIRGAS2000</b> e <b>Fuso = 24k</b> já aparecem <strong>travados e predefinidos</strong>. Preencha somente <b>Easting</b> e <b>Northing</b> usando os dois valores copiáveis apresentados na etapa anterior.</div></li>
+<li><div>Na linha <b>Dados GEOBASES</b>, clique no primeiro botão de ação de processamento/reprocessamento e aguarde a situação ficar como <b>Processado</b>.</div></li>
+</ol>
+<div class="warn"><strong>Preenchimento do Simulador.</strong> Utilize os dois valores da <b>coordenada central</b> apresentados acima. Os campos UTM / SIRGAS2000 / 24k permanecem travados; apenas Easting e Northing devem ser preenchidos.</div>
+<h3>7.b) Enviar o ZIP</h3>
+<div class="figure"><img alt="Envio do ZIP no SIMLAM" src="assets/img/atividade-01/envio-do-zip-no-simlam-bbe97d85309e03.png"/><div class="caption">Área para selecionar e enviar o arquivo ZIP exportado pelo QGIS.</div></div>
+<ol class="steps">
+<li><div>Clique em <b>Escolher arquivo</b>.</div></li>
+<li><div>Selecione o arquivo ZIP gerado pelo modelo <b>10. Exportar shapes (.ZIP)</b>.</div></li>
+<li><div>Clique em <b>Enviar</b>.</div></li>
+<li><div>Aguarde o processamento do simulador.</div></li>
+</ol>
+<div class="compare">
+<div class="official"><h4>Processamento aprovado</h4><p>O simulador gera o <b>croqui</b> e os produtos de conferência do processamento.</p></div>
+<div class="danger"><h4>Processamento reprovado</h4><p>O sistema gera <b>apenas o relatório de erros</b>. Esse relatório informa as inconsistências que impediram a aprovação.</p></div>
+</div>
+<h3>7.c) Localizar e corrigir os erros no Módulo CAR</h3>
+<div class="figure"><img alt="Modelo Verificar erros" src="assets/img/atividade-01/modelo-verificar-erros-8938c2c382dd91.png"/><div class="caption">Caminho: <b>Projeto → Modelos → 09. Verificar erros → Executar...</b></div></div>
+<div class="tool-card">
+<div class="tool-head"><span class="model-badge">M</span><div><div class="tool-name">09. Verificar erros</div><div class="tool-location">Projeto → Modelos → 09. Verificar erros → Executar...</div></div></div>
+<div class="tool-grid"><div><span>Uso</span><strong>Diagnóstico espacial</strong></div><div><span>Quando executar</span><strong>Quando o simulador apontar erros ou para conferência antes de novo envio</strong></div></div>
+<div class="tool-procedure"><span>Procedimento</span>Execute o modelo. Ele reproduz as verificações espaciais utilizadas no fluxo de validação e cria uma camada de erros, indicando a camada envolvida e a localização de cada ocorrência no mapa.</div>
+<div class="tool-result"><span>Resultado esperado</span>É adicionada ao projeto a camada <b>ERROS ESPACIAIS IDENTIFICADOS</b>. Use os pontos/ocorrências para localizar e corrigir cada problema.</div>
+</div>
+<div class="grid-2">
+<div class="figure"><img alt="ERROS ESPACIAIS IDENTIFICADOS" src="assets/img/atividade-01/erros-espaciais-identificados-5c033bf08abad7.png"/><div class="caption">Exemplo da camada criada pelo verificador de erros.</div></div>
+<div class="box">
+<h4>Como corrigir</h4>
+<ol>
+<li>Leia o relatório do simulador.</li>
+<li>Execute <b>09. Verificar erros</b>.</li>
+<li>Localize a ocorrência no mapa e identifique a camada indicada.</li>
+<li>Corrija a geometria ou o atributo.</li>
+<li>Salve e encerre a edição.</li>
+<li>Execute novamente a verificação.</li>
+<li>Exporte um novo ZIP e reenvie ao simulador.</li>
+</ol>
+</div>
+</div>
+<div class="cycle">
+<div class="c">Relatório de erro</div><div class="arrow">→</div><div class="c">09. Verificar erros</div><div class="arrow">→</div><div class="c">Corrigir no QGIS</div><div class="arrow">→</div><div class="c">Novo ZIP</div>
+</div>
+<div class="page-break"></div>
+<div class="cleanup-guidance"><div class="model-guidance-head"><span class="model-badge">M</span><div><strong>Encerrar a atividade — Limpar projeto atual</strong><small>Projeto → Modelos → 12. Limpar projeto atual → Executar...</small></div></div><p><strong>Execute somente depois de o processamento estar aprovado e o croqui ter sido conferido.</strong> A limpeza prepara o Módulo CAR para o próximo imóvel/atividade e evita que feições do trabalho anterior permaneçam no projeto.</p><div class="figure"><img alt="Modelo Limpar projeto atual" src="assets/img/modulo-car/limpar-projeto-atual.webp"/><div class="caption">Após a aprovação do croqui: Projeto → Modelos → 12. Limpar projeto atual → Executar...</div></div></div></div></details><details class="topic"><summary><h2>8. Resultado esperado</h2></summary><div class="topic-body">
+<div class="figure"><img alt="Resultado esperado no QGIS" src="assets/img/atividade-01/resultado-esperado-no-qgis-ba74d3320a43fd.jpg"/><div class="caption">Resultado de referência no Módulo CAR.</div></div>
+<div class="grid-2" style="margin-top:5mm">
+<div class="figure"><img alt="Croqui oficial com imagem" src="assets/img/atividade-01/croqui-oficial-com-imagem-5b2d7ee6e63fcd.jpg"/><div class="caption">Croqui oficial com imagem, processado pelo SIMLAM.</div></div>
+<div class="figure"><img alt="Quadro de áreas" src="assets/img/atividade-01/quadro-de-areas-4425e9981dc431.jpg"/><div class="caption">Quadro de áreas do resultado de referência.</div></div>
+</div>
+<h3>8.a) Valores aproximados de referência</h3>
+<div class="warn"><strong>Não use os valores como meta rígida.</strong> Pequenas diferenças são esperadas pela digitalização manual, interpretação visual e escala de trabalho.</div>
+<table class="ref-values">
+<tr><th>Classe</th><th>Valor aproximado</th></tr>
+<tr><td>ATP</td><td>14,0999 ha</td></tr>
+<tr><td>VEGETAÇÃO NATIVA</td><td>2,4238 ha</td></tr>
+<tr><td>ÁREA ALTERADA</td><td>10,3393 ha</td></tr>
+<tr><td>REPRESA / massa d'água</td><td>1,3367 ha</td></tr>
+<tr><td>RESERVA LEGAL</td><td>2,8219 ha</td></tr>
+<tr><td>CONSTRUÇÕES</td><td>0,0371 ha</td></tr>
+<tr><td>APP total</td><td>0,8240 ha</td></tr>
+</table>
+</div></details><details class="topic"><summary><h2>9. Checklist final</h2></summary><div class="topic-body">
+<ul class="checklist">
+<li><input class="ck" type="checkbox"/><span>Coordenadas importadas corretamente em EPSG:31984.</span></li>
+<li><input class="ck" type="checkbox"/><span>Aderência aos pontos importados ativada.</span></li>
+<li><input class="ck" type="checkbox"/><span>AREA TOTAL DO IMÓVEL digitalizada.</span></li>
+<li><input class="ck" type="checkbox"/><span>MATRÍCULA/POSSE criada por cópia.</span></li>
+<li><input class="ck" type="checkbox"/><span>ÁREA ALTERADA criada utilizando Recortar (Ctrl+X) e Colar (Ctrl+V), conforme a sequência da atividade.</span></li>
+<li><input class="ck" type="checkbox"/><span>AVN separada com Quebrar feição e transferida por Ctrl+X para VEGETAÇÃO NATIVA.</span></li>
+<li><input class="ck" type="checkbox"/><span>Represa separada com Quebrar feição e transferida por Ctrl+X para REPRESA.</span></li>
+<li><input class="ck" type="checkbox"/><span>AVN copiada por Ctrl+C para RESERVA LEGAL.</span></li>
+<li><input class="ck" type="checkbox"/><span>Diagnóstico realizado no DescompliCAR.</span></li>
+<li><input class="ck" type="checkbox"/><span>Reserva Legal complementar demarcada.</span></li>
+<li><input class="ck" type="checkbox"/><span>Nascente demarcada visualmente.</span></li>
+<li><input class="ck" type="checkbox"/><span>Três construções criadas com Preencher anel e transferidas por Ctrl+X para CONSTRUÇÕES.</span></li>
+<li><input class="ck" type="checkbox"/><span>Todas as geometrias tiveram seus atributos conferidos/preenchidos.</span></li>
+<li><input class="ck" type="checkbox"/><span>As APPs processadas foram conferidas como referência.</span></li>
+<li><input class="ck" type="checkbox"/><span>Nenhuma camada permaneceu indevidamente em edição.</span></li>
+<li><input class="ck" type="checkbox"/><span>Modelo 10. Exportar shapes (.ZIP) executado com verificação de atributos.</span></li>
+<li><input class="ck" type="checkbox"/><span>Coordenada central do empreendimento copiada pelos botões e histórico da Área de Transferência habilitado com Windows + V.</span></li>
+<li><input class="ck" type="checkbox"/><span>Simulador preenchido com o próprio CPF e coordenadas do exportador.</span></li>
+<li><input class="ck" type="checkbox"/><span>Dados GEOBASES processados/reprocessados.</span></li>
+<li><input class="ck" type="checkbox"/><span>ZIP enviado ao simulador.</span></li>
+<li><input class="ck" type="checkbox"/><span>Em caso de reprovação, relatório analisado e 09. Verificar erros executado.</span></li>
+<li><input class="ck" type="checkbox"/><span>Resultado final conferido visualmente.</span></li>
+</ul>
+<div class="page-break"></div>
+</div></details><details class="topic"><summary><h2>10. Referência rápida das ferramentas</h2></summary><div class="topic-body">
+<table class="quick">
+<tr><th class="qi">Ícone</th><th>Ferramenta</th><th>Localização</th><th>Uso nesta atividade</th></tr>
+<tr><td class="qi"><img src="assets/icons/qgis/mActionAddDelimitedTextLayer.svg"/></td><td>Adicionar Camada de Texto Delimitado</td><td>Camada → Adicionar Camada → Adicionar Camada de Texto Delimitado... • Ctrl+Shift+T</td><td>Importar os vértices.</td></tr>
+<tr><td class="qi"><img src="assets/icons/qgis/mIconSnapping.svg"/></td><td>Habilitar aderência</td><td>Barra Aderência.</td><td>Encaixar a digitalização nos vértices.</td></tr>
+<tr><td class="qi"><img src="assets/icons/qgis/mActionToggleEditing.svg"/></td><td>Alternar edição</td><td>Barra Digitalização; também no menu de contexto da camada.</td><td>Entrar e sair da edição.</td></tr>
+<tr><td class="qi"><img src="assets/icons/qgis/mActionSaveEdits.svg"/></td><td>Salvar edições</td><td>Barra Digitalização.</td><td>Gravar alterações.</td></tr>
+<tr><td class="qi"><img src="assets/icons/qgis/mActionCapturePolygon.svg"/></td><td>Adicionar feição de polígono</td><td>Barra Digitalização.</td><td>ATP e complemento da ARL.</td></tr>
+<tr><td class="qi"><img src="assets/icons/qgis/mActionCapturePoint.svg"/></td><td>Adicionar feição de ponto</td><td>Barra Digitalização.</td><td>Nascente.</td></tr>
+<tr><td class="qi"><img src="assets/icons/qgis/mActionSelectRectangle.svg"/></td><td>Selecionar feição</td><td>Barra Seleção.</td><td>Preparar feições para copiar/recortar/atribuir.</td></tr>
+<tr><td class="qi"><img src="assets/icons/qgis/mActionEditCopy.svg"/></td><td>Copiar feições</td><td>Editar → Copiar • Ctrl+C</td><td>Manter a origem e criar cópia em outra camada; ex.: AVN → ARL.</td></tr>
+<tr><td class="qi"><img src="assets/icons/qgis/mActionEditCut.svg"/></td><td>Recortar feições</td><td>Editar → Recortar • Ctrl+X</td><td>Retirar a feição da origem e transferi-la; ex.: AA → AVN/REPRESA/CONSTRUÇÕES.</td></tr>
+<tr><td class="qi"><img src="assets/icons/qgis/mActionEditPaste.svg"/></td><td>Colar feições</td><td>Editar → Colar • Ctrl+V; camada de destino em edição.</td><td>Inserir a feição na camada de destino.</td></tr>
+<tr><td class="qi"><img src="assets/icons/qgis/mActionSplitFeatures.svg"/></td><td>Quebrar feição</td><td>Barra Digitalização Avançada.</td><td>Isolar AVN e Represa dentro da AA.</td></tr>
+<tr><td class="qi"><img src="assets/icons/qgis/mActionFillRing.svg"/></td><td>Preencher anel</td><td>Barra Digitalização Avançada.</td><td>Recortar construções internas à AA e criar feições correspondentes.</td></tr>
+<tr><td class="qi"><img src="assets/icons/qgis/mActionOpenTable.svg"/></td><td>Abrir Tabela de Atributos</td><td>Botão direito na camada → Abrir Tabela de Atributos • F6</td><td>Conferir e editar atributos por feição.</td></tr>
+<tr><td class="qi"><img src="assets/icons/qgis/mActionMultiEdit.svg"/></td><td>Modificar atributos de feições selecionadas</td><td>Editar → Modificar atributos das feições selecionadas; ou modo multi edição da tabela.</td><td>Aplicar os mesmos atributos a uma ou várias feições selecionadas.</td></tr>
+<tr><td class="qi"><span class="model-badge">M</span></td><td>09. Verificar erros</td><td>Projeto → Modelos → 09. Verificar erros → Executar...</td><td>Localizar no mapa os erros espaciais apontados no fluxo de validação.</td></tr>
+<tr><td class="qi"><span class="model-badge">M</span></td><td>10. Exportar shapes (.ZIP)</td><td>Projeto → Modelos → 10. Exportar shapes (.ZIP) → Executar...</td><td>Validar atributos, gerar ZIP e informar a coordenada do empreendimento.</td></tr>
+</table>
+<div class="footer"><strong>Material de apoio da atividade prática.</strong> Utilize Matrícula e CCIR apenas para consulta dos dados solicitados pelos formulários. As camadas processadas localmente servem como referência; o croqui oficial é o produto do processamento no SIMLAM. Ícones das ferramentas QGIS: tema oficial da versão 3.44.</div>
+</div></details></div>
+</section>
+<section class="course-unit" data-result-caption="Resultado esperado — Atividade 02" data-result-image="assets/img/atividade-02/resultado-esperado-qgis.png" data-title="Atividade 02 — Construção do imóvel a partir de arquivo KML" id="atividade-02">
+<div class="sheet">
+<div class="print-footer">Curso QGIS aplicado ao CAR • Atividade 02 • Construção do imóvel a partir de KML</div>
+<header class="header">
+<div class="header-text">
+<div class="kicker">Curso QGIS aplicado ao Cadastro Ambiental Rural</div>
+<h1>Atividade prática 02 - Construção do imóvel a partir de arquivo KML</h1>
+<div class="subtitle">Carregamento de KML, construção da dominialidade, classificação do uso do solo, cursos d'água, Reserva Legal, atributos, APPs e exportação.</div>
+</div>
+<img alt="QGIS Aplicado ao CAR" class="logo" src="assets/img/logo/logo-dalvi-geotecnologias-cbee9e2874040b.png"/>
+</header><div class="project-start">
+<div class="project-icon">Q</div>
+<div><strong>Antes de iniciar esta atividade: abra o arquivo <code>Modulo_CAR.qgz</code>.</strong><br/>As orientações a seguir devem ser executadas dentro desse projeto do Módulo CAR.</div>
+</div><div class="model-guidance model-update-full">
+<div class="model-guidance-head"><span class="model-badge">M</span><div><strong>Atualizar as camadas antes de continuar</strong><small>Projeto → Modelos → 01.3. Atualizar Camadas após Importação → Executar...</small></div></div>
+<p>Logo após abrir o <b>Modulo_CAR.qgz</b>, execute <b>01.3. Atualizar Camadas após Importação</b>. O modelo atualiza as referências/localizações utilizadas pelo projeto no computador atual.</p>
+<div class="figure"><img alt="Atualizar Camadas após Importação" src="assets/img/modulo-car/atualizar-camadas-apos-importacao.webp"/><div class="caption">Caminho do modelo utilizado para atualizar as camadas do projeto.</div></div>
+<div class="note"><strong>Repita este procedimento após ferramentas automatizadas do Módulo CAR</strong> que importem, criem, substituam ou atualizem dados — por exemplo Importar Shape, Polígono a partir de ponto, Rio Linha para Rio Área e Gerar Faixa de Domínio.</div>
+</div>
+<div class="box objective"><strong>Objetivo.</strong> Simular o recebimento de uma delimitação produzida no Google Earth, carregar o arquivo KML no QGIS e utilizá-lo como ponto de partida para construir e caracterizar o imóvel no Módulo CAR.</div>
+<div class="workflow">
+<div class="wf">KML</div><div class="wf-arrow">→</div>
+<div class="wf">ATP / Matrícula</div><div class="wf-arrow">→</div>
+<div class="wf">ÁREA ALTERADA</div><div class="wf-arrow">→</div>
+<div class="wf">Uso do solo</div><div class="wf-arrow">→</div>
+<div class="wf">Hidrografia</div><div class="wf-arrow">→</div>
+<div class="wf">Reserva Legal</div><div class="wf-arrow">→</div>
+<div class="wf green">Validar e exportar</div>
+</div>
+<details class="topic" open=""><summary><h2>1. Carregar o KML e construir a dominialidade</h2></summary><div class="topic-body">
+<h3>1.a) Arquivos utilizados</h3>
+<table class="source-table">
+<tr><th>Arquivo</th><th>Utilização</th></tr>
+<tr><td><b>area do imóvel.kml</b></td><td>Delimitação recebida para iniciar a construção do imóvel.</td></tr>
+<tr><td><b>Matrícula 2002.pdf</b></td><td>Consulta dos dados dominiais e da averbação/transferência da Reserva Legal.</td></tr>
+<tr><td><b>CCIR 2026 - Sítio Rapadura.pdf</b></td><td>Consulta dos dados cadastrais do imóvel.</td></tr>
+<tr><td><b>PdfDoMapa (2002).pdf</b></td><td>Referência para conferência do resultado final.</td></tr>
+</table>
+<h3>1.b) Adicionar o arquivo KML ao QGIS</h3>
+<div class="tool-card">
+<div class="tool-head">
+<img alt="Adicionar Camada Vetorial" class="tool-icon" src="assets/icons/qgis/mActionAddOgrLayer.svg"/>
+<div>
+<div class="tool-name">Adicionar Camada Vetorial</div>
+<div class="tool-location">Camada → Adicionar Camada → Adicionar Camada Vetorial...; também é possível arrastar o KML para o QGIS</div>
+</div>
+</div>
+<div class="tool-grid">
+<div><span>Camada ativa</span><strong>Nenhuma camada em edição</strong></div>
+<div><span>Pré-condição</span><strong>Arquivo KML disponível</strong></div>
+</div>
+<div class="tool-procedure"><span>Procedimento</span>Carregue <b>area do imóvel.kml</b>. Confirme que a geometria aparece na posição esperada sobre a ortofoto. O QGIS realiza a transformação em tela para o SRC do projeto.</div>
+<div class="tool-result"><span>Resultado esperado</span>A delimitação do imóvel aparece como uma camada vetorial de referência.</div>
+</div>
+<div class="figure"><img alt="KML carregado no Módulo CAR" src="assets/img/atividade-02/01-kml-carregado.webp"/><div class="caption">Resultado de referência após o carregamento da delimitação recebida em KML.</div></div>
+<h3>1.c) Transferir a geometria para AREA TOTAL DO IMÓVEL</h3>
+<p>O KML é uma camada de origem/apoio. A geometria deve ser <b>copiada</b> para a camada oficial de trabalho do projeto.</p>
+<div class="copy-flow">
+<div class="cf-node"><b>camada KML</b><small>camada de origem</small></div>
+<div class="cf-arrow">→</div>
+<div class="cf-step"><img alt="Selecionar" src="assets/icons/qgis/mActionSelectRectangle.svg"/><span>Selecionar feição</span></div>
+<div class="cf-arrow">→</div>
+<div class="cf-step"><img alt="Copiar" src="assets/icons/qgis/mActionEditCopy.svg"/><span>Copiar<br/><kbd>Ctrl+C</kbd></span></div>
+<div class="cf-arrow">→</div>
+<div class="cf-node target"><b>AREA TOTAL DO IMÓVEL</b><small>ativar e colocar em edição</small></div>
+<div class="cf-arrow">→</div>
+<div class="cf-step"><img alt="Colar" src="assets/icons/qgis/mActionEditPaste.svg"/><span>Colar<br/><kbd>Ctrl+V</kbd></span></div>
+</div>
+<div class="micro-note">O arquivo KML permanece no projeto como referência; por isso, nesta etapa use Copiar.</div>
+<div class="finish">
+<div class="finish-title">Finalizar esta etapa - AREA TOTAL DO IMÓVEL</div>
+<div class="finish-grid">
+<div class="finish-action">
+<img alt="Salvar edições" src="assets/icons/qgis/mActionSaveEdits.svg"/>
+<div><strong>1. Salvar edições da camada</strong><br/>Clique em <b>Salvar edições da camada</b> para gravar as alterações realizadas em <b>AREA TOTAL DO IMÓVEL</b>.</div>
+</div>
+<div class="finish-arrow">→</div>
+<div class="finish-action">
+<img alt="Alternar edição" src="assets/icons/qgis/mActionToggleEditing.svg"/>
+<div><strong>2. Sair do modo de edição</strong><br/>Clique em <b>Alternar edição</b>. A camada não deve permanecer em edição ao concluir a etapa.</div>
+</div>
+</div>
+</div>
+<h3>1.d) Criar MATRÍCULA/POSSE</h3>
+<div class="copy-flow">
+<div class="cf-node"><b>AREA TOTAL DO IMÓVEL</b><small>camada de origem</small></div>
+<div class="cf-arrow">→</div>
+<div class="cf-step"><img alt="Selecionar" src="assets/icons/qgis/mActionSelectRectangle.svg"/><span>Selecionar feição</span></div>
+<div class="cf-arrow">→</div>
+<div class="cf-step"><img alt="Copiar" src="assets/icons/qgis/mActionEditCopy.svg"/><span>Copiar<br/><kbd>Ctrl+C</kbd></span></div>
+<div class="cf-arrow">→</div>
+<div class="cf-node target"><b>MATRÍCULA/POSSE</b><small>ativar e colocar em edição</small></div>
+<div class="cf-arrow">→</div>
+<div class="cf-step"><img alt="Colar" src="assets/icons/qgis/mActionEditPaste.svg"/><span>Colar<br/><kbd>Ctrl+V</kbd></span></div>
+</div>
+<div class="micro-note">Consulte Matrícula e CCIR para preencher os campos documentais solicitados pelo formulário.</div>
+<div class="finish">
+<div class="finish-title">Finalizar esta etapa - MATRÍCULA/POSSE</div>
+<div class="finish-grid">
+<div class="finish-action">
+<img alt="Salvar edições" src="assets/icons/qgis/mActionSaveEdits.svg"/>
+<div><strong>1. Salvar edições da camada</strong><br/>Clique em <b>Salvar edições da camada</b> para gravar as alterações realizadas em <b>MATRÍCULA/POSSE</b>.</div>
+</div>
+<div class="finish-arrow">→</div>
+<div class="finish-action">
+<img alt="Alternar edição" src="assets/icons/qgis/mActionToggleEditing.svg"/>
+<div><strong>2. Sair do modo de edição</strong><br/>Clique em <b>Alternar edição</b>. A camada não deve permanecer em edição ao concluir a etapa.</div>
+</div>
+</div>
+</div>
+<h3>1.e) Criar ÁREA ALTERADA</h3>
+<p>Nesta etapa, a geometria da <b>APMP</b> deve ser <b>copiada</b> para <b>ÁREA ALTERADA</b> usando <b>Copiar</b> (<kbd>Ctrl+C</kbd>) e <b>Colar</b> (<kbd>Ctrl+V</kbd>). A feição precisa permanecer também na APMP.</p>
+<div class="copy-flow">
+<div class="cf-node"><b>APMP</b><small>camada de origem — deve permanecer</small></div>
+<div class="cf-arrow">→</div>
+<div class="cf-step"><img alt="Selecionar" src="assets/icons/qgis/mActionSelectRectangle.svg"/><span>Selecionar feição</span></div>
+<div class="cf-arrow">→</div>
+<div class="cf-step"><img alt="Copiar" src="assets/icons/qgis/mActionEditCopy.svg"/><span>Copiar<br/><kbd>Ctrl+C</kbd></span></div>
+<div class="cf-arrow">→</div>
+<div class="cf-node target"><b>ÁREA ALTERADA</b><small>ativar e colocar em edição</small></div>
+<div class="cf-arrow">→</div>
+<div class="cf-step"><img alt="Colar" src="assets/icons/qgis/mActionEditPaste.svg"/><span>Colar<br/><kbd>Ctrl+V</kbd></span></div>
+</div>
+<div class="micro-note"><strong>Use Copiar nesta etapa.</strong> A APMP continua existindo na camada de origem e uma cópia é inserida em ÁREA ALTERADA.</div>
+<div class="finish">
+<div class="finish-title">Finalizar esta etapa - ÁREA ALTERADA</div>
+<div class="finish-grid">
+<div class="finish-action">
+<img alt="Salvar edições" src="assets/icons/qgis/mActionSaveEdits.svg"/>
+<div><strong>1. Salvar edições da camada</strong><br/>Clique em <b>Salvar edições da camada</b> para gravar as alterações realizadas em <b>ÁREA ALTERADA</b>.</div>
+</div>
+<div class="finish-arrow">→</div>
+<div class="finish-action">
+<img alt="Alternar edição" src="assets/icons/qgis/mActionToggleEditing.svg"/>
+<div><strong>2. Sair do modo de edição</strong><br/>Clique em <b>Alternar edição</b>. A camada não deve permanecer em edição ao concluir a etapa.</div>
+</div>
+</div>
+</div>
+</div></details><details class="topic"><summary><h2>2. Classificar o uso do solo</h2></summary><div class="topic-body">
+<div class="warn"><strong>Faça a classificação visualmente sobre a ortofoto.</strong> Neste exercício serão diferenciadas vegetação nativa, floresta plantada, duas represas, duas construções e a área predominante de culturas perenes.</div>
+<h3>2.a) Separar as classes dentro da ÁREA ALTERADA</h3>
+<p>Utilize <b>Quebrar feição</b> quando a classe alcança o limite da feição e <b>Preencher anel</b> quando a classe está inteiramente no interior da AA.</p>
+<div class="compare">
+<div class="compare-card">
+<h4><img alt="Quebrar feição" src="assets/icons/qgis/mActionSplitFeatures.svg"/> Quebrar feição</h4>
+<p>Use para separar, neste exercício, as porções que alcançam o limite da AA, como a vegetação nativa e a floresta plantada, seguindo a interpretação visual da imagem.</p>
+</div>
+<div class="compare-card">
+<h4><img alt="Preencher anel" src="assets/icons/qgis/mActionFillRing.svg"/> Preencher anel</h4>
+<p>Use nas feições totalmente internas à AA, como as represas e as construções, criando feições independentes dentro da camada.</p>
+</div>
+</div>
+<div class="figure"><img alt="Recortes da Área Alterada" src="assets/img/atividade-02/02-recortes-area-alterada.webp"/><div class="caption">Exemplo da ÁREA ALTERADA após os recortes necessários à classificação das feições.</div></div>
+<div class="history-guidance"><div class="history-text"><strong>Antes de delimitar a Vegetação Nativa: consulte o histórico de imagens.</strong><p>O <b>uso do solo atual</b> deve ser interpretado com a imagem mais recente e adequada disponível. Para <b>VEGETAÇÃO NATIVA</b> e, posteriormente, para a <b>RESERVA LEGAL</b>, compare também bases de diferentes datas para compreender a permanência, evolução ou alteração da cobertura vegetal.</p><p>As imagens históricas são elementos de apoio à interpretação temporal e devem ser analisadas em conjunto com a situação atual e a documentação disponível.</p></div><div class="figure history-shot"><img alt="Bases históricas de ortofotos e satélite" src="assets/img/modulo-car/bases-historicas-ortofotos.webp"/><div class="caption">Alterne entre Google/Bing e as ortofotos disponíveis, especialmente 2019/2020, 2012/2015 e 2007/2008 quando pertinentes.</div></div></div><h3>2.b) Transferir a VEGETAÇÃO NATIVA</h3>
+<p>Depois de isolar a feição de vegetação nativa, ela não deve permanecer classificada como AA.</p>
+<div class="copy-flow">
+<div class="cf-node"><b>ÁREA ALTERADA - feição de AVN</b><small>camada de origem</small></div>
+<div class="cf-arrow">→</div>
+<div class="cf-step"><img alt="Selecionar" src="assets/icons/qgis/mActionSelectRectangle.svg"/><span>Selecionar feição</span></div>
+<div class="cf-arrow">→</div>
+<div class="cf-step"><img alt="Recortar" src="assets/icons/qgis/mActionEditCut.svg"/><span>Recortar<br/><kbd>Ctrl+X</kbd></span></div>
+<div class="cf-arrow">→</div>
+<div class="cf-node target"><b>VEGETAÇÃO NATIVA</b><small>ativar e colocar em edição</small></div>
+<div class="cf-arrow">→</div>
+<div class="cf-step"><img alt="Colar" src="assets/icons/qgis/mActionEditPaste.svg"/><span>Colar<br/><kbd>Ctrl+V</kbd></span></div>
+</div>
+<div class="micro-note">Use Ctrl+X para retirar a feição da AA e Ctrl+V para inseri-la em VEGETAÇÃO NATIVA.</div>
+<div class="finish">
+<div class="finish-title">Finalizar esta etapa - VEGETAÇÃO NATIVA</div>
+<div class="finish-grid">
+<div class="finish-action">
+<img alt="Salvar edições" src="assets/icons/qgis/mActionSaveEdits.svg"/>
+<div><strong>1. Salvar edições da camada</strong><br/>Clique em <b>Salvar edições da camada</b> para gravar as alterações realizadas em <b>VEGETAÇÃO NATIVA</b>.</div>
+</div>
+<div class="finish-arrow">→</div>
+<div class="finish-action">
+<img alt="Alternar edição" src="assets/icons/qgis/mActionToggleEditing.svg"/>
+<div><strong>2. Sair do modo de edição</strong><br/>Clique em <b>Alternar edição</b>. A camada não deve permanecer em edição ao concluir a etapa.</div>
+</div>
+</div>
+</div>
+<h3>2.c) Transferir as duas REPRESAS</h3>
+<p>As duas represas são feições internas. Depois de delimitadas com <b>Preencher anel</b>, selecione-as e transfira para a camada <b>REPRESA</b>.</p>
+<div class="copy-flow">
+<div class="cf-node"><b>ÁREA ALTERADA - duas represas</b><small>camada de origem</small></div>
+<div class="cf-arrow">→</div>
+<div class="cf-step"><img alt="Selecionar" src="assets/icons/qgis/mActionSelectRectangle.svg"/><span>Selecionar feição</span></div>
+<div class="cf-arrow">→</div>
+<div class="cf-step"><img alt="Recortar" src="assets/icons/qgis/mActionEditCut.svg"/><span>Recortar<br/><kbd>Ctrl+X</kbd></span></div>
+<div class="cf-arrow">→</div>
+<div class="cf-node target"><b>REPRESA</b><small>ativar e colocar em edição</small></div>
+<div class="cf-arrow">→</div>
+<div class="cf-step"><img alt="Colar" src="assets/icons/qgis/mActionEditPaste.svg"/><span>Colar<br/><kbd>Ctrl+V</kbd></span></div>
+</div>
+<div class="micro-note">As duas feições podem ser selecionadas juntas quando receberem o mesmo tratamento.</div>
+<div class="finish">
+<div class="finish-title">Finalizar esta etapa - REPRESA</div>
+<div class="finish-grid">
+<div class="finish-action">
+<img alt="Salvar edições" src="assets/icons/qgis/mActionSaveEdits.svg"/>
+<div><strong>1. Salvar edições da camada</strong><br/>Clique em <b>Salvar edições da camada</b> para gravar as alterações realizadas em <b>REPRESA</b>.</div>
+</div>
+<div class="finish-arrow">→</div>
+<div class="finish-action">
+<img alt="Alternar edição" src="assets/icons/qgis/mActionToggleEditing.svg"/>
+<div><strong>2. Sair do modo de edição</strong><br/>Clique em <b>Alternar edição</b>. A camada não deve permanecer em edição ao concluir a etapa.</div>
+</div>
+</div>
+</div>
+<h3>2.d) Classificar FLORESTA-PLANTADA, CULTURAS-PERENES e OUTRO</h3>
+<div class="box">
+<p>As feições que permanecem em <b>ÁREA ALTERADA</b> devem ser atributadas conforme a interpretação do exercício:</p>
+<ul>
+<li>área predominante: <b>CULTURAS-PERENES</b>;</li>
+<li>talhão identificado na imagem: <b>FLORESTA-PLANTADA</b>;</li>
+<li>duas feições correspondentes às construções: <b>OUTRO</b>.</li>
+</ul>
+<p>Ao final, o resultado de referência apresenta <b>quatro feições em ÁREA ALTERADA</b>.</p>
+</div>
+<h3>2.e) Copiar as construções para CONSTRUÇÕES</h3>
+<p>As duas feições classificadas como <b>OUTRO</b> permanecem na AA e também são representadas na camada <b>CONSTRUÇÕES</b>. Portanto, aqui use <b>Copiar</b>, e não Recortar.</p>
+<div class="copy-flow">
+<div class="cf-node"><b>ÁREA ALTERADA - duas feições OUTRO</b><small>camada de origem</small></div>
+<div class="cf-arrow">→</div>
+<div class="cf-step"><img alt="Selecionar" src="assets/icons/qgis/mActionSelectRectangle.svg"/><span>Selecionar feição</span></div>
+<div class="cf-arrow">→</div>
+<div class="cf-step"><img alt="Copiar" src="assets/icons/qgis/mActionEditCopy.svg"/><span>Copiar<br/><kbd>Ctrl+C</kbd></span></div>
+<div class="cf-arrow">→</div>
+<div class="cf-node target"><b>CONSTRUÇÕES</b><small>ativar e colocar em edição</small></div>
+<div class="cf-arrow">→</div>
+<div class="cf-step"><img alt="Colar" src="assets/icons/qgis/mActionEditPaste.svg"/><span>Colar<br/><kbd>Ctrl+V</kbd></span></div>
+</div>
+<div class="micro-note">Selecione as duas construções, use Ctrl+C e cole na camada CONSTRUÇÕES em edição.</div>
+<div class="finish">
+<div class="finish-title">Finalizar esta etapa - CONSTRUÇÕES</div>
+<div class="finish-grid">
+<div class="finish-action">
+<img alt="Salvar edições" src="assets/icons/qgis/mActionSaveEdits.svg"/>
+<div><strong>1. Salvar edições da camada</strong><br/>Clique em <b>Salvar edições da camada</b> para gravar as alterações realizadas em <b>CONSTRUÇÕES</b>.</div>
+</div>
+<div class="finish-arrow">→</div>
+<div class="finish-action">
+<img alt="Alternar edição" src="assets/icons/qgis/mActionToggleEditing.svg"/>
+<div><strong>2. Sair do modo de edição</strong><br/>Clique em <b>Alternar edição</b>. A camada não deve permanecer em edição ao concluir a etapa.</div>
+</div>
+</div>
+</div>
+<div class="finish">
+<div class="finish-title">Finalizar esta etapa - ÁREA ALTERADA</div>
+<div class="finish-grid">
+<div class="finish-action">
+<img alt="Salvar edições" src="assets/icons/qgis/mActionSaveEdits.svg"/>
+<div><strong>1. Salvar edições da camada</strong><br/>Clique em <b>Salvar edições da camada</b> para gravar as alterações realizadas em <b>ÁREA ALTERADA</b>.</div>
+</div>
+<div class="finish-arrow">→</div>
+<div class="finish-action">
+<img alt="Alternar edição" src="assets/icons/qgis/mActionToggleEditing.svg"/>
+<div><strong>2. Sair do modo de edição</strong><br/>Clique em <b>Alternar edição</b>. A camada não deve permanecer em edição ao concluir a etapa.</div>
+</div>
+</div>
+</div>
+</div></details><details class="topic"><summary><h2>3. Desenhar os cursos d'água e gerar RIO ÁREA</h2></summary><div class="topic-body">
+<h3>3.a) Digitalizar os cursos d'água em RIO_LINHA (Rascunho)</h3>
+<div class="tool-card edit-start"><div class="edit-callout"><img alt="Alternar edição" src="assets/icons/qgis/mActionToggleEditing.svg"/>ANTES DE USAR A FERRAMENTA: coloque a camada em edição</div>
+<div class="tool-head">
+<img alt="Alternar edição" class="tool-icon" src="assets/icons/qgis/mActionToggleEditing.svg"/>
+<div>
+<div class="tool-name">Alternar edição</div>
+<div class="tool-location">Barra Digitalização</div>
+</div>
+</div>
+<div class="tool-grid">
+<div><span>Camada ativa</span><strong>RIO_LINHA (Rascunho)</strong></div>
+<div><span>Pré-condição</span><strong>Os cursos d’água foram identificados visualmente</strong></div>
+</div>
+<div class="tool-procedure"><span>Procedimento</span>Coloque a camada em edição.</div>
+<div class="tool-result"><span>Resultado esperado</span>A camada fica pronta para receber as linhas.</div>
+</div>
+<div class="tool-card">
+<div class="tool-head">
+<img alt="Adicionar feição de linha" class="tool-icon" src="assets/icons/qgis/mActionCaptureLine.svg"/>
+<div>
+<div class="tool-name">Adicionar feição de linha</div>
+<div class="tool-location">Barra Digitalização</div>
+</div>
+</div>
+<div class="tool-grid">
+<div><span>Camada ativa</span><strong>RIO_LINHA (Rascunho)</strong></div>
+<div><span>Pré-condição</span><strong>Camada em edição</strong></div>
+</div>
+<div class="tool-procedure"><span>Procedimento</span>Digitalize o eixo dos dois trechos de curso d’água visíveis na atividade. Para cada feição, informe <b>LARGURA = 1</b> e <b>DENOMINAÇÃO = RIO</b>.</div>
+<div class="tool-result"><span>Resultado esperado</span>Duas feições de RIO_LINHA são criadas e corretamente atributadas.</div>
+</div>
+<div class="figure"><img alt="Digitalização de RIO_LINHA" src="assets/img/atividade-02/03-desenho-rio-linha.webp"/><div class="caption">Exemplo de digitalização do eixo do curso d'água e preenchimento do campo LARGURA.</div></div>
+<div class="finish">
+<div class="finish-title">Finalizar esta etapa - RIO_LINHA (Rascunho)</div>
+<div class="finish-grid">
+<div class="finish-action">
+<img alt="Salvar edições" src="assets/icons/qgis/mActionSaveEdits.svg"/>
+<div><strong>1. Salvar edições da camada</strong><br/>Clique em <b>Salvar edições da camada</b> para gravar as alterações realizadas em <b>RIO_LINHA (Rascunho)</b>.</div>
+</div>
+<div class="finish-arrow">→</div>
+<div class="finish-action">
+<img alt="Alternar edição" src="assets/icons/qgis/mActionToggleEditing.svg"/>
+<div><strong>2. Sair do modo de edição</strong><br/>Clique em <b>Alternar edição</b>. A camada não deve permanecer em edição ao concluir a etapa.</div>
+</div>
+</div>
+</div>
+<h3>3.b) Executar 04. Rio Linha para Rio Área</h3>
+<div class="grid-2">
+<div class="figure"><img alt="Executar modelo Rio Linha para Rio Área" src="assets/img/atividade-02/05-executando-modelo-rio.webp"/><div class="caption">Caminho: <b>Projeto → Modelos → 04. Rio Linha para Rio Área → Executar...</b></div></div>
+<div class="figure"><img alt="Modelo Rio Linha para Rio Área" src="assets/img/atividade-02/04-modelo-rio-linha-para-rio-area.png"/><div class="caption">O modelo usa a camada RIO_LINHA do projeto e a largura informada em cada feição.</div></div>
+</div>
+<div class="note"><strong>Como o modelo funciona.</strong> Ele transforma as feições de RIO_LINHA em geometrias de área a partir do valor do campo <b>LARGURA</b>. Antes de executar, verifique se as linhas estão corretamente desenhadas e atributadas.</div>
+<div class="figure"><img alt="Resultado após conversão para Rio Área" src="assets/img/atividade-02/06-resultado-rio-area.webp"/><div class="caption">Resultado de referência após a conversão das linhas para geometrias de área.</div></div>
+<div class="model-reminder"><span class="model-badge">M</span><div><strong>Após executar o modelo:</strong> execute também <b>01.3. Atualizar Camadas após Importação</b> antes de continuar.</div></div><h3>3.c) Inserir a NASCENTE</h3>
+<div class="tool-card">
+<div class="tool-head">
+<img alt="Adicionar feição de ponto" class="tool-icon" src="assets/icons/qgis/mActionCapturePoint.svg"/>
+<div>
+<div class="tool-name">Adicionar feição de ponto</div>
+<div class="tool-location">Barra Digitalização</div>
+</div>
+</div>
+<div class="tool-grid">
+<div><span>Camada ativa</span><strong>NASCENTE</strong></div>
+<div><span>Pré-condição</span><strong>Posição identificada visualmente</strong></div>
+</div>
+<div class="tool-procedure"><span>Procedimento</span>Coloque NASCENTE em edição, clique no ponto correspondente e preencha os atributos solicitados.</div>
+<div class="tool-result"><span>Resultado esperado</span>Uma feição de nascente é criada.</div>
+</div>
+<div class="finish">
+<div class="finish-title">Finalizar esta etapa - NASCENTE</div>
+<div class="finish-grid">
+<div class="finish-action">
+<img alt="Salvar edições" src="assets/icons/qgis/mActionSaveEdits.svg"/>
+<div><strong>1. Salvar edições da camada</strong><br/>Clique em <b>Salvar edições da camada</b> para gravar as alterações realizadas em <b>NASCENTE</b>.</div>
+</div>
+<div class="finish-arrow">→</div>
+<div class="finish-action">
+<img alt="Alternar edição" src="assets/icons/qgis/mActionToggleEditing.svg"/>
+<div><strong>2. Sair do modo de edição</strong><br/>Clique em <b>Alternar edição</b>. A camada não deve permanecer em edição ao concluir a etapa.</div>
+</div>
+</div>
+</div>
+</div></details><details class="topic"><summary><h2>4. Demarcar a Reserva Legal</h2></summary><div class="topic-body"><div class="note rl-history-reminder"><strong>Reserva Legal — confira novamente o histórico.</strong> Antes de definir a ARL, compare a imagem atual com as ortofotos históricas já consultadas para a Vegetação Nativa e considere a documentação do imóvel.</div>
+<h3>4.a) Interpretar a documentação</h3>
+<div class="grid-2">
+<div>
+<p>A Matrícula 2.002 informa a transferência de um Termo de Compromisso de Reserva Legal originalmente vinculado ao imóvel de origem. O croqui anexado ao documento mostra a posição da Reserva Legal naquele imóvel anterior.</p>
+<div class="warn"><strong>Atenção didática.</strong> A interpretação desta atividade é ilustrativa. O valor integral de 3,8720 ha do termo refere-se ao imóvel de origem. Para o exercício, a análise deve considerar a situação da parcela atual e ser conferida no DescompliCAR.</div>
+</div>
+<div class="figure"><img alt="Croqui da Reserva Legal da matrícula anterior" src="assets/img/atividade-02/10-croqui-reserva-legal-matricula.webp"/><div class="caption">Croqui apresentado junto à documentação de origem da Reserva Legal.</div></div>
+</div>
+<h3>4.b) Conferir no DescompliCAR</h3>
+<div class="box objective">
+<p>Utilize o <b>DescompliCAR - Ferramenta de Diagnóstico para Demarcação da Reserva Legal</b> para conduzir a interpretação do exercício.</p>
+<a class="button-link" href="https://dalvigeo.github.io/DescompliCAR/" rel="noopener" target="_blank">Abrir DescompliCAR</a>
+<p style="font-size:8.7pt;word-break:break-all">https://dalvigeo.github.io/DescompliCAR/</p>
+<p>Nesta atividade, considera-se que <b>toda a vegetação nativa existente no imóvel atual corresponde à Reserva Legal que recai sobre a parcela</b>, uma vez que o cenário didático não indica desmatamento posterior.</p>
+</div>
+<h3>4.c) Copiar a AVN para RESERVA LEGAL</h3>
+<div class="copy-flow">
+<div class="cf-node"><b>VEGETAÇÃO NATIVA</b><small>camada de origem</small></div>
+<div class="cf-arrow">→</div>
+<div class="cf-step"><img alt="Selecionar" src="assets/icons/qgis/mActionSelectRectangle.svg"/><span>Selecionar feição</span></div>
+<div class="cf-arrow">→</div>
+<div class="cf-step"><img alt="Copiar" src="assets/icons/qgis/mActionEditCopy.svg"/><span>Copiar<br/><kbd>Ctrl+C</kbd></span></div>
+<div class="cf-arrow">→</div>
+<div class="cf-node target"><b>RESERVA LEGAL</b><small>ativar e colocar em edição</small></div>
+<div class="cf-arrow">→</div>
+<div class="cf-step"><img alt="Colar" src="assets/icons/qgis/mActionEditPaste.svg"/><span>Colar<br/><kbd>Ctrl+V</kbd></span></div>
+</div>
+<div class="micro-note">A AVN continua existindo em VEGETAÇÃO NATIVA; por isso a operação correta é Copiar.</div>
+<div class="finish">
+<div class="finish-title">Finalizar esta etapa - RESERVA LEGAL</div>
+<div class="finish-grid">
+<div class="finish-action">
+<img alt="Salvar edições" src="assets/icons/qgis/mActionSaveEdits.svg"/>
+<div><strong>1. Salvar edições da camada</strong><br/>Clique em <b>Salvar edições da camada</b> para gravar as alterações realizadas em <b>RESERVA LEGAL</b>.</div>
+</div>
+<div class="finish-arrow">→</div>
+<div class="finish-action">
+<img alt="Alternar edição" src="assets/icons/qgis/mActionToggleEditing.svg"/>
+<div><strong>2. Sair do modo de edição</strong><br/>Clique em <b>Alternar edição</b>. A camada não deve permanecer em edição ao concluir a etapa.</div>
+</div>
+</div>
+</div>
+</div></details><details class="topic"><summary><h2>5. Conferir atributos e processar APPs</h2></summary><div class="topic-body">
+<h3>5.a) Conferir e preencher todos os atributos</h3>
+<div class="warn"><strong>Antes de exportar, todas as geometrias devem estar corretamente atributadas.</strong> Verifique AREA TOTAL DO IMÓVEL, MATRÍCULA/POSSE, ÁREA ALTERADA, VEGETAÇÃO NATIVA, RESERVA LEGAL, REPRESA, RIO/RIO ÁREA, NASCENTE e CONSTRUÇÕES.</div>
+<div class="compare">
+<div class="compare-card">
+<h4><img alt="Tabela de atributos" src="assets/icons/qgis/mActionOpenTable.svg"/> Tabela de atributos</h4>
+<p>Coloque a camada em edição, abra a Tabela de Atributos e escolha os valores nas listas suspensas, feição por feição.</p>
+</div>
+<div class="compare-card">
+<h4><img alt="Modificar atributos" src="assets/icons/qgis/mActionMultiEdit.svg"/> Modificar atributos das feições selecionadas</h4>
+<p>Quando duas ou mais feições devam receber exatamente os mesmos atributos, selecione-as e aplique os valores simultaneamente.</p>
+</div>
+</div>
+<h3>5.b) Processar as APPs no projeto</h3>
+<div class="box">
+<p>Depois que hidrografia, uso do solo e atributos estiverem consistentes, execute o modelo <b>05. Processar APP's</b> disponível em <b>Projeto → Modelos</b>.</p>
+<p>As camadas do grupo <b>APPS PROCESSADAS</b> são utilizadas para conferência e diagnóstico no projeto. O processamento oficial e o croqui final continuam sendo obtidos no SIMLAM.</p>
+</div>
+<div class="figure"><img alt="Resultado após caracterização e atributos" src="assets/img/atividade-02/07-resultado-caracterizacao.webp"/><div class="caption">Resultado de referência após a caracterização, atribuição e processamento das camadas.</div></div>
+<div class="model-reminder"><span class="model-badge">M</span><div><strong>Após executar o modelo:</strong> execute também <b>01.3. Atualizar Camadas após Importação</b> antes de continuar.</div></div></div></details><details class="topic"><summary><h2>6. Exportar os Shapefiles</h2></summary><div class="topic-body">
+<h3>6.a) Executar 10. Exportar shapes (.ZIP)</h3>
+<div class="grid-2">
+<div class="figure"><img alt="Exportar shapes da Atividade 02" src="assets/img/atividade-02/08-exportar-shapes.png"/><div class="caption">Exemplo de configuração da exportação da Atividade 02.</div></div>
+<div class="box">
+<ol>
+<li>Acesse <b>Projeto → Modelos → 10. Exportar shapes (.ZIP) → Executar...</b>.</li>
+<li>Informe uma identificação, por exemplo <b>atividade_02</b>.</li>
+<li>Mantenha <b>Verificar atributos antes de exportar</b> marcado.</li>
+<li>Escolha a pasta de destino.</li>
+<li>Execute o modelo.</li>
+</ol>
+<p>Conclua a exportação e aguarde a geração do ZIP. A coordenada que será utilizada no processamento está apresentada de forma copiável na etapa seguinte.</p>
+</div>
+</div>
+<h3>6.b) Corrigir erros de atributos antes de prosseguir</h3>
+<div class="figure"><img alt="Erro de atributo na exportação" src="assets/img/atividade-02/09-erro-atributo-exportacao.png"/><div class="caption">Exemplo: a exportação identifica uma APMP com atributo NOME inválido/vazio e interrompe a geração do ZIP.</div></div>
+<div class="danger"><strong>Se a validação falhar, não ignore o erro.</strong> O log informa a camada e a inconsistência encontrada. Volte ao projeto, coloque a camada indicada em edição, corrija o atributo, salve, encerre a edição e execute novamente a exportação.</div>
+</div></details><details class="topic"><summary><h2>7. Conferência no Simulador e resultado esperado</h2></summary><div class="topic-body"><a class="simulator-button" href="http://simlam.idaf.es.gov.br/portal/geoprocessamento/simulador-de-importacao-de-shape-dominialidade" rel="noopener" target="_blank">Acessar o Simulador de Importação de Shape</a><div class="coord-panel">
+<div class="coord-title">Coordenada central do empreendimento — use estes valores no processamento</div>
+<div class="coord-row"><code>360348,0000</code><button class="copy-button" data-copy-value="360348,0000" type="button">Copiar</button></div>
+<div class="coord-row"><code>7868364,0000</code><button class="copy-button" data-copy-value="7868364,0000" type="button">Copiar</button></div>
+<div class="clipboard-tip"><strong>Antes de copiar:</strong> pressione <kbd>Windows + V</kbd>. Se o Windows solicitar, clique em <b>Ativar</b> para habilitar o histórico da Área de Transferência. Depois clique em <b>Copiar</b> nos dois valores. Assim, as duas coordenadas ficam disponíveis no histórico para preencher Easting e Northing sem precisar voltar ao guia.</div>
+</div><div class="note"><strong>Envio ao Simulador.</strong> Informe o próprio CPF; se houver processamento anterior, use <b>Reenviar</b>. Os campos UTM / SIRGAS2000 / 24k já ficam travados pelo sistema. Preencha somente Easting e Northing, processe/reprocesse Dados GEOBASES, escolha o ZIP e clique em Enviar.</div>
+<div class="grid-2">
+<div>
+<h4>Referências quantitativas</h4>
+<table class="ref-values">
+<tr><th>Camada</th><th>Referência</th></tr>
+<tr><td>AREA TOTAL DO IMÓVEL</td><td>1 feição; aproximadamente 9,787 ha</td></tr>
+<tr><td>ÁREA ALTERADA</td><td>4 feições</td></tr>
+<tr><td>VEGETAÇÃO NATIVA</td><td>1 feição; aproximadamente 2,0955 ha</td></tr>
+<tr><td>RESERVA LEGAL</td><td>1 feição; aproximadamente 2,0955 ha</td></tr>
+<tr><td>REPRESA</td><td>2 feições</td></tr>
+<tr><td>RIO ÁREA</td><td>2 feições</td></tr>
+<tr><td>NASCENTE</td><td>1 feição</td></tr>
+<tr><td>CONSTRUÇÕES</td><td>2 feições</td></tr>
+</table>
+<div class="warn"><strong>Valores de referência, não metas rígidas.</strong> Pequenas diferenças geométricas decorrentes da digitalização são aceitáveis.</div>
+</div>
+<div class="figure"><img alt="Resultado esperado da Atividade 02 no QGIS" src="assets/img/atividade-02/resultado-esperado-qgis.png"/><div class="caption"><strong>Resultado esperado.</strong> Referência visual correta do projeto ao final da Atividade 02, com as feições construídas e classificadas.</div></div>
+</div>
+<div class="cleanup-guidance"><div class="model-guidance-head"><span class="model-badge">M</span><div><strong>Encerrar a atividade — Limpar projeto atual</strong><small>Projeto → Modelos → 12. Limpar projeto atual → Executar...</small></div></div><p><strong>Execute somente depois de o processamento estar aprovado e o croqui ter sido conferido.</strong> A limpeza prepara o Módulo CAR para o próximo imóvel/atividade e evita que feições do trabalho anterior permaneçam no projeto.</p><div class="figure"><img alt="Modelo Limpar projeto atual" src="assets/img/modulo-car/limpar-projeto-atual.webp"/><div class="caption">Após a aprovação do croqui: Projeto → Modelos → 12. Limpar projeto atual → Executar...</div></div></div></div></details><details class="topic"><summary><h2>8. Checklist final</h2></summary><div class="topic-body">
+<ul class="checklist">
+<li><input class="ck" type="checkbox"/><span>KML carregado e conferido sobre a ortofoto.</span></li>
+<li><input class="ck" type="checkbox"/><span>Geometria copiada para AREA TOTAL DO IMÓVEL.</span></li>
+<li><input class="ck" type="checkbox"/><span>MATRÍCULA/POSSE criada e atributos documentais preenchidos.</span></li>
+<li><input class="ck" type="checkbox"/><span>ÁREA ALTERADA criada a partir da APMP por Copiar (Ctrl+C) + Colar (Ctrl+V).</span></li>
+<li><input class="ck" type="checkbox"/><span>AVN separada e transferida por Ctrl+X para VEGETAÇÃO NATIVA.</span></li>
+<li><input class="ck" type="checkbox"/><span>Duas represas separadas e transferidas para REPRESA.</span></li>
+<li><input class="ck" type="checkbox"/><span>Área de FLORESTA-PLANTADA identificada na AA.</span></li>
+<li><input class="ck" type="checkbox"/><span>Duas construções classificadas como OUTRO na AA e copiadas para CONSTRUÇÕES.</span></li>
+<li><input class="ck" type="checkbox"/><span>Dois trechos de RIO_LINHA desenhados com largura 1.</span></li>
+<li><input class="ck" type="checkbox"/><span>Modelo 04. Rio Linha para Rio Área executado.</span></li>
+<li><input class="ck" type="checkbox"/><span>Nascente inserida.</span></li>
+<li><input class="ck" type="checkbox"/><span>Dados da Reserva Legal avaliados no DescompliCAR.</span></li>
+<li><input class="ck" type="checkbox"/><span>AVN copiada para RESERVA LEGAL.</span></li>
+<li><input class="ck" type="checkbox"/><span>Todos os atributos conferidos.</span></li>
+<li><input class="ck" type="checkbox"/><span>APPs processadas para referência.</span></li>
+<li><input class="ck" type="checkbox"/><span>Nenhuma camada ficou indevidamente em edição.</span></li>
+<li><input class="ck" type="checkbox"/><span>Exportação executada com validação de atributos.</span></li>
+<li><input class="ck" type="checkbox"/><span>Coordenadas centrais copiadas com Windows + V, ZIP submetido ao Simulador e resultado conferido.</span></li>
+</ul>
+</div></details><details class="topic"><summary><h2>9. Referência rápida das ferramentas</h2></summary><div class="topic-body">
+<table class="quick">
+<tr><th class="qi">Ícone</th><th>Ferramenta</th><th>Localização</th><th>Uso</th></tr>
+<tr><td class="qi"><img src="assets/icons/qgis/mActionAddOgrLayer.svg"/></td><td>Adicionar Camada Vetorial</td><td>Camada → Adicionar Camada → Adicionar Camada Vetorial...</td><td>Carregar o KML.</td></tr>
+<tr><td class="qi"><img src="assets/icons/qgis/mActionEditCopy.svg"/></td><td>Copiar feições</td><td>Editar → Copiar • Ctrl+C</td><td>Manter a origem e criar cópia em outra camada.</td></tr>
+<tr><td class="qi"><img src="assets/icons/qgis/mActionEditCut.svg"/></td><td>Recortar feições</td><td>Editar → Recortar • Ctrl+X</td><td>Transferir feições que não devem permanecer na camada de origem.</td></tr>
+<tr><td class="qi"><img src="assets/icons/qgis/mActionEditPaste.svg"/></td><td>Colar feições</td><td>Editar → Colar • Ctrl+V</td><td>Inserir na camada de destino em edição.</td></tr>
+<tr><td class="qi"><img src="assets/icons/qgis/mActionSplitFeatures.svg"/></td><td>Quebrar feição</td><td>Barra Digitalização Avançada</td><td>Separar classes que alcançam o limite da AA.</td></tr>
+<tr><td class="qi"><img src="assets/icons/qgis/mActionFillRing.svg"/></td><td>Preencher anel</td><td>Barra Digitalização Avançada</td><td>Criar feições internas, como represas e construções.</td></tr>
+<tr><td class="qi"><img src="assets/icons/qgis/mActionCaptureLine.svg"/></td><td>Adicionar feição de linha</td><td>Barra Digitalização</td><td>Desenhar RIO_LINHA.</td></tr>
+<tr><td class="qi"><img src="assets/icons/qgis/mActionCapturePoint.svg"/></td><td>Adicionar feição de ponto</td><td>Barra Digitalização</td><td>Inserir a nascente.</td></tr>
+<tr><td class="qi"><img src="assets/icons/qgis/mActionOpenTable.svg"/></td><td>Tabela de Atributos</td><td>Botão direito na camada → Abrir Tabela de Atributos</td><td>Conferir/preencher atributos.</td></tr>
+<tr><td class="qi"><img src="assets/icons/qgis/mActionMultiEdit.svg"/></td><td>Modificar atributos de feições selecionadas</td><td>Editar → Modificar atributos das feições selecionadas</td><td>Aplicar o mesmo atributo a várias feições.</td></tr>
+<tr><td class="qi"><span class="model-badge">M</span></td><td>04. Rio Linha para Rio Área</td><td>Projeto → Modelos</td><td>Converter linhas em áreas com base na largura.</td></tr>
+<tr><td class="qi"><span class="model-badge">M</span></td><td>05. Processar APP's</td><td>Projeto → Modelos</td><td>Gerar APPs de referência no projeto.</td></tr>
+<tr><td class="qi"><span class="model-badge">M</span></td><td>10. Exportar shapes (.ZIP)</td><td>Projeto → Modelos</td><td>Validar atributos e gerar o ZIP.</td></tr>
+</table>
+<div class="footer"><strong>Material de apoio da atividade prática.</strong> A interpretação documental da Reserva Legal é utilizada nesta atividade como cenário didático e deve ser analisada conjuntamente com os documentos e com a ferramenta de diagnóstico indicada.</div>
+</div></details></div>
+</section>
+<section class="course-unit" data-result-caption="Resultado esperado — Atividade 03" data-result-image="assets/img/atividade-03/09-reserva-legal-final.webp" data-title="Atividade 03 — Construção a partir das coordenadas da matrícula" id="atividade-03">
+<div class="sheet"><div class="print-footer">Curso QGIS aplicado ao CAR • Atividade 03 • Matrícula georreferenciada</div>
+<header class="header"><div class="header-text"><div class="kicker">Curso QGIS aplicado ao Cadastro Ambiental Rural</div><h1>Atividade 03 — Construção do imóvel a partir das coordenadas da matrícula</h1><div class="subtitle">Extração das coordenadas da matrícula georreferenciada, polígono por pontos, análise temporal da vegetação, Reserva Legal, exportação e validação.</div></div><img alt="QGIS Aplicado ao CAR" class="logo" src="assets/img/logo/logo-dalvi-geotecnologias-cbee9e2874040b.png"/></header>
+<div class="project-start"><div class="project-icon">Q</div><div><strong>Antes de iniciar: abra o arquivo <code>Modulo_CAR.qgz</code>.</strong><br/>Toda a construção espacial desta atividade será realizada nesse projeto.</div></div>
+<div class="model-guidance model-update-full">
+<div class="model-guidance-head"><span class="model-badge">M</span><div><strong>Atualizar as camadas antes de continuar</strong><small>Projeto → Modelos → 01.3. Atualizar Camadas após Importação → Executar...</small></div></div>
+<p>Logo após abrir o <b>Modulo_CAR.qgz</b>, execute <b>01.3. Atualizar Camadas após Importação</b>. O modelo atualiza as referências/localizações utilizadas pelo projeto no computador atual.</p>
+<div class="figure"><img alt="Atualizar Camadas após Importação" src="assets/img/modulo-car/atualizar-camadas-apos-importacao.webp"/><div class="caption">Caminho do modelo utilizado para atualizar as camadas do projeto.</div></div>
+<div class="note"><strong>Repita este procedimento após ferramentas automatizadas do Módulo CAR</strong> que importem, criem, substituam ou atualizem dados — por exemplo Importar Shape, Polígono a partir de ponto, Rio Linha para Rio Área e Gerar Faixa de Domínio.</div>
+</div>
+<div class="box objective"><strong>Objetivo.</strong> Construir o imóvel da Matrícula nº 3.003 a partir de sua tabela de coordenadas georreferenciadas, interpretar a evolução da cobertura vegetal com referência em 22/07/2008, classificar o uso atual, compor a Reserva Legal e validar o arquivo no Simulador de Importação.</div>
+<div class="workflow"><div class="wf">Matrícula</div><div class="wf-arrow">→</div><div class="wf">TXT de coordenadas</div><div class="wf-arrow">→</div><div class="wf">Polígono</div><div class="wf-arrow">→</div><div class="wf">Histórico 2008</div><div class="wf-arrow">→</div><div class="wf">Uso atual</div><div class="wf-arrow">→</div><div class="wf">Reserva Legal</div><div class="wf-arrow">→</div><div class="wf green">Exportar e validar</div></div>
+<details class="topic" open=""><summary><h2>1. Documentação e extração das coordenadas</h2></summary><div class="topic-body">
+<h3>1.a) Reconhecer a documentação do imóvel</h3>
+<table class="source-table"><tr><th>Documento</th><th>Uso nesta atividade</th></tr><tr><td><b>Certidão Matrícula 3003.pdf</b></td><td>Fonte principal da área atual e da tabela georreferenciada. Área: aproximadamente <b>29,5474 ha</b>; SIRGAS 2000 / UTM 24S.</td></tr><tr><td><b>Certidão — Matrícula 303.pdf</b></td><td>Registro anterior, utilizado como apoio para compreender a origem/desmembramentos do imóvel e a análise histórica.</td></tr><tr><td><b>CCIR 2026 — Sítio Castanheira.pdf</b></td><td>Consulta dos dados cadastrais solicitados pelos formulários.</td></tr><tr><td><b>PdfDoMapa 3003.pdf</b></td><td>Referência do resultado final aprovado.</td></tr><tr><td><b>RelatorioImportacao 3003.pdf</b></td><td>Conferência das feições reconhecidas no processamento, especialmente das represas.</td></tr></table>
+<div class="warn"><strong>Data de referência para a análise histórica: 22/07/2008.</strong> A caracterização do uso atual deve considerar a imagem mais recente disponível, mas a Vegetação Nativa e a Reserva Legal exigem atenção especial à evolução temporal.</div>
+<h3>1.b) Capturar a tabela de coordenadas da matrícula</h3>
+<div class="grid-2"><div><ol class="steps"><li><div>Abra a <b>Matrícula 3.003</b> e localize a tabela da averbação de georreferenciamento.</div></li><li><div>Pressione <kbd>Windows</kbd> + <kbd>Shift</kbd> + <kbd>S</kbd> e capture somente a tabela, garantindo que os vértices e as colunas <b>Este / X</b> e <b>Norte / Y</b> fiquem legíveis.</div></li><li><div>Cole/anexe a captura no ChatGPT e use o prompt abaixo para gerar o TXT.</div></li></ol></div><div class="figure"><img alt="Tabela de coordenadas da Matrícula 3003" src="assets/img/atividade-03/00-tabela-coordenadas-matricula.webp"/><div class="caption">Trecho da tabela georreferenciada da Matrícula 3.003.</div></div></div>
+<div class="prompt-card"><div class="prompt-head"><strong>Prompt para extrair as coordenadas</strong><div><button class="copy-button" data-copy-target="#prompt-atv03-coordenadas" type="button">Copiar prompt</button> <a class="button-link chatgpt-link" href="https://chatgpt.com/" target="_blank">Abrir ChatGPT ↗</a></div></div><pre id="prompt-atv03-coordenadas">Analise a imagem da tabela de coordenadas da matrícula e extraia somente os vértices e as coordenadas planas UTM.
+
+Gere o conteúdo de um arquivo TXT separado por UM ÚNICO ESPAÇO, com o cabeçalho:
+Vertice X_UTM Y_UTM
+
+Regras:
+1. Use a ordem apresentada na tabela da matrícula.
+2. Use a coordenada Este/X como X_UTM e Norte/Y como Y_UTM.
+3. Remova separadores de milhar e mantenha a vírgula como separador decimal. Ex.: 364814,070 7880130,940.
+4. Renumere as linhas sequencialmente como 01, 02, 03... para garantir a ordenação no QGIS. Se a última linha for o fechamento e repetir as coordenadas do primeiro vértice, mantenha-a como o próximo número sequencial, sem repetir o identificador 01.
+5. Não altere nem reordene os vértices com base na forma do polígono. Não invente valores ausentes ou ilegíveis.
+6. Antes de gerar a resposta, confira se a sequência é contínua, se todas as linhas possuem X e Y numéricos e, quando houver linha de fechamento, se a primeira e a última coordenada são idênticas.
+7. Retorne somente o conteúdo do TXT em um bloco de código, sem explicações adicionais.</pre></div>
+<div class="note"><strong>Conferência obrigatória.</strong> Nesta matrícula há 11 vértices distintos e uma linha final de fechamento. O TXT desta atividade deve resultar em <b>12 registros de coordenadas</b>, numerados sequencialmente. Compare visualmente o resultado com a tabela antes de importar.</div>
+<h3>1.c) Salvar e importar o TXT no QGIS</h3>
+<div class="grid-2"><div class="figure"><img alt="Adicionar Camada de Texto Delimitado" src="assets/img/atividade-03/01-importar-coordenadas-txt.webp"/><div class="caption">Configuração de referência para importar o TXT gerado.</div></div><div><table class="settings"><tr><th>Delimitador</th><td><b>Espaço</b>.</td></tr><tr><th>Cabeçalho</th><td>Primeiro registro contém nomes dos campos.</td></tr><tr><th>Decimal</th><td>Marcar <b>Separador decimal é vírgula</b>.</td></tr><tr><th>Geometria</th><td>Coordenadas de ponto.</td></tr><tr><th>X</th><td><b>X_UTM</b></td></tr><tr><th>Y</th><td><b>Y_UTM</b></td></tr><tr><th>SRC</th><td><b>EPSG:31984 — SIRGAS 2000 / UTM zone 24S</b></td></tr></table></div></div>
+<div class="figure"><img alt="Vértices importados" src="assets/img/atividade-03/02-vertices-importados.webp"/><div class="caption">Resultado esperado: 12 pontos carregados, incluindo a linha de fechamento.</div></div>
+</div></details>
+<details class="topic"><summary><h2>2. Converter os vértices em polígono e construir a dominialidade</h2></summary><div class="topic-body">
+<h3>2.a) Executar Polígono a partir de ponto</h3>
+<div class="grid-2"><div class="figure"><img alt="Menu Polígono a partir de ponto" src="assets/img/atividade-03/03-menu-poligono-a-partir-de-ponto.webp"/><div class="caption">Projeto → Modelos → 02. Polígono a partir de ponto → Executar...</div></div><div class="figure"><img alt="Parâmetros Polígono a partir de ponto" src="assets/img/atividade-03/04-parametros-poligono-a-partir-de-ponto.webp"/><div class="caption">Use o campo <b>Vertice</b> para ordenar e mantenha a saída como camada temporária.</div></div></div>
+<div class="warn"><strong>A sequência dos vértices é determinante.</strong> O modelo liga os pontos na ordem informada pelo campo de ordenação. Se o TXT estiver fora de sequência, o polígono poderá cruzar a si mesmo ou representar um perímetro incorreto. Por isso, a conferência feita na etapa anterior é indispensável.</div>
+<table class="settings"><tr><th>Vértices</th><td>Camada de pontos importada do TXT.</td></tr><tr><th>Ordenar pelo campo</th><td><b>Vertice</b>.</td></tr><tr><th>Campo de grupo</th><td>Deixar vazio.</td></tr><tr><th>Atualizar ATP [Opcional]</th><td>Deixar desmarcado nesta etapa.</td></tr><tr><th>Saída</th><td><b>Criar camada temporária</b>.</td></tr></table>
+<div class="figure"><img alt="Polígono temporário gerado" src="assets/img/atividade-03/05-poligono-temporario-gerado.webp"/><div class="caption">O modelo deve produzir uma única geometria de polígono correspondente ao perímetro da matrícula.</div></div>
+<div class="model-reminder"><span class="model-badge">M</span><div><strong>Após executar o modelo:</strong> execute também <b>01.3. Atualizar Camadas após Importação</b> antes de continuar.</div></div>
+<h3>2.b) Transferir o polígono para AREA TOTAL DO IMÓVEL</h3>
+<div class="copy-flow"><div class="cf-node"><b>Polígono Gerado</b><small>camada de origem</small></div><div class="cf-arrow">→</div><div class="cf-step"><img alt="Selecionar" src="assets/icons/qgis/mActionSelectRectangle.svg"/><span>Selecionar feição</span></div><div class="cf-arrow">→</div><div class="cf-step"><img alt="Copiar" src="assets/icons/qgis/mActionEditCopy.svg"/><span>Copiar<br/><kbd>Ctrl+C</kbd></span></div><div class="cf-arrow">→</div><div class="cf-node target"><b>AREA TOTAL DO IMÓVEL</b><small>ativar e colocar em edição</small></div><div class="cf-arrow">→</div><div class="cf-step"><img alt="Colar" src="assets/icons/qgis/mActionEditPaste.svg"/><span>Colar<br/><kbd>Ctrl+V</kbd></span></div></div><div class="micro-note">A camada temporária permanece apenas como apoio; copie a geometria para a camada oficial do projeto.</div>
+<div class="finish"><div class="finish-title">Finalizar esta etapa - AREA TOTAL DO IMÓVEL</div><div class="finish-grid">
+<div class="finish-action"><img alt="Salvar edições" src="assets/icons/qgis/mActionSaveEdits.svg"/><div><strong>1. Salvar edições da camada</strong><br/>Clique em <b>Salvar edições da camada</b> para gravar as alterações realizadas em <b>AREA TOTAL DO IMÓVEL</b>.</div></div>
+<div class="finish-arrow">→</div>
+<div class="finish-action"><img alt="Alternar edição" src="assets/icons/qgis/mActionToggleEditing.svg"/><div><strong>2. Sair do modo de edição</strong><br/>Clique em <b>Alternar edição</b>. Ao concluir, a camada não deve permanecer em edição.</div></div>
+</div></div>
+<h3>2.c) Criar MATRÍCULA/POSSE e ÁREA ALTERADA</h3>
+<div class="copy-flow"><div class="cf-node"><b>AREA TOTAL DO IMÓVEL</b><small>camada de origem</small></div><div class="cf-arrow">→</div><div class="cf-step"><img alt="Selecionar" src="assets/icons/qgis/mActionSelectRectangle.svg"/><span>Selecionar feição</span></div><div class="cf-arrow">→</div><div class="cf-step"><img alt="Copiar" src="assets/icons/qgis/mActionEditCopy.svg"/><span>Copiar<br/><kbd>Ctrl+C</kbd></span></div><div class="cf-arrow">→</div><div class="cf-node target"><b>MATRÍCULA/POSSE</b><small>ativar e colocar em edição</small></div><div class="cf-arrow">→</div><div class="cf-step"><img alt="Colar" src="assets/icons/qgis/mActionEditPaste.svg"/><span>Colar<br/><kbd>Ctrl+V</kbd></span></div></div><div class="micro-note">A geometria deve permanecer na ATP; use Copiar.</div>
+<div class="finish"><div class="finish-title">Finalizar esta etapa - MATRÍCULA/POSSE</div><div class="finish-grid">
+<div class="finish-action"><img alt="Salvar edições" src="assets/icons/qgis/mActionSaveEdits.svg"/><div><strong>1. Salvar edições da camada</strong><br/>Clique em <b>Salvar edições da camada</b> para gravar as alterações realizadas em <b>MATRÍCULA/POSSE</b>.</div></div>
+<div class="finish-arrow">→</div>
+<div class="finish-action"><img alt="Alternar edição" src="assets/icons/qgis/mActionToggleEditing.svg"/><div><strong>2. Sair do modo de edição</strong><br/>Clique em <b>Alternar edição</b>. Ao concluir, a camada não deve permanecer em edição.</div></div>
+</div></div>
+<p>Depois, <b>copie</b> a geometria da <b>APMP</b> para <b>ÁREA ALTERADA</b>. A feição precisa permanecer na APMP.</p>
+<div class="copy-flow"><div class="cf-node"><b>APMP</b><small>camada de origem</small></div><div class="cf-arrow">→</div><div class="cf-step"><img alt="Selecionar" src="assets/icons/qgis/mActionSelectRectangle.svg"/><span>Selecionar feição</span></div><div class="cf-arrow">→</div><div class="cf-step"><img alt="Copiar" src="assets/icons/qgis/mActionEditCopy.svg"/><span>Copiar<br/><kbd>Ctrl+C</kbd></span></div><div class="cf-arrow">→</div><div class="cf-node target"><b>ÁREA ALTERADA</b><small>ativar e colocar em edição</small></div><div class="cf-arrow">→</div><div class="cf-step"><img alt="Colar" src="assets/icons/qgis/mActionEditPaste.svg"/><span>Colar<br/><kbd>Ctrl+V</kbd></span></div></div><div class="micro-note">APMP → AA usa Ctrl+C, pois a mesma geometria permanece na camada APMP.</div>
+<div class="finish"><div class="finish-title">Finalizar esta etapa - ÁREA ALTERADA</div><div class="finish-grid">
+<div class="finish-action"><img alt="Salvar edições" src="assets/icons/qgis/mActionSaveEdits.svg"/><div><strong>1. Salvar edições da camada</strong><br/>Clique em <b>Salvar edições da camada</b> para gravar as alterações realizadas em <b>ÁREA ALTERADA</b>.</div></div>
+<div class="finish-arrow">→</div>
+<div class="finish-action"><img alt="Alternar edição" src="assets/icons/qgis/mActionToggleEditing.svg"/><div><strong>2. Sair do modo de edição</strong><br/>Clique em <b>Alternar edição</b>. Ao concluir, a camada não deve permanecer em edição.</div></div>
+</div></div>
+<div class="figure"><img alt="ATP construída" src="assets/img/atividade-03/05b-atp-construida.webp"/><div class="caption">Referência após a construção inicial do imóvel.</div></div>
+</div></details>
+<details class="topic"><summary><h2>3. Análise temporal da Vegetação Nativa e classificação do uso do solo</h2></summary><div class="topic-body">
+<div class="history-guidance"><div class="history-text"><strong>Antes de delimitar a Vegetação Nativa: consulte o histórico de imagens.</strong><p>O <b>uso do solo atual</b> deve ser interpretado com a imagem mais recente e adequada disponível. Para <b>VEGETAÇÃO NATIVA</b> e, posteriormente, para a <b>RESERVA LEGAL</b>, compare também bases de diferentes datas para compreender a permanência, evolução ou alteração da cobertura vegetal.</p><p>As imagens históricas são elementos de apoio à interpretação temporal e devem ser analisadas em conjunto com a situação atual e a documentação disponível.</p></div><div class="figure history-shot"><img alt="Bases históricas de ortofotos e satélite" src="assets/img/modulo-car/bases-historicas-ortofotos.webp"/><div class="caption">Alterne entre Google/Bing e as ortofotos disponíveis, especialmente 2019/2020, 2012/2015 e 2007/2008 quando pertinentes.</div></div></div>
+<h3>3.a) Usar a ortofoto histórica de 2007/2008</h3>
+<div class="grid-2"><div><p>Para esta atividade, comece a análise da vegetação pela base histórica correspondente à data de referência de <b>22/07/2008</b>. Ative a <b>ORTOFOTO 2007/2008</b> e identifique as áreas que apresentavam cobertura vegetal nesse período.</p><div class="note"><strong>Primeiro resultado:</strong> a delimitação histórica serve para reconhecer a cobertura existente na data de referência. Ela ainda deverá ser comparada com uma imagem atual antes da classificação final.</div></div><div class="figure"><img alt="Painel de bases históricas" src="assets/img/atividade-03/12-bases-historicas-painel.webp"/><div class="caption">Exemplo de ativação das bases históricas no painel Camadas.</div></div></div>
+<h3>3.b) Isolar a vegetação identificada na AA</h3>
+<div class="tool-card edit-start"><div class="edit-callout"><img alt="Alternar edição" src="assets/icons/qgis/mActionToggleEditing.svg"/>ANTES DE USAR A FERRAMENTA: coloque a camada em edição</div>
+<div class="tool-head"><img alt="Alternar edição" class="tool-icon" src="assets/icons/qgis/mActionToggleEditing.svg"/><div><div class="tool-name">Alternar edição</div><div class="tool-location">Barra Digitalização</div></div></div>
+<div class="tool-grid"><div><span>Camada ativa</span><strong>ÁREA ALTERADA</strong></div><div><span>Pré-condição</span><strong>Vegetação de 2008 identificada sobre a ortofoto histórica</strong></div></div>
+<div class="tool-procedure"><span>Procedimento</span>Selecione <b>ÁREA ALTERADA</b> e clique em <b>Alternar edição</b> antes de usar as ferramentas de vetorização ou edição.</div><div class="tool-result"><span>Resultado esperado</span>A camada fica pronta para receber ou alterar feições.</div></div>
+<div class="compare"><div class="compare-card"><h4><img alt="Quebrar feição" src="assets/icons/qgis/mActionSplitFeatures.svg"/> Quebrar feição</h4><p>Use quando o limite da vegetação interceptar as bordas ou exigir um corte da feição existente.</p></div><div class="compare-card"><h4><img alt="Preencher anel" src="assets/icons/qgis/mActionFillRing.svg"/> Preencher anel</h4><p>Use quando a área a separar estiver inteiramente contida dentro da feição que está sendo editada.</p></div></div>
+<div class="warn"><strong>Não transfira para VEGETAÇÃO NATIVA ainda.</strong> Nesta etapa, apenas <b>isole dentro da própria ÁREA ALTERADA</b> as porções que apresentavam vegetação na imagem histórica de 2008. Elas devem permanecer na AA até a comparação com a imagem atual.</div>
+<div class="finish"><div class="finish-title">Finalizar esta etapa - ÁREA ALTERADA</div><div class="finish-grid">
+<div class="finish-action"><img alt="Salvar edições" src="assets/icons/qgis/mActionSaveEdits.svg"/><div><strong>1. Salvar edições da camada</strong><br/>Salve os recortes realizados em <b>ÁREA ALTERADA</b>.</div></div>
+<div class="finish-arrow">→</div>
+<div class="finish-action"><img alt="Alternar edição" src="assets/icons/qgis/mActionToggleEditing.svg"/><div><strong>2. Sair do modo de edição</strong><br/>Saia do modo de edição antes de trocar as bases e prosseguir com a comparação temporal.</div></div>
+</div></div>
+<h3>3.c) Adicionar e consultar Apple Maps Satélite</h3>
+<div class="grid-2"><div class="figure"><img alt="Script Adicionar Apple Maps Satellite" src="assets/img/atividade-03/13-script-apple-maps.webp"/><div class="caption">Caixa de Ferramentas de Processamento → Scripts → DalviGEO.</div></div><div class="figure"><img alt="Executar Adicionar Apple Maps Satellite" src="assets/img/atividade-03/06-adicionar-apple-maps-satellite.webp"/><div class="caption">Abra <b>Adicionar Apple Maps Satellite</b>, mantenha os parâmetros padrão e execute.</div></div></div>
+<div class="note"><strong>Como acessar:</strong> abra <b>Processamento → Caixa de Ferramentas</b>, expanda <b>Scripts → DalviGEO</b> e execute <b>Adicionar Apple Maps Satellite</b>. A camada depende de conexão com a internet e serve como uma das referências atuais para comparação visual.</div>
+<h3>3.d) Comparar 2008 com a situação atual</h3>
+<div class="figure"><img alt="Comparação com imagem atual" src="assets/img/atividade-03/07-analise-imagem-atual.webp"/><div class="caption">Troque para a base atual e verifique quais porções da vegetação histórica permaneceram e quais foram suprimidas.</div></div>
+<div class="tool-card edit-start"><div class="edit-callout"><img alt="Alternar edição" src="assets/icons/qgis/mActionToggleEditing.svg"/>ANTES DE AJUSTAR A CLASSIFICAÇÃO: coloque ÁREA ALTERADA em edição</div><div class="tool-head"><img alt="Alternar edição" class="tool-icon" src="assets/icons/qgis/mActionToggleEditing.svg"/><div><div class="tool-name">Comparar e subdividir ainda na ÁREA ALTERADA</div><div class="tool-location">Use a base atual como referência visual</div></div></div><div class="tool-procedure"><span>Procedimento</span>Compare as porções isoladas pela imagem de 2008 com a imagem atual. Faça os recortes necessários <b>ainda na camada ÁREA ALTERADA</b>, separando o que permanece como vegetação nativa do que foi suprimido.</div><div class="tool-result"><span>Resultado esperado</span>As porções suprimidas permanecem em ÁREA ALTERADA e recebem o atributo <b>AA em recuperação</b>; somente a vegetação que permanece na situação atual será transferida para VEGETAÇÃO NATIVA.</div></div>
+<p>Depois de concluir essa subdivisão na <b>ÁREA ALTERADA</b>, selecione apenas as feições que permanecem como vegetação nativa na imagem atual e transfira-as para <b>VEGETAÇÃO NATIVA</b> usando <b>Recortar</b> (<kbd>Ctrl+X</kbd>) e <b>Colar</b> (<kbd>Ctrl+V</kbd>).</p>
+<div class="copy-flow"><div class="cf-node"><b>ÁREA ALTERADA — AVN atual</b><small>somente vegetação preservada</small></div><div class="cf-arrow">→</div><div class="cf-step"><img alt="Selecionar" src="assets/icons/qgis/mActionSelectRectangle.svg"/><span>Selecionar feição</span></div><div class="cf-arrow">→</div><div class="cf-step"><img alt="Recortar" src="assets/icons/qgis/mActionEditCut.svg"/><span>Recortar<br/><kbd>Ctrl+X</kbd></span></div><div class="cf-arrow">→</div><div class="cf-node target"><b>VEGETAÇÃO NATIVA</b><small>ativar e colocar em edição</small></div><div class="cf-arrow">→</div><div class="cf-step"><img alt="Colar" src="assets/icons/qgis/mActionEditPaste.svg"/><span>Colar<br/><kbd>Ctrl+V</kbd></span></div></div>
+<div class="micro-note"><strong>Importante:</strong> as áreas suprimidas desde 2008 não são transferidas para VEGETAÇÃO NATIVA. Elas permanecem em ÁREA ALTERADA como <b>AA em recuperação</b>.</div>
+<div class="finish"><div class="finish-title">Finalizar esta etapa - VEGETAÇÃO NATIVA e ÁREA ALTERADA</div><div class="finish-grid"><div class="finish-action"><img alt="Salvar edições" src="assets/icons/qgis/mActionSaveEdits.svg"/><div><strong>1. Salvar as edições</strong><br/>Salve as alterações nas duas camadas após concluir a classificação.</div></div><div class="finish-arrow">→</div><div class="finish-action"><img alt="Alternar edição" src="assets/icons/qgis/mActionToggleEditing.svg"/><div><strong>2. Sair do modo de edição</strong><br/>Confirme que nenhuma das duas camadas permaneceu em edição.</div></div></div></div>
+<div class="official"><strong>Resultado conceitual.</strong> A camada VEGETAÇÃO NATIVA representa apenas a vegetação preservada na situação atual. As áreas com vegetação em 2008 que foram posteriormente suprimidas permanecem na ÁREA ALTERADA como <b>AA em recuperação</b> e poderão ser consideradas na composição da Reserva Legal quando aplicável ao diagnóstico.</div>
+<h3>3.e) Completar as demais classes atuais</h3>
+<p>Utilize a imagem atual para finalizar a classificação da AA: culturas perenes, floresta plantada e áreas classificadas como OUTRO. Delimite também as duas represas e as quatro construções.</p>
+<div class="grid-2"><div class="figure"><img alt="Classificação final" src="assets/img/atividade-03/08-classificacao-final.webp"/><div class="caption">Referência do projeto já com as principais classes de uso do solo.</div></div><div><div class="note"><strong>REPRESA:</strong> retire as duas feições da AA usando Ctrl+X e cole em REPRESA.</div><div class="note"><strong>CONSTRUÇÕES:</strong> nesta atividade as quatro construções permanecem na AA como OUTRO e são <b>copiadas</b> para CONSTRUÇÕES, não recortadas.</div></div></div><div class="at3-transfer-detail"><h4>Transferir as duas REPRESAS</h4><p>Depois de isoladas na ÁREA ALTERADA, as represas não devem permanecer classificadas como AA.</p><div class="copy-flow"><div class="cf-node"><b>ÁREA ALTERADA — REPRESAS</b><small>duas feições</small></div><div class="cf-arrow">→</div><div class="cf-step"><img alt="Recortar" src="assets/icons/qgis/mActionEditCut.svg"/><span>Recortar<br/><kbd>Ctrl+X</kbd></span></div><div class="cf-arrow">→</div><div class="cf-node target"><b>REPRESA</b><small>colocar em edição</small></div><div class="cf-arrow">→</div><div class="cf-step"><img alt="Colar" src="assets/icons/qgis/mActionEditPaste.svg"/><span>Colar<br/><kbd>Ctrl+V</kbd></span></div></div><h4>Copiar as quatro CONSTRUÇÕES</h4><p>As áreas construídas permanecem classificadas na AA como <b>OUTRO</b> e também precisam existir em CONSTRUÇÕES. Portanto, selecione as quatro feições e use <b>Copiar</b> (<kbd>Ctrl+C</kbd>) e <b>Colar</b> (<kbd>Ctrl+V</kbd>) na camada CONSTRUÇÕES em edição.</p></div>
+</div></details>
+<details class="topic"><summary><h2>4. Demarcar a Reserva Legal</h2></summary><div class="topic-body">
+<div class="note"><strong>Reserva Legal — confira novamente o histórico.</strong> Antes de definir a ARL, compare a imagem atual com as ortofotos históricas já consultadas para a Vegetação Nativa e considere a documentação do imóvel.</div>
+<h3>4.a) Analisar a documentação e o diagnóstico</h3>
+<p>Consulte a <b>Matrícula 3.003</b>, a <b>Matrícula 303</b> anterior e a evolução do imóvel. No cenário deste exercício, o imóvel atual <b>não possui Reserva Legal aprovada ou averbada</b>. Use os documentos e a análise temporal como suporte para o diagnóstico.</p><div class="doc-chronology"><strong>Leitura cronológica de apoio:</strong><ul><li>a Matrícula 303 registra área original de aproximadamente 125,5531 ha;</li><li>em 2006 houve desmembramento de 20,0000 ha;</li><li>em 2013, novo desmembramento de aproximadamente 29,8131 ha deu origem à Matrícula 3.003;</li><li>o georreferenciamento posterior da Matrícula 3.003 registra a área atual de aproximadamente 29,5474 ha.</li></ul><p>Use essa sequência apenas como apoio à interpretação documental e à análise da situação da Reserva Legal no exercício.</p></div>
+<div class="box objective"><h4>DescompliCAR — Diagnóstico para Demarcação da Reserva Legal</h4><p>Utilize a ferramenta para estruturar a análise antes de definir a composição espacial da ARL.</p><a class="button-link" href="https://dalvigeo.github.io/DescompliCAR/" target="_blank">Abrir DescompliCAR ↗</a></div>
+<h3>4.b) Compor a Reserva Legal</h3>
+<p>Nesta atividade, a Reserva Legal final é formada por diferentes situações de cobertura/uso:</p>
+<div class="formula">ARL = AVN preservada + AA em recuperação + parcela complementar em uso</div>
+<ol class="steps"><li><div><b>AVN preservada:</b> copie a vegetação nativa atual para RESERVA LEGAL. Ela continua existindo em VEGETAÇÃO NATIVA.</div></li><li><div><b>Áreas suprimidas desde 2008:</b> copie as feições classificadas como AA em recuperação para RESERVA LEGAL.</div></li><li><div><b>Complementação:</b> como essas áreas ainda não atingem o percentual necessário no resultado de referência, inclua uma porção adicional de área alterada/em uso conforme o diagnóstico até completar a ARL.</div></li></ol>
+<div class="note"><strong>Referência do exercício:</strong> a ARL resulta em aproximadamente <b>6,0602 ha (20,51%)</b>, distribuída em cinco feições: cerca de 2,4264 ha preservados, 2,3920 ha em recuperação e 1,2418 ha em uso. Pequenas diferenças de digitalização são aceitáveis.</div>
+<div class="figure"><img alt="Reserva Legal final" src="assets/img/atividade-03/09-reserva-legal-final.webp"/><div class="caption">Resultado visual de referência da Reserva Legal e das classes de uso do solo.</div></div>
+<div class="finish"><div class="finish-title">Finalizar esta etapa - RESERVA LEGAL</div><div class="finish-grid">
+<div class="finish-action"><img alt="Salvar edições" src="assets/icons/qgis/mActionSaveEdits.svg"/><div><strong>1. Salvar edições da camada</strong><br/>Clique em <b>Salvar edições da camada</b> para gravar as alterações realizadas em <b>RESERVA LEGAL</b>.</div></div>
+<div class="finish-arrow">→</div>
+<div class="finish-action"><img alt="Alternar edição" src="assets/icons/qgis/mActionToggleEditing.svg"/><div><strong>2. Sair do modo de edição</strong><br/>Clique em <b>Alternar edição</b>. Ao concluir, a camada não deve permanecer em edição.</div></div>
+</div></div>
+</div></details>
+<details class="topic"><summary><h2>5. Conferir atributos e processar as APPs</h2></summary><div class="topic-body">
+<h3>5.a) Conferir todos os atributos</h3>
+<div class="warn"><strong>Antes de exportar, nenhuma feição deve ficar sem atribuição adequada.</strong> Coloque cada camada em edição, abra a Tabela de Atributos e confira os valores nas listas suspensas. Quando várias feições tiverem exatamente os mesmos atributos, selecione-as e utilize <b>Modificar atributos das feições selecionadas</b>.</div>
+<div class="compare"><div class="compare-card"><h4><img alt="Tabela de atributos" src="assets/icons/qgis/mActionOpenTable.svg"/> Tabela de Atributos</h4><p>Use para revisar e preencher cada feição individualmente.</p></div><div class="compare-card"><h4><img alt="Modificar atributos" src="assets/icons/qgis/mActionMultiEdit.svg"/> Modificar atributos selecionados</h4><p>Use somente quando todas as feições selecionadas devam receber os mesmos valores.</p></div></div>
+<h3>5.b) Processar APPs quando aplicável</h3>
+<p>Execute o modelo <b>05. Processar APP's</b> para a conferência local do projeto e, depois, execute <b>01.3. Atualizar Camadas após Importação</b>. No resultado de referência desta atividade, o quadro oficial não apresenta APP processada.</p>
+<div class="model-reminder"><span class="model-badge">M</span><div><strong>Após executar o modelo:</strong> execute também <b>01.3. Atualizar Camadas após Importação</b> antes de continuar.</div></div>
+<div class="note"><strong>Lembrete:</strong> as APPs processadas no projeto são recursos de referência e conferência. O processamento/croqui oficial é aquele produzido pelo SIMLAM.</div>
+</div></details>
+<details class="topic"><summary><h2>6. Exportar os Shapefiles e abrir o simulador</h2></summary><div class="topic-body">
+<h3>6.a) Executar 10. Exportar shapes (.ZIP)</h3>
+<div class="figure"><img alt="Exportar shapes atividade 03" src="assets/img/atividade-03/10-exportar-shapes.webp"/><div class="caption">Projeto → Modelos → 10. Exportar shapes (.ZIP). Use uma identificação como <b>ATIVIDADE03</b>, mantenha a verificação de atributos e a abertura do simulador habilitadas.</div></div>
+<div class="warn"><strong>Se a exportação apontar atributo inválido ou ausente, corrija antes de prosseguir.</strong> Volte à camada indicada, coloque-a em edição, ajuste os atributos, salve, saia da edição e execute novamente a exportação.</div>
+<h3>6.b) Copiar a coordenada central do empreendimento</h3>
+<div class="figure"><img alt="Log com coordenada central" src="assets/img/atividade-03/11-log-exportacao-coordenada.webp"/><div class="caption">O log da ferramenta informa o ponto central utilizado no simulador.</div></div>
+<div class="coord-panel"><div class="coord-title">Coordenada central — Atividade 03</div><div class="coord-row"><code>365394,4447</code><button class="copy-button" data-copy-value="365394,4447" type="button">Copiar</button></div><div class="coord-row"><code>7879951,4650</code><button class="copy-button" data-copy-value="7879951,4650" type="button">Copiar</button></div><div class="clipboard-tip"><strong>Ative o histórico da Área de Transferência:</strong> pressione <kbd>Windows</kbd> + <kbd>V</kbd> e, se solicitado, clique em <b>Ativar</b>. Depois copie as duas coordenadas acima. Assim, ambas permanecem disponíveis para preencher Easting e Northing sem retornar ao guia.</div></div>
+<a class="simulator-button" href="http://simlam.idaf.es.gov.br/portal/geoprocessamento/simulador-de-importacao-de-shape-dominialidade" target="_blank">Acessar o Simulador de Importação de Shape</a>
+<p>No campo <b>Ponto de Coordenada Geográfica do Empreendimento</b>, <b>UTM / SIRGAS2000 / fuso 24k</b> já aparecem predefinidos e travados pelo sistema. Preencha somente <b>Easting</b> e <b>Northing</b> com os valores acima.</p>
+<ol class="steps"><li><div>Informe o seu próprio CPF.</div></li><li><div>Se houver um processamento anterior, clique em <b>Reenviar</b> para liberar a edição.</div></li><li><div>Cole Easting e Northing e processe/reprocesse <b>Dados GEOBASES</b>.</div></li><li><div>Clique em <b>Escolher arquivo</b>, selecione o ZIP exportado e clique em <b>Enviar</b>.</div></li><li><div>Aguarde o processamento. Se aprovado, será produzido o croqui; se reprovado, analise o relatório de erros e utilize <b>09. Verificar erros</b> no Módulo CAR.</div></li></ol>
+</div></details>
+<details class="topic"><summary><h2>7. Conferir o processamento e o resultado esperado</h2></summary><div class="topic-body">
+<h3>7.a) Conferir as represas no relatório de importação</h3>
+<div class="grid-2"><div><div class="warn"><strong>Atenção específica deste exercício.</strong> No PDF do mapa de referência, o quadro de áreas apresenta MASSA_D'ÁGUA sem valor, embora tenham sido vetorizadas duas represas. Quando ocorrer situação semelhante, não conclua imediatamente que as represas foram ignoradas.</div><p>Baixe o <b>Relatório de Importação</b> e confira a contagem das geometrias. No resultado desta atividade, o relatório aprovado registra <b>REPRESA = 2</b>, confirmando que as duas feições foram reconhecidas pelo processamento.</p><div class="note">Essa inconsistência de apresentação pode ocorrer no simulador em alguns cenários de barragens sem APP. O relatório de importação é a referência complementar para verificar o que foi efetivamente recebido/processado.<p style="margin-top:2mm"><strong>Observação do curso:</strong> no módulo credenciado esse comportamento tende a ser menos frequente; ainda assim, a conferência do Relatório de Importação continua recomendada.</p></div></div><div class="figure"><img alt="Relatório de importação aprovado" src="assets/img/atividade-03/18-relatorio-importacao.webp"/><div class="caption">Relatório de Importação de referência: processamento aprovado e duas feições REPRESA contabilizadas.</div></div></div>
+<h3>7.b) Comparar com o resultado de referência</h3>
+<div class="grid-2"><div class="figure"><img alt="Croqui oficial com imagem" src="assets/img/atividade-03/16-croqui-oficial-com-imagem.webp"/><div class="caption">Croqui com imagem do processamento de referência.</div></div><div class="figure"><img alt="Quadro de áreas" src="assets/img/atividade-03/17-quadro-areas.webp"/><div class="caption">Quadro oficial de áreas do resultado de referência.</div></div></div>
+<table class="ref-values"><tr><th>Classe</th><th>Referência aproximada</th></tr><tr><td>ATP / APMP</td><td>29,5474 ha</td></tr><tr><td>VEGETAÇÃO NATIVA</td><td>2,4264 ha — 8,21%</td></tr><tr><td>ÁREA ALTERADA</td><td>26,3553 ha</td></tr><tr><td>AA em recuperação</td><td>2,3920 ha</td></tr><tr><td>RESERVA LEGAL</td><td>6,0602 ha — 20,51%</td></tr><tr><td>CONSTRUÇÕES</td><td>4 feições — aproximadamente 0,1937 ha</td></tr><tr><td>REPRESAS</td><td>2 feições — aproximadamente 0,7657 ha no total; conferir pelo Relatório de Importação</td></tr><tr><td>APP</td><td>Sem área no resultado de referência</td></tr></table>
+<div class="warn"><strong>Os valores não são metas rígidas de digitalização.</strong> Use-os para conferência. Pequenas diferenças são admissíveis, desde que a geometria, a classificação e a lógica de sobreposição estejam corretas.</div>
+<div class="cleanup-guidance"><div class="model-guidance-head"><span class="model-badge">M</span><div><strong>Encerrar a atividade — Limpar projeto atual</strong><small>Projeto → Modelos → 12. Limpar projeto atual → Executar...</small></div></div><p><strong>Execute somente depois de o processamento estar aprovado e o croqui ter sido conferido.</strong> A limpeza prepara o Módulo CAR para o próximo imóvel/atividade e evita que feições do trabalho anterior permaneçam no projeto.</p><div class="figure"><img alt="Modelo Limpar projeto atual" src="assets/img/modulo-car/limpar-projeto-atual.webp"/><div class="caption">Após a aprovação do croqui: Projeto → Modelos → 12. Limpar projeto atual → Executar...</div></div></div>
+</div></details>
+<details class="topic"><summary><h2>8. Checklist final</h2></summary><div class="topic-body"><ul class="checklist">
+<li><input class="ck" type="checkbox"/><span>Modulo_CAR.qgz aberto e 01.3 Atualizar Camadas executado.</span></li><li><input class="ck" type="checkbox"/><span>Tabela de coordenadas capturada da matrícula e TXT conferido.</span></li><li><input class="ck" type="checkbox"/><span>12 registros de coordenadas importados em EPSG:31984.</span></li><li><input class="ck" type="checkbox"/><span>Polígono temporário gerado com o campo Vertice como ordenação.</span></li><li><input class="ck" type="checkbox"/><span>ATP, MATRÍCULA/POSSE, APMP e AA construídas corretamente.</span></li><li><input class="ck" type="checkbox"/><span>Vegetação de 2008 analisada e comparada com imagem atual.</span></li><li><input class="ck" type="checkbox"/><span>Áreas suprimidas desde 2008 classificadas como AA em recuperação.</span></li><li><input class="ck" type="checkbox"/><span>Duas represas e quatro construções demarcadas.</span></li><li><input class="ck" type="checkbox"/><span>Reserva Legal composta conforme o diagnóstico, com aproximadamente 20% ou mais.</span></li><li><input class="ck" type="checkbox"/><span>Todos os atributos conferidos.</span></li><li><input class="ck" type="checkbox"/><span>ZIP exportado sem erros de atributos.</span></li><li><input class="ck" type="checkbox"/><span>Coordenada central conferida e utilizada no simulador.</span></li><li><input class="ck" type="checkbox"/><span>Processamento aprovado e croqui conferido.</span></li><li><input class="ck" type="checkbox"/><span>Relatório de Importação conferido quanto às duas represas.</span></li><li><input class="ck" type="checkbox"/><span>12. Limpar projeto atual executado ao final.</span></li></ul></div></details>
+<details class="topic"><summary><h2>9. Referência rápida das ferramentas</h2></summary><div class="topic-body"><table class="quick"><tr><th class="qi">Ícone</th><th>Ferramenta</th><th>Localização</th><th>Uso</th></tr>
+<tr><td class="qi"><img src="assets/icons/qgis/mActionAddDelimitedTextLayer.svg"/></td><td>Adicionar Camada de Texto Delimitado</td><td>Camada → Adicionar Camada</td><td>Importar o TXT de coordenadas.</td></tr><tr><td class="qi"><span class="model-badge">M</span></td><td>02. Polígono a partir de ponto</td><td>Projeto → Modelos</td><td>Converter os vértices ordenados em polígono.</td></tr><tr><td class="qi"><img src="assets/icons/qgis/mActionToggleEditing.svg"/></td><td>Alternar edição</td><td>Barra Digitalização</td><td>Entrar e sair do modo de edição.</td></tr><tr><td class="qi"><img src="assets/icons/qgis/mActionSplitFeatures.svg"/></td><td>Quebrar feição</td><td>Digitalização Avançada</td><td>Separar classes e áreas suprimidas.</td></tr><tr><td class="qi"><img src="assets/icons/qgis/mActionFillRing.svg"/></td><td>Preencher anel</td><td>Digitalização Avançada</td><td>Separar feições internas quando aplicável.</td></tr><tr><td class="qi"><img src="assets/icons/qgis/mActionEditCut.svg"/></td><td>Recortar</td><td>Editar → Recortar • Ctrl+X</td><td>Transferir uma feição removendo-a da camada de origem.</td></tr><tr><td class="qi"><img src="assets/icons/qgis/mActionEditCopy.svg"/></td><td>Copiar</td><td>Editar → Copiar • Ctrl+C</td><td>Reutilizar a mesma geometria em outra camada.</td></tr><tr><td class="qi"><img src="assets/icons/qgis/mActionMultiEdit.svg"/></td><td>Modificar atributos selecionados</td><td>Editar / Tabela de Atributos</td><td>Atribuir valores iguais a várias feições selecionadas.</td></tr><tr><td class="qi"><span class="model-badge">M</span></td><td>01.3. Atualizar Camadas após Importação</td><td>Projeto → Modelos</td><td>Atualizar referências após abrir o projeto ou executar modelos automatizados.</td></tr><tr><td class="qi"><span class="model-badge">M</span></td><td>10. Exportar shapes (.ZIP)</td><td>Projeto → Modelos</td><td>Validar atributos, gerar ZIP e apresentar a coordenada central.</td></tr><tr><td class="qi"><span class="model-badge">M</span></td><td>12. Limpar projeto atual</td><td>Projeto → Modelos</td><td>Preparar o projeto para a próxima atividade após aprovação do croqui.</td></tr></table></div></details>
+<div class="footer"><strong>Material de apoio da atividade prática.</strong> As imagens históricas e atuais são recursos de interpretação; a documentação do imóvel, a análise técnica e o processamento no SIMLAM devem ser considerados em conjunto.</div>
+</div></section>
+<section class="course-unit" data-title="Atividade 04" id="atividade-04">
+<div class="sheet">
+<header class="header">
+<div class="header-text">
+<div class="kicker">Curso QGIS aplicado ao Cadastro Ambiental Rural</div>
+<h1>Atividade 04</h1>
+<div class="subtitle">Espaço reservado para a próxima atividade do curso.</div>
+</div>
+<img alt="QGIS Aplicado ao CAR" class="logo" src="assets/img/logo/logo-dalvi-geotecnologias-cbee9e2874040b.png"/>
+</header>
+<div class="box objective"><strong>Conteúdo em elaboração.</strong> Esta posição já está reservada na estrutura do material e poderá receber o próximo guia sem alterar a navegação geral.</div>
+</div>
+</section>
+<script src="assets/js/site.js"></script>
+</body>
+</html>
