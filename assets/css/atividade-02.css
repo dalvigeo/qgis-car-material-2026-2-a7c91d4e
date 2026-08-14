@@ -1,0 +1,99 @@
+#atividade-02{--green:#589632;--green-dark:#355d20;--green-soft:#eef7e9;--ink:#1f2937;--muted:#5d6873;--line:#d8dfe5;--blue:#3c7dc0;--blue-soft:#edf5ff;--yellow:#d8a300;--yellow-soft:#fff9df;--red:#b84a44;--red-soft:#fff0ef;--panel:#f7f9fa;--orange:#f47b20}
+#atividade-02, #atividade-02 *{box-sizing:border-box}
+#atividade-02, #atividade-02{margin:0;padding:0}
+#atividade-02{font-family:"Segoe UI",Arial,Helvetica,sans-serif;background:#e9ecef;color:var(--ink);line-height:1.44;font-size:10.3pt}
+#atividade-02 .sheet{width:210mm;margin:10mm auto;background:#fff;padding:15mm 15mm 17mm;box-shadow:0 3px 18px rgba(0,0,0,.13)}
+#atividade-02 .header{display:flex;align-items:flex-start;justify-content:space-between;gap:9mm;padding-bottom:5mm;border-bottom:1px solid #e3e7ea;margin-bottom:5mm}
+#atividade-02 .header-text{min-width:0;flex:1}
+#atividade-02 .logo{width:32mm;height:auto;object-fit:contain;margin-top:1mm}
+#atividade-02 .kicker{font-size:8.4pt;color:var(--green);text-transform:uppercase;letter-spacing:.12em;font-weight:800}
+#atividade-02 h1, #atividade-02 h2, #atividade-02 h3, #atividade-02 h4{color:var(--green-dark);margin:0}
+#atividade-02 h1{font-size:22.5pt;line-height:1.08;margin:1mm 0 1.7mm}
+#atividade-02 .subtitle{font-size:11.4pt;color:var(--muted)}
+#atividade-02 h2{font-size:16.4pt;border-bottom:2px solid var(--green);padding-bottom:2mm;margin:8mm 0 4.5mm}
+#atividade-02 h3{font-size:13.2pt;border-left:4px solid var(--green);padding-left:3mm;margin:6mm 0 3.5mm}
+#atividade-02 h4{font-size:11.2pt;margin:0 0 2mm}
+#atividade-02 p{margin:0 0 3mm}
+#atividade-02 a{color:#356c22;font-weight:650}
+#atividade-02 ul{margin-top:2mm}
+#atividade-02 .box, #atividade-02 .note, #atividade-02 .warn, #atividade-02 .official, #atividade-02 .danger{padding:4mm 4.5mm;border-radius:2.4mm;margin:4mm 0;break-inside:avoid;page-break-inside:avoid}
+#atividade-02 .box{border:1px solid var(--line);background:#fff}
+#atividade-02 .objective{background:var(--green-soft);border-left:4px solid var(--green)}
+#atividade-02 .note{background:var(--blue-soft);border-left:4px solid var(--blue)}
+#atividade-02 .warn{background:var(--yellow-soft);border-left:4px solid var(--yellow)}
+#atividade-02 .official{background:#f1f7f0;border:1px solid #cbdcc5;border-left:4px solid var(--green-dark)}
+#atividade-02 .danger{background:var(--red-soft);border-left:4px solid var(--red)}
+#atividade-02 .path{font-family:Consolas,"Courier New",monospace;background:#f1f3f5;border:1px solid #d8dde2;border-radius:1.4mm;padding:1mm 1.8mm;display:inline-block;word-break:break-all}
+#atividade-02 .ui{font-weight:700;color:#344557}
+#atividade-02 kbd{font-family:Consolas,monospace;background:#fff;border:1px solid #bfc7cf;border-bottom-width:2px;border-radius:1mm;padding:.2mm 1mm;font-size:8.5pt}
+#atividade-02 .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:5mm}
+#atividade-02 .grid-32{display:grid;grid-template-columns:3fr 2fr;gap:5mm}
+#atividade-02 .figure{border:1px solid var(--line);border-radius:2mm;overflow:hidden;background:#fff;break-inside:avoid}
+#atividade-02 .figure img{display:block;width:100%}
+#atividade-02 .caption{font-size:8.45pt;color:var(--muted);padding:1.7mm 2.5mm 2.2mm}
+#atividade-02 .layer-list{columns:2;column-gap:7mm;margin:2mm 0;padding-left:5mm}
+#atividade-02 .layer-list li{margin:1mm 0;break-inside:avoid}
+#atividade-02 .workflow{display:flex;align-items:center;gap:1.5mm;flex-wrap:wrap;margin:3mm 0}
+#atividade-02 .wf{border:1px solid #ccd6dd;background:#fff;border-radius:2mm;padding:2.4mm 3mm;font-weight:750;text-align:center}
+#atividade-02 .wf.green{background:#f0f8eb;border-color:#bcd2b0}
+#atividade-02 .wf.blue{background:#eef6ff;border-color:#bdd4ea}
+#atividade-02 .wf.yellow{background:#fff8df;border-color:#e2ce7d}
+#atividade-02 .wf.red{background:#fff0ef;border-color:#e0aaa6}
+#atividade-02 .wf-arrow{font-size:16pt;color:var(--green);font-weight:800}
+#atividade-02 .source-table, #atividade-02 .settings, #atividade-02 .quick, #atividade-02 .ref-values{width:100%;border-collapse:collapse;margin:2.5mm 0;font-size:9.35pt}
+#atividade-02 .source-table th, #atividade-02 .source-table td, #atividade-02 .settings th, #atividade-02 .settings td, #atividade-02 .quick th, #atividade-02 .quick td, #atividade-02 .ref-values th, #atividade-02 .ref-values td{border:1px solid var(--line);padding:2mm 2.4mm;vertical-align:top}
+#atividade-02 .source-table th, #atividade-02 .settings th, #atividade-02 .quick th, #atividade-02 .ref-values th{background:#f3f6f8;text-align:left}
+#atividade-02 .settings th{width:34%}
+#atividade-02 .tool-card{border:1px solid #d6dee4;border-radius:2.5mm;background:#fbfcfd;padding:3.2mm 3.7mm;margin:3mm 0;break-inside:avoid;page-break-inside:avoid}
+#atividade-02 .tool-head{display:grid;grid-template-columns:11mm 1fr;gap:3mm;align-items:center;margin-bottom:2mm}
+#atividade-02 .tool-icon{width:9mm;height:9mm;object-fit:contain;border:1px solid #d8dfe4;border-radius:1.2mm;background:#fff;padding:.7mm}
+#atividade-02 .tool-name{font-weight:800;color:#253746;font-size:10.5pt}
+#atividade-02 .tool-location{font-size:8.5pt;color:#5c7386;margin-top:.3mm}
+#atividade-02 .tool-grid{display:grid;grid-template-columns:1fr 1fr;gap:2mm;margin:2mm 0}
+#atividade-02 .tool-grid div, #atividade-02 .tool-procedure, #atividade-02 .tool-result{border-top:1px solid #e4e8eb;padding-top:1.6mm;font-size:9.4pt}
+#atividade-02 .tool-grid span, #atividade-02 .tool-procedure span, #atividade-02 .tool-result span{display:block;color:#697782;text-transform:uppercase;font-size:7.5pt;font-weight:800;letter-spacing:.05em;margin-bottom:.5mm}
+#atividade-02 .tool-result{color:#294d20}
+#atividade-02 .steps{counter-reset:step;list-style:none;padding:0;margin:0}
+#atividade-02 .steps>li{counter-increment:step;display:grid;grid-template-columns:10mm 1fr;gap:3mm;border:1px solid var(--line);border-radius:2mm;padding:3mm 3.5mm;margin:2.5mm 0;break-inside:avoid}
+#atividade-02 .steps>li::before{content:counter(step);width:8mm;height:8mm;border-radius:50%;display:flex;align-items:center;justify-content:center;background:var(--green);color:#fff;font-weight:800;font-size:9pt}
+#atividade-02 .finish{border:1px solid #c9dbc1;background:#f6fbf3;border-radius:2.5mm;padding:3.3mm 4mm;margin:4mm 0 6mm;break-inside:avoid}
+#atividade-02 .finish-title{text-transform:uppercase;letter-spacing:.05em;font-size:8.4pt;font-weight:850;color:var(--green-dark);margin-bottom:2mm}
+#atividade-02 .finish-grid{display:grid;grid-template-columns:1fr 8mm 1fr;gap:2mm;align-items:center}
+#atividade-02 .finish-action{display:grid;grid-template-columns:10mm 1fr;gap:2.5mm;align-items:center;font-size:9.1pt}
+#atividade-02 .finish-action img{width:8mm;height:8mm;object-fit:contain}
+#atividade-02 .finish-arrow{font-size:18pt;color:var(--green);text-align:center}
+#atividade-02 .copy-flow{display:flex;align-items:center;gap:1.2mm;flex-wrap:wrap;margin:3mm 0;padding:3mm;border:1px solid var(--line);border-radius:2mm;background:#f8fafb;break-inside:avoid}
+#atividade-02 .cf-node, #atividade-02 .cf-step{min-height:16mm;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;border:1px solid #d5dde3;border-radius:2mm;padding:1.8mm 2.5mm;background:#fff;font-size:8.8pt}
+#atividade-02 .cf-node{min-width:30mm}
+#atividade-02 .cf-node.target{background:#f1f8ed;border-color:#bfd5b4}
+#atividade-02 .cf-node small{display:block;color:var(--muted);font-size:7.4pt}
+#atividade-02 .cf-step img{width:7mm;height:7mm;object-fit:contain;margin-bottom:.6mm}
+#atividade-02 .cf-arrow{font-weight:900;color:var(--green);font-size:14pt}
+#atividade-02 .micro-note{font-size:8.5pt;color:#53616c;background:#f5f7f8;border-left:3px solid #b6c0c8;padding:2mm 3mm;margin-top:-1mm}
+#atividade-02 .compare{display:grid;grid-template-columns:1fr 1fr;gap:4mm;margin:3mm 0}
+#atividade-02 .compare-card{border:1px solid var(--line);border-radius:2mm;padding:3.2mm;background:#fff}
+#atividade-02 .compare-card img{width:8mm;height:8mm;vertical-align:middle;margin-right:1.5mm}
+#atividade-02 .formula{font-size:13pt;font-weight:850;text-align:center;color:#2f5d20;padding:3mm;border:1px solid #c8d9c0;border-radius:2mm;background:#f5faf2;margin:3mm 0}
+#atividade-02 .button-link{display:inline-block;background:var(--green-dark);color:#fff!important;text-decoration:none;padding:2.2mm 4mm;border-radius:2mm;font-weight:800;margin:1mm 0 2mm}
+#atividade-02 .checklist{list-style:none;padding:0;margin:2mm 0}
+#atividade-02 .checklist li{display:grid;grid-template-columns:7mm 1fr;gap:2mm;align-items:start;margin:2mm 0}
+#atividade-02 .ck{width:5mm;height:5mm;margin:0;accent-color:var(--green)}
+#atividade-02 .quick{font-size:8.65pt}
+#atividade-02 .quick th, #atividade-02 .quick td{padding:1.55mm 1.8mm}
+#atividade-02 .quick img{width:7mm;height:7mm;object-fit:contain}
+#atividade-02 .quick .qi{width:10mm;text-align:center}
+#atividade-02 .model-badge{display:inline-flex;width:8mm;height:8mm;border-radius:1.4mm;background:#7d4fb2;color:white;align-items:center;justify-content:center;font-weight:900;font-size:8pt}
+#atividade-02 .cycle{display:grid;grid-template-columns:repeat(7,auto);align-items:center;justify-content:center;gap:1.5mm;margin:4mm 0;break-inside:avoid}
+#atividade-02 .cycle .c{padding:2.2mm 2.7mm;border:1px solid var(--line);border-radius:2mm;background:#fff;text-align:center;font-weight:750;font-size:8.8pt}
+#atividade-02 .cycle .arrow{font-size:14pt;color:var(--green);font-weight:900}
+#atividade-02 .page-break{break-before:page;page-break-before:always}
+#atividade-02 .footer{font-size:8.2pt;color:var(--muted);border-top:1px solid var(--line);padding-top:3mm;margin-top:7mm}
+#atividade-02 .print-footer{display:none}
+@media print{#atividade-02{background:#fff;font-size:9.6pt}
+#atividade-02 .sheet{width:auto;margin:0;padding:0;box-shadow:none}
+#atividade-02 h1{font-size:20.5pt}
+#atividade-02 h2{font-size:15.3pt}
+#atividade-02 h3{font-size:12.3pt}
+#atividade-02 .logo{width:29mm}
+#atividade-02 .print-footer{display:block;position:fixed;bottom:-9mm;left:0;right:0;text-align:center;border-top:.25mm solid #d8dee4;padding-top:1mm;font-size:7.5pt;color:#6b7280}
+#atividade-02 a{color:inherit;text-decoration:none}}
